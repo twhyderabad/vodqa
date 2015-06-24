@@ -9,7 +9,7 @@ tinylr = require "tiny-lr"
 server = tinylr()
 
 gulp.task "compile:html", ->
-  gulp.src "src/**/*.jade"
+  gulp.src "src/index.jade"
     .pipe jade { pretty: true }
     .pipe gulp.dest "dist/"
     .pipe livereload server
