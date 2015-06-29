@@ -2,169 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee6fff62-33b7-41b1-8e84-d9285e2ab088" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/core-component-page/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/core-component-page/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/core-component-page/bowager-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/core-component-page/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/core-component-page/core-component-page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/core-component-page/demo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/core-component-page/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/docs/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/explainer/data-bind.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/explainer/data-bind.vsdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/explainer/samples.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/layout.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/polymer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/polymer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/polymer.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/annotations/annotations.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/annotations/demo/app-chrome.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/array-observe.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/array-splice.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/async.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/base.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/bind/accessors.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/bind/demo/app-chrome.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/bind/demo/app.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/bind/demo/src/annotations-bind-demo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/bind/demo/src/bind-demo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/bind/effects.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/case-map.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/collection.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/css-parse.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/debounce.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/dom-api.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/dom-module.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/event-api.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/expr/focus.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/expr/gestures.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/expr/log.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/expr/sinspect.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/expr/style-auditor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/expr/style-protector.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/gestures.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/lang.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/module.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/polymer-bootstrap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/resolve-url.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/settings.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/style-defaults.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/style-transformer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/style-util.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/template/templatizer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/template/x-array-selector.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/template/x-autobind.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/template/x-if.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/template/x-repeat.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/template/x-template.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/lib/x-style.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/micro/attributes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/micro/behaviors.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/micro/constructor.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/micro/debouncer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/micro/extends.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/micro/mixins.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/micro/properties.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/micro/tag.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/mini/ready.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/mini/shadow.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/mini/shady.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/mini/template.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/polymer-lib.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/standard/annotations.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/standard/configure.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/standard/effects.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/standard/events.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/standard/notify-path.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/standard/resolveUrl.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/standard/styling.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/standard/utils.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/src/standard/x-styling.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/assets/Beaker2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/assets/test-style-path.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/compat/polymer-smoke-elements.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/compat/polymer-smoke-polyfill.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/runner.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/smoke/bind-smoke.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/smoke/custom-notify-smoke.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/smoke/elements-smoke.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/smoke/polymer-micro-smoke.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/smoke/polymer-mini-smoke.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/smoke/polymer-smoke.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/smoke/style-path-smoke.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/smoke/x-if.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/smoke/x-repeat.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/async.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/attributes-elements.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/attributes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/base.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/behaviors-elements.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/behaviors.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/bind-elements.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/bind.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/configure-elements.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/configure.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/css-parse.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/dynamic-import.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/dynamic-imports/dynamic-element.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/dynamic-imports/inner-element.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/dynamic-imports/outer-element.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/gestures-elements.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/gestures.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/micro-elements.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/micro.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/notify-path-elements.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/notify-path.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/polymer-dom-elements.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/polymer-dom-shadow.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/polymer-dom.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/polymer-dom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/ready-elements.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/ready-shadow.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/ready.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/ready.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/resolveurl.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/shady.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/styling-remote-elements.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/styling-remote-module-sheet.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/styling-remote-sheet.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/styling-remote.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/styling-scoped-elements.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/styling-scoped.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/sub/resolveurl-elements.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/template-elements.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/template.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/template/x-template.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/utils-content.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/utils-elements.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/utils.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/x-repeat-elements.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/x-repeat.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/polymer/test/unit/x-style.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/CustomElements.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/CustomElements.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/HTMLImports.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/HTMLImports.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/ShadowDOM.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/ShadowDOM.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/build.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/webcomponents-lite.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/webcomponents-lite.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/webcomponents.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/webcomponentsjs/webcomponents.min.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/header/headerTemplate.jade" afterPath="$PROJECT_DIR$/src/header/headerTemplate.jade" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/header/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.jade" afterPath="$PROJECT_DIR$/src/index.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/serve.coffee" afterPath="$PROJECT_DIR$/build/serve.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/layout.jade" afterPath="$PROJECT_DIR$/src/layout.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vodqa.iws" />
@@ -187,101 +28,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="gulpfile.coffee" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gulpfile.coffee">
+      <file leaf-file-name="layout.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/layout.jade">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bower.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bower.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5">
-              <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".bowerrc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.bowerrc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.875">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.10013351">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="compile.coffee" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/compile.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+        <entry file="file://$PROJECT_DIR$/vendor/bower_components/paper-header-panel/demo/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="11" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+            <state vertical-scroll-proportion="62.416668">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="clean.coffee" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/clean.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="serve.coffee" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/serve.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/layout.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.jade" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.jade">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.13530928">
+              <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/header/style.css">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -295,6 +76,7 @@
         <option value="CoffeeScript File" />
         <option value="Html5" />
         <option value="Jade File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -323,15 +105,16 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/index.jade" />
         <option value="$PROJECT_DIR$/build/compile.coffee" />
-        <option value="$PROJECT_DIR$/dist/index.html" />
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/src/header/headerTemplate.jade" />
-        <option value="$PROJECT_DIR$/src/index.jade" />
         <option value="$PROJECT_DIR$/build/clean.coffee" />
         <option value="$PROJECT_DIR$/build/serve.coffee" />
-        <option value="$PROJECT_DIR$/src/layout.jade" />
         <option value="$PROJECT_DIR$/.bowerrc" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/dist/index.html" />
+        <option value="$PROJECT_DIR$/src/header/style.css" />
+        <option value="$PROJECT_DIR$/src/layout.jade" />
+        <option value="$PROJECT_DIR$/src/index.jade" />
       </list>
     </option>
   </component>
@@ -378,6 +161,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -406,15 +191,45 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vodqa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vodqa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="header" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vodqa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vodqa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="dist" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -423,6 +238,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="SearchEverywhereHistoryKey" value="bower&#9;FILE&#9;file:///Users/jyotsna/Projects/vodqa/node_modules/bower/test/commands/bower.js" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -668,6 +484,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
@@ -689,40 +511,41 @@
       <updated>1434955270530</updated>
       <workItem from="1434955271903" duration="552000" />
       <workItem from="1435073135135" duration="10839000" />
+      <workItem from="1435572857172" duration="831000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11391000" />
+    <option name="totallyTimeSpent" value="12222000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="23" width="1439" height="873" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21612231" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -745,74 +568,34 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build/copy.coffee">
+    <entry file="file://$PROJECT_DIR$/gulpfile.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/coffee/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/bower/test/commands/bower.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.125">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="11" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5">
+        <state vertical-scroll-proportion="0.0">
           <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/header/headerTemplate.jade">
+    <entry file="file://$PROJECT_DIR$/.bowerrc">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21262887">
-          <caret line="11" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.jade">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -825,10 +608,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/index.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21941489">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="11" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -841,14 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/layout.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/serve.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -857,10 +632,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.bowerrc">
+    <entry file="file://$PROJECT_DIR$/src/layout.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.875">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/copy.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/coffee/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/bower/test/commands/bower.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.125">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="11" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/header/headerTemplate.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21262887">
+          <caret line="11" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21941489">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -869,6 +703,86 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.10013351">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.bowerrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.059840426">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2393617">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09664948">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/compile.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21262887">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/clean.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.038659792">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/serve.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15463917">
+          <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bower_components/paper-header-panel/demo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="62.416668">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/header/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layout.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13530928">
+          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
           <folding />
         </state>
       </provider>

@@ -1,6 +1,8 @@
 extends layout
 
 block headerTemplate
-    p this is header section
-    paper-input(type = "text")
-    p thi is new
+    link(rel="import" href="paper-header-panel/paper-header-panel.html")
+    paper-header-panel(mode="scroll")
+        link(rel="import" href="paper-toolbar/paper-toolbar.html")
+        paper-toolbar
+            h1(class="header",align="center") VODQA 2.0
