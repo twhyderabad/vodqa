@@ -1,8 +1,23 @@
-extends layout
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        title vodQA 2015
+        script(src="webcomponentsjs/webcomponents.min.js")
+        link(rel="stylesheet", href="home-section/home-section.css")
+        link(rel="stylesheet", href="register-section/register-section.css")
+        link(rel="stylesheet", href="blank-section/blank-section.css")
 
-block headerTemplate
-    link(rel="import" href="paper-header-panel/paper-header-panel.html")
-    paper-header-panel(mode="scroll")
-        link(rel="import" href="paper-toolbar/paper-toolbar.html")
-        paper-toolbar
-            h1(class="header",align="center") VODQA 2.0
+
+        link(rel="import", href="polymer/polymer.html")
+        link(rel="import", href="home-section/home-section.html")
+        link(rel="import", href="app-header/app-header.html")
+        link(rel="import", href="register-section/register-section.html")
+        link(rel="import", href="blank-section/blank-section.html")
+    body
+        home-section
+        app-header
+        blank-section
+        register-section
+
