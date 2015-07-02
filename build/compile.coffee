@@ -14,22 +14,16 @@ gulp.task "compile:html", ->
     .pipe gulp.dest "./dist"
     .pipe livereload server
 
-gulp.task "compile:elements", ->
-  gulp.src "src/**/*.jade"
-  .pipe jade { pretty: true }
-  .pipe gulp.dest "./dist"
-  .pipe livereload server
-
 gulp.task "compile:css", ->
-  gulp.src("src/**/*.sass")
+  gulp.src("src/assets/styles/*.sass")
     .pipe sass { errLogToConsole: true }
-    .pipe gulp.dest "./dist/"
+    .pipe gulp.dest "./dist/assets"
     .pipe livereload server
 
 gulp.task "compile:js", ->
-  gulp.src("src/**/*.coffee")
+  gulp.src("src/assets/scripts/*.coffee")
     .pipe coffee {bare: true}
-    .pipe gulp.dest "./dist/"
+    .pipe gulp.dest "./dist/assets/"
     .pipe livereload server
 
 gulp.task "watch", ->
@@ -37,8 +31,7 @@ gulp.task "watch", ->
     if err then return console.log err
 
     gulp.watch "src/index.jade", ["compile:html"]
-    gulp.watch "src/**/*.sass", ["compile:css"]
-    gulp.watch "src/**/*.coffee", ["compile:js"]
-    gulp.watch "src/**/*.jade", ["compile:elements"]
+    gulp.watch "src/assets/styles/*.sass", ["compile:css"]
+    gulp.watch "src/assets/scripts/*.coffee", ["compile:js"]
 
-gulp.task "compile", ["compile:html", "compile:css", "compile:js","compile:elements"]
+gulp.task "compile", ["compile:html", "compile:css", "compile:js"]
