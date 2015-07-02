@@ -1,2 +1,9 @@
 section.agenda
   background: $secondary
+
+  $d: $agenda-base-duration
+  @while $d < $agenda-max-duration
+    .duration-#{$d}m
+      height: $agenda-base-height * $d/$agenda-base-duration
+      max-height: $agenda-max-height
+    $d: $d + $agenda-step
