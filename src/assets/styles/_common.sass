@@ -1,4 +1,5 @@
 body
+  color: $grey2
   margin: 0
   padding: 0
   font-family: "open sans", Arial
@@ -7,6 +8,14 @@ body
 
   > section
     padding: 1em
+    > h2
+      margin: 0 auto
+      @media all and ("min-width: 1024px")
+        width: 1024px
+    > .content
+      margin: 0 auto
+      @media all and ("min-width: 1024px")
+        width: 1024px
 
 h2
   font-size: 2em
@@ -15,4 +24,4 @@ h2
   font-weight: 100
 
 p
-  padding: .5em 0 0 1em
+  padding: .5em 0 0 .5em
