@@ -6,11 +6,7 @@ html(lang="en")
         title vodQA 2015
         script(src="webcomponentsjs/webcomponents.min.js")
     body
-        header
-            h1 VODQA
-            ul
-                li Home
-                li About
-                li Contact
-                li Register
-
+        include sections/header/header.jade
+        include sections/about/about.jade
+        include sections/speakers/speakers.jade
+        include sections/agenda/agenda.jade
