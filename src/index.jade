@@ -5,11 +5,21 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1")
         title vodQA 2015
         script(src="webcomponentsjs/webcomponents.min.js")
+        script(src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js")
+        script(src="assets/js/jquery.bxslider.min.js")
         link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,300,600,400' rel='stylesheet' type='text/css')
         link(rel="stylesheet", href="/assets/main.css")
-    body
+        link(rel="stylesheet", href="/assets/lib/jquery.bxslider.css")
+        script
+            |$(document).ready(function(){
+            |$('.bxslider').bxSlider();
+            |});
+
+body
         .container
             include sections/header/header.jade
             include sections/about/about.jade
             include sections/speakers/speakers.jade
             include sections/agenda/agenda.jade
+            include sections/contact/contact.jade
+            include sections/register/register.jade
