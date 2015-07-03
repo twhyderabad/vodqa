@@ -8,7 +8,8 @@ html(lang="en")
         link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,300,600,400' rel='stylesheet' type='text/css')
         link(rel="stylesheet", href="/assets/main.css")
     body
-        include sections/header/header.jade
-        include sections/about/about.jade
-        include sections/speakers/speakers.jade
-        include sections/agenda/agenda.jade
+        .container
+            include sections/header/header.jade
+            include sections/about/about.jade
+            include sections/speakers/speakers.jade
+            include sections/agenda/agenda.jade
