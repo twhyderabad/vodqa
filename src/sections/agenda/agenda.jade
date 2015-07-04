@@ -1,7 +1,11 @@
-include data.jade
-
 section.agenda
   h2 Agenda
   .content
-    each item in agenda
-      li= item.title
+    div(class="tracks tracks-#{tracks.length}")
+      each track in tracks
+        .track
+          h3= track.title
+          each session in track.sessions
+            div(class="session #{session.type} duration-#{session.duration}")
+              h4.topic= session.topic
+              span.speaker= session.speaker

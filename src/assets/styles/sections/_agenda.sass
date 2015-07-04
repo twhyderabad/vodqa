@@ -1,2 +1,52 @@
 section.agenda
   background: $secondary
+  color: $grey2
+  .track
+    .topic
+      font-size: 1.5em
+      font-weight: 200
+    .speaker
+      font-size: 1em
+      font-style: italic
+      line-height: 2.5em
+
+
+// # of tracks
+
+.tracks
+  overflow: hidden
+  width: 100%
+  .track
+    float: left
+  &.tracks-1
+    .track
+      width: 100%
+  &.tracks-2
+    .track
+      width: 46%
+      margin-right: 2%
+
+
+// track types
+
+section.agenda
+  .track
+    .session
+      margin: 0.5em 0 0
+      padding: 1em
+      box-sizing: border-box
+      &.talk
+        background: rgba($grey-3, 0.9)
+      &.break
+        background: desaturate($secondary, 20%)
+
+
+// Dynamic height based on duration
+
+section.agenda
+  $d: $agenda-base-duration
+  @while $d < $agenda-max-duration
+    .duration-#{$d}m
+      height: #{$agenda-base-height * $d/$agenda-base-duration}px
+      max-height: #{$agenda-max-height}px
+    $d: $d + $agenda-step

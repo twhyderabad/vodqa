@@ -30,8 +30,8 @@ gulp.task "watch", ->
   server.listen 35729, (err) ->
     if err then return console.log err
 
-    gulp.watch "src/index.jade", ["compile:html"]
-    gulp.watch "src/assets/styles/*.sass", ["compile:css"]
+    gulp.watch "src/**/*.jade", ["compile:html"]
+    gulp.watch "src/assets/styles/**/*.sass", ["compile:css"]
     gulp.watch "src/assets/scripts/*.coffee", ["compile:js"]
 
 gulp.task "compile", ["compile:html", "compile:css", "compile:js"]
