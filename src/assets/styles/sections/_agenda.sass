@@ -1,6 +1,7 @@
 section.agenda
   background: $secondary
-  color: $grey2
+  h2
+    color: $grey2
   .track
     .topic
       font-size: 1.5em
@@ -36,7 +37,7 @@ section.agenda
       padding: 1em
       box-sizing: border-box
       &.talk
-        background: rgba($grey-3, 0.9)
+        background: $grey-3
       &.break
         background: desaturate($secondary, 20%)
 
@@ -47,6 +48,6 @@ section.agenda
   $d: $agenda-base-duration
   @while $d < $agenda-max-duration
     .duration-#{$d}m
-      height: #{$agenda-base-height * $d/$agenda-base-duration}px
-      max-height: #{$agenda-max-height}px
+      height: $agenda-base-height * $d/$agenda-base-duration
+      max-height: $agenda-max-height
     $d: $d + $agenda-step
