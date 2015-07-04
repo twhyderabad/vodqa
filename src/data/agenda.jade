@@ -1,1 +1,30 @@
-- var agenda = [{ "title": "Some seszcxzxckjashdkjhsion name" , "start": "9h45m" , "end": "10h00m" , "speaker": "Name Name" , "speaker": "Name Name" } , { "title": "Some session name askjdhjka" , "start": "10h00m" , "end": "10h30m" , "speaker": "Nasadasdme Name" } ]
+//- Tracks
+
+- tracks = []
+
+- track = {}
+- track.title = "Track 1"
+- track.sessions = []
+- tracks[0] = track
+
+//- Sessions
+
+- session = {}
+- session.topic = "kasdkajshkahs kajshdakjh"
+- session.speaker = "kkjhkadsj kjh"
+- session.duration = "30m"
+- session.type = "talk"
+- tracks[0].sessions[0] = session
+
+- session = {}
+- session.topic = "sdasd"
+- session.speaker = "kkj23"
+- session.duration = "60m"
+- session.type = "talk"
+- tracks[0].sessions[1] = session
+
+- session = {}
+- session.topic = "Break"
+- session.duration = "15m"
+- session.type = "break"
+- tracks[0].sessions[2] = session

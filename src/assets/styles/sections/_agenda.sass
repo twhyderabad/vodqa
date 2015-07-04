@@ -1,9 +1,25 @@
 section.agenda
   background: $secondary
 
+// track types
+
+section.agenda
+  .track
+    margin: 0.5em 0 0
+    padding: 1em
+    box-sizing: border-box
+    &.talk
+      background: rgba($grey-3, 0.9)
+    &.break
+      background: lighten(desaturate($secondary, 10%), 10%)
+
+
+// Dynamic height based on duration
+
+section.agenda
   $d: $agenda-base-duration
   @while $d < $agenda-max-duration
     .duration-#{$d}m
-      height: $agenda-base-height * $d/$agenda-base-duration
-      max-height: $agenda-max-height
+      height: #{$agenda-base-height * $d/$agenda-base-duration}px
+      max-height: #{$agenda-max-height}px
     $d: $d + $agenda-step
