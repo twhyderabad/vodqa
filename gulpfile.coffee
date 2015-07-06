@@ -4,4 +4,4 @@ reqDir = require "require-dir"
 
 reqDir "./build"
 
-gulp.task "default", ["clean", "compile", "copy", "serve", "watch"]
+gulp.task "default", ["compile", "copy", "serve", "watch"]
