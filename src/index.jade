@@ -34,6 +34,10 @@ html(lang="en")
       |  return false;
       |});
       |});
+    script(src="//app-e.marketo.com/js/forms2/js/forms2.min.js")
+    script
+      | MktoForms2.loadForm("//app-e.marketo.com",
+      |"199-QDE-291", 3106);
 
 body
   include data/agenda.jade
