@@ -14,7 +14,10 @@ html(lang="en")
     link(rel="stylesheet", href="/assets/lib/jquery.bxslider.css")
     script
       |$(document).ready(function(){
-      |$('.bxslider').bxSlider();
+      | $('.bxslider').bxSlider({
+      |   mode: 'fade',
+      |captions: true
+      |});
       |});
 
     script
