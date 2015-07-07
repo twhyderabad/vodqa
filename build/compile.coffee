@@ -11,7 +11,7 @@ server = tinylr()
 gulp.task "compile:html", ->
   gulp.src "src/index.jade"
     .pipe jade { pretty: true }
-    .pipe gulp.dest "./dist"
+    .pipe gulp.dest "./"
     .pipe livereload server
 
 gulp.task "compile:css", ->

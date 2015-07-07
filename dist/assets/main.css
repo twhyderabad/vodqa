@@ -260,13 +260,15 @@ section.speakers {
   border-radius: 50%;
   background-image: url("images/sp-1.png"); }
 
-section.contact .content {
-  max-width: 100%; }
-  section.contact .content .details {
-    max-width: 50%;
-    float: left; }
-  section.contact .content .map {
+section.contact {
+  background: #ccdc85; }
+  section.contact .content {
     max-width: 100%; }
+    section.contact .content .details {
+      max-width: 50%;
+      float: left; }
+    section.contact .content .map {
+      max-width: 100%; }
 
 section.register {
   background: #EEE; }
