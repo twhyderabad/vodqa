@@ -1,0 +1,291 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+body {
+  color: #666;
+  margin: 0;
+  padding: 0;
+  font-family: "open sans", Arial;
+  line-height: 150%; }
+  body > section {
+    padding: 1em; }
+    body > section > h2 {
+      margin: 1em auto 0.5em; }
+      @media all and (min-width: 1024px) {
+        body > section > h2 {
+          width: 1024px; } }
+    body > section > .content {
+      margin: 0 auto;
+      padding: 0 0.5em 1em 0; }
+      @media all and (min-width: 1024px) {
+        body > section > .content {
+          width: 1024px; } }
+
+h2 {
+  font-size: 2em;
+  margin: 1em 0 0.5em;
+  font-weight: 100; }
+
+.navigator {
+  box-sizing: border-box;
+  width: 100%;
+  position: fixed;
+  background: white; }
+  .navigator ul {
+    text-align: right;
+    list-style: none; }
+    .navigator ul li {
+      display: inline-block;
+      font-size: 1em;
+      font-weight: 300;
+      padding: 0.3em; }
+      .navigator ul li a {
+        text-decoration: none;
+        color: #B2BC18;
+        padding: 0.15em 0.5em; }
+        .navigator ul li a.current {
+          border-bottom: 2px #CCC solid; }
+
+section.header {
+  background: transparent;
+  text-align: center;
+  background: #F6F6F6;
+  padding-top: 7em; }
+
+section.agenda {
+  background: #00B348; }
+  section.agenda h2 {
+    color: #333; }
+  section.agenda .track .topic {
+    font-size: 1.5em;
+    font-weight: 200; }
+  section.agenda .track .speaker {
+    font-size: 1em;
+    font-style: italic;
+    line-height: 2.5em; }
+
+.tracks {
+  overflow: hidden;
+  width: 100%; }
+  .tracks .track {
+    float: left; }
+  .tracks.tracks-1 .track {
+    width: 100%; }
+  .tracks.tracks-2 .track {
+    width: 46%;
+    margin-right: 2%; }
+
+section.agenda .track .session {
+  margin: 0.5em 0 0;
+  padding: 1em;
+  box-sizing: border-box; }
+  section.agenda .track .session.talk {
+    background: #F6F6F6; }
+  section.agenda .track .session.break {
+    background: #12a14c; }
+
+section.agenda .duration-5m {
+  height: 20px;
+  max-height: auto; }
+
+section.agenda .duration-10m {
+  height: 40px;
+  max-height: auto; }
+
+section.agenda .duration-15m {
+  height: 60px;
+  max-height: auto; }
+
+section.agenda .duration-20m {
+  height: 80px;
+  max-height: auto; }
+
+section.agenda .duration-25m {
+  height: 100px;
+  max-height: auto; }
+
+section.agenda .duration-30m {
+  height: 120px;
+  max-height: auto; }
+
+section.agenda .duration-35m {
+  height: 140px;
+  max-height: auto; }
+
+section.agenda .duration-40m {
+  height: 160px;
+  max-height: auto; }
+
+section.agenda .duration-45m {
+  height: 180px;
+  max-height: auto; }
+
+section.agenda .duration-50m {
+  height: 200px;
+  max-height: auto; }
+
+section.agenda .duration-55m {
+  height: 220px;
+  max-height: auto; }
+
+section.agenda .duration-60m {
+  height: 240px;
+  max-height: auto; }
+
+section.agenda .duration-65m {
+  height: 260px;
+  max-height: auto; }
+
+section.agenda .duration-70m {
+  height: 280px;
+  max-height: auto; }
+
+section.agenda .duration-75m {
+  height: 300px;
+  max-height: auto; }
+
+section.agenda .duration-80m {
+  height: 320px;
+  max-height: auto; }
+
+section.agenda .duration-85m {
+  height: 340px;
+  max-height: auto; }
+
+section.agenda .duration-90m {
+  height: 360px;
+  max-height: auto; }
+
+section.agenda .duration-95m {
+  height: 380px;
+  max-height: auto; }
+
+section.agenda .duration-100m {
+  height: 400px;
+  max-height: auto; }
+
+section.agenda .duration-105m {
+  height: 420px;
+  max-height: auto; }
+
+section.agenda .duration-110m {
+  height: 440px;
+  max-height: auto; }
+
+section.agenda .duration-115m {
+  height: 460px;
+  max-height: auto; }
+
+section.speakers {
+  background: #ccdc85; }
+  section.speakers .content {
+    padding: 0 2em 2em 0; }
+  section.speakers ul {
+    list-style: none;
+    text-align: center;
+    margin: 0; }
+    section.speakers ul li {
+      display: inline-block; }
+
+.speaker-slider {
+  width: 80%;
+  margin: 2em 0 0 7em; }
+
+.speaker-img {
+  width: 250px;
+  height: 250px;
+  margin: 0.5em 0 0 4em;
+  border: none;
+  border-radius: 50%;
+  background-image: url("images/sp-1.png"); }
+
+section.contact .content {
+  max-width: 100%; }
+  section.contact .content .details {
+    max-width: 50%;
+    float: left; }
+  section.contact .content .map {
+    max-width: 100%; }
+
+section.register {
+  background: #EEE; }
+
+#speaker-reg {
+  margin: 2em 0 0 5em;
+  padding: 0 0 0 5em; }
+  #speaker-reg input, #speaker-reg label {
+    margin: 10px;
+    padding: 5px;
+    font-size: 26px;
+    width: 60%;
+    height: 30px;
+    font-weight: 100;
+    border: none;
+    background: #EEE;
+    font-family: "open sans", Arial;
+    color: #666; }
+  #speaker-reg input[type="text"] {
+    border-bottom: solid 1px #666; }
+  #speaker-reg input[type="text"]:hover {
+    border-bottom: solid 1px #000000; }

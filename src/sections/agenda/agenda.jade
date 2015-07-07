@@ -1,0 +1,14 @@
+section#agenda.agenda
+  h2 Agenda
+  .content
+
+    div(class="tracks tracks-#{tracks.length}")
+
+      each track in tracks
+        .track
+          h3= track.title
+
+          each session in track.sessions
+            div(class="session #{session.type} duration-#{session.duration}")
+              h4.topic= session.topic
+              span.speaker= session.speaker
