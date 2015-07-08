@@ -267,8 +267,15 @@ section.contact {
     section.contact .content .details {
       max-width: 50%;
       float: left; }
-    section.contact .content .map {
-      max-width: 100%; }
+    section.contact .content .map iframe {
+      border-top: 50px solid #ffffff;
+      border-bottom: 50px solid #ffffff;
+      height: 200px;
+      width: 50%; }
+      @media (max-width: 768px) {
+        section.contact .content .map iframe {
+          width: 100%;
+          margin-top: 20px; } }
 
 section.register {
   background: #EEE; }
