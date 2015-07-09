@@ -108,10 +108,10 @@ h2 {
           border-bottom: 2px #CCC solid; }
 
 section.header {
-  background: transparent;
+  background: url("images/bg.jpg") no-repeat fixed 0px -370px;
   text-align: center;
-  background: #F6F6F6;
-  padding-top: 7em; }
+  padding-top: 2em;
+  color: #F6F6F6; }
   @media (max-width: 768px) {
     section.header img {
       width: 80%; } }
