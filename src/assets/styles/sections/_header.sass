@@ -3,3 +3,27 @@ section.header
   text-align: center
   background: $grey-3
   padding-top: 7em
+  @media (max-width: 768px)
+    img
+      width: 80%
+  .register-button
+    background: $primary
+    width: 30%
+    padding: 15px
+    margin-top: 40px
+    font-size: 1.3em
+    font-weight: 400
+    text-align: center
+    a
+      text-decoration: none
+      color: #000000
+    @media (max-width: 768px)
+      font-size: 1em
+      width: 50%
+  .register-button a:hover
+    color: $grey-1
+  .notification
+    font-size: 22px
+    font-weight: 300
+    font-style: italic
+    margin-top: 25px

@@ -26,7 +26,7 @@ html(lang="en")
       |           scrollTop: element.offset().top
       |       }, 250);
       |   }
-      |$('#nav li a').click(function(e) {
+      |$('#nav a').click(function(e) {
       |   scrollTo($($(this).attr('href')));
       |    $($(this)).addClass('current');
       |  return false;
@@ -40,8 +40,9 @@ html(lang="en")
 body
   include data/agenda.jade
 
-  include sections/navigation/navigation.jade
+  //include sections/navigation/navigation.jade
   include sections/header/header.jade
   include sections/about/about.jade
   include sections/contact/contact.jade
   include sections/register/register.jade
+  include sections/footer/footer.jade

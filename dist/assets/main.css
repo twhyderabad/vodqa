@@ -112,6 +112,31 @@ section.header {
   text-align: center;
   background: #F6F6F6;
   padding-top: 7em; }
+  @media (max-width: 768px) {
+    section.header img {
+      width: 80%; } }
+  section.header .register-button {
+    background: #B2BC18;
+    width: 30%;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 1.3em;
+    font-weight: 400;
+    text-align: center; }
+    section.header .register-button a {
+      text-decoration: none;
+      color: #000000; }
+    @media (max-width: 768px) {
+      section.header .register-button {
+        font-size: 1em;
+        width: 50%; } }
+  section.header .register-button a:hover {
+    color: #CCC; }
+  section.header .notification {
+    font-size: 22px;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 25px; }
 
 section.agenda {
   background: #00B348; }
@@ -261,24 +286,25 @@ section.speakers {
   background-image: url("images/sp-1.png"); }
 
 section.contact {
-  background: #ccdc85; }
+  background: #CCDC85; }
   section.contact .content {
     max-width: 100%; }
     section.contact .content .details {
       max-width: 50%;
-      float: left; }
+      float: left;
+      padding: 0 30px 20px 0; }
     section.contact .content .map iframe {
       border-top: 50px solid #ffffff;
       border-bottom: 50px solid #ffffff;
       height: 200px;
-      width: 50%; }
+      width: 40%; }
       @media (max-width: 768px) {
         section.contact .content .map iframe {
           width: 100%;
           margin-top: 20px; } }
 
 section.register {
-  background: #EEE; }
+  background: #00B348; }
 
 #speaker-reg {
   margin: 2em 0 0 5em;
