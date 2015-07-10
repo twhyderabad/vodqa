@@ -310,37 +310,48 @@ section.register {
   background: #00B348; }
 
 #mktoForm_3106 {
-  width: 600px;
-  padding: 0 0 0 5em; }
-  #mktoForm_3106 .mktoLabel .mktoHasWidth {
-    width: 200px; }
-  #mktoForm_3106 label {
+  width: 100% !important;
+  margin: 2em 0 0 5em;
+  padding: 2em 0 2em 2em;
+  background: rgba(252, 251, 193, 0.5);
+  color: #F6F6F6; }
+  #mktoForm_3106 label.mktoLabel {
+    width: initial !important;
     padding: 5px;
     font-size: 20px;
-    width: 120px;
     font-weight: 100;
-    border: none;
     font-family: "open sans", Arial;
-    color: #666; }
+    color: #F6F6F6; }
   #mktoForm_3106 input {
-    margin-left: 50%;
-    margin-top: -40px;
+    margin: -40px 0 10px 40%;
     padding: 5px;
     font-size: 20px;
-    width: 60%;
+    width: 100% !important;
     font-weight: 100;
-    border: none;
     background: none;
+    border: none;
     font-family: "open sans", Arial;
     color: #666; }
-  #mktoForm_3106 input:hover {
-    border-bottom: solid 1px #F6F6F6; }
-  #mktoForm_3106 input:focus {
-    border-bottom: solid 1px #F6F6F6; }
+  #mktoForm_3106 textarea {
+    border: 1px solid #666 !important;
+    margin: -40px 0 10px 40%;
+    padding: 5px;
+    font-size: 20px;
+    width: 100% !important;
+    font-weight: 100;
+    background: none; }
+  #mktoForm_3106 select {
+    padding: 5px;
+    margin: -40px 0 10px 40%;
+    font-size: 20px;
+    width: 100% !important;
+    font-weight: 100;
+    background: none; }
   #mktoForm_3106 input[type="text"] {
     border-bottom: solid 1px #666; }
-  #mktoForm_3106 input[type="text"]:hover {
-    border-bottom: solid 1px #000000; }
-
-section.register .mktoForm .mktoRequiredField label.mktoLabel {
-  font-weight: normal; }
+  #mktoForm_3106 input[type="email"] {
+    border-bottom: solid 1px #666; }
+  #mktoForm_3106 input:hover {
+    border-bottom: solid 1px #ffc520; }
+  #mktoForm_3106 input:focus {
+    border-bottom: solid 1px #F6F6F6 !important; }
