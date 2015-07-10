@@ -333,6 +333,10 @@ section.register {
     background: none;
     font-family: "open sans", Arial;
     color: #666; }
+  #mktoForm_3106 input:hover {
+    border-bottom: solid 1px #F6F6F6; }
+  #mktoForm_3106 input:focus {
+    border-bottom: solid 1px #F6F6F6; }
   #mktoForm_3106 input[type="text"] {
     border-bottom: solid 1px #666; }
   #mktoForm_3106 input[type="text"]:hover {
