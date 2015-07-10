@@ -14,4 +14,3 @@ gulp.task "copy:js", ->
 
 
 gulp.task "copy", ["copy:images", "copy:lib", "copy:js"]
-

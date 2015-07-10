@@ -32,6 +32,6 @@ gulp.task "watch", ->
 
     gulp.watch "src/**/*.jade", ["compile:html"]
     gulp.watch "src/assets/styles/**/*.sass", ["compile:css"]
-    gulp.watch "src/assets/scripts/*.coffee", ["compile:js"]
+    gulp.watch "src/assets/scripts/*.coffee", ["compile:js", "copy"]
 
 gulp.task "compile", ["compile:html", "compile:css", "compile:js"]

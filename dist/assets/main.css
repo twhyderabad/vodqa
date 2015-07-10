@@ -324,3 +324,6 @@ section.register {
     border-bottom: solid 1px #666; }
   #speaker-reg input[type="text"]:hover {
     border-bottom: solid 1px #000000; }
+
+section.register .mktoForm .mktoRequiredField label.mktoLabel {
+  font-weight: normal; }
