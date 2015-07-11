@@ -2,7 +2,7 @@ section.register
   background: $secondary
 
 #mktoForm_3106
-  width: 100% !important
+  width: 80% !important
   margin: 2em 0 0 5em
   padding: 2em 0 2em 2em
   background: rgba(252,251,193,0.5)
@@ -10,7 +10,6 @@ section.register
 
   div.mktoAsterix
     margin-right: 50%
-
   label.mktoLabel
     width: 350px !important
     padding: 5px
@@ -25,22 +24,23 @@ section.register
     margin: -40px 0 10px 35%
     padding: 5px
     font-size: 20px
-    width: 90% !important
+    width: 60% !important
     font-weight: 100
     background: none
     border: none
     font-family: "open sans", Arial
     color: $grey1
-
+    -moz-margin-start: 30%
 
   textarea
     border: 1px solid $grey1 !important
     margin: -20px 0 10px 35%
     padding: 5px
     font-size: 20px
-    width: 80% !important
+    width: 60% !important
     font-weight: 100
     background: none
+    -moz-margin-start: 30%
   select
     padding: 5px
     margin: -40px 0 10px 35%
@@ -48,14 +48,59 @@ section.register
     width: 250px !important
     font-weight: 100
     background: none
+    -moz-margin-start: 30%
   input[type="text"]
     border-bottom: solid 1px $grey1
   input[type="email"]
     border-bottom: solid 1px $grey1
-    //margin: -40px 0 10px 46%
-    //width: 92% !important
 
   input:hover
     border-bottom: solid 1px #ffc520
   input:focus
     border-bottom: solid 1px #F6F6F6 !important
+    box-shadow: none !important
+    
+// removed unwanted element
+#mktoForm_3106 > div:nth-child(11) > div.mktoFieldDescriptor.mktoFormCol > div.mktoFieldWrap
+  display: none
+
+//  only for last element
+#mktoForm_3106 > div:nth-child(12) > div.mktoFieldDescriptor.mktoFormCol > div.mktoFieldWrap
+  > label
+    width: 200px !important
+    padding: 5px
+    font-size: 20px
+    font-weight: 100
+    font-family: "open sans", Arial
+    color: #F6F6F6
+    float: left
+    display: block
+  > select
+    margin: -40px 0 10px 45%
+    -moz-margin-start: 35%
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton
+  color: #fff
+  border: none !important
+  padding: 0.8em 1em
+  font-size: 1.5em !important
+  font-weight: 200
+  background-color: $primary !important
+  float: left
+  margin-left: 100%
+  background-image: none !important
+  -moz-margin-start: 59%
+
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover
+  background: $secondary !important
+  border: none !important
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton:focus
+  outline: none
+  border: none !important
+
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton:active
+  background-color: $primary-1
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#75ae4c), to(#99c47c))
+  background-image: -webkit-linear-gradient(top, #75ae4c, #99c47c)
+  background-image: -moz-linear-gradient(top, #75ae4c, #99c47c)
+  background-image: linear-gradient(to bottom, #75ae4c, #99c47c)
+
