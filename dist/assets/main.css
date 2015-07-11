@@ -315,19 +315,22 @@ section.register {
   padding: 2em 0 2em 2em;
   background: rgba(252, 251, 193, 0.5);
   color: #F6F6F6; }
+  #mktoForm_3106 div.mktoAsterix {
+    margin-right: 50%; }
   #mktoForm_3106 label.mktoLabel {
-    width: initial !important;
+    width: 350px !important;
     padding: 5px;
     font-size: 20px;
     font-weight: 100;
     font-family: "open sans", Arial;
     color: #F6F6F6;
-    float: left; }
+    float: left;
+    display: block; }
   #mktoForm_3106 input {
-    margin: -40px 0 10px 50%;
+    margin: -40px 0 10px 35%;
     padding: 5px;
     font-size: 20px;
-    width: 100% !important;
+    width: 90% !important;
     font-weight: 100;
     background: none;
     border: none;
@@ -335,26 +338,27 @@ section.register {
     color: #666; }
   #mktoForm_3106 textarea {
     border: 1px solid #666 !important;
-    margin: -20px 0 10px 47%;
+    margin: -20px 0 10px 35%;
     padding: 5px;
     font-size: 20px;
-    width: 100% !important;
+    width: 80% !important;
     font-weight: 100;
     background: none; }
   #mktoForm_3106 select {
     padding: 5px;
-    margin: -40px 0 10px 45%;
+    margin: -40px 0 10px 35%;
     font-size: 20px;
-    width: 100% !important;
+    width: 250px !important;
     font-weight: 100;
     background: none; }
   #mktoForm_3106 input[type="text"] {
     border-bottom: solid 1px #666; }
   #mktoForm_3106 input[type="email"] {
-    border-bottom: solid 1px #666;
-    margin: -40px 0 10px 46%;
-    width: 92% !important; }
+    border-bottom: solid 1px #666; }
   #mktoForm_3106 input:hover {
     border-bottom: solid 1px #ffc520; }
   #mktoForm_3106 input:focus {
     border-bottom: solid 1px #F6F6F6 !important; }
+
+section.register .mktoForm .mktoRequiredField label.mktoLabel {
+  font-weight: normal; }
