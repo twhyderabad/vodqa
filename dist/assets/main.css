@@ -365,9 +365,6 @@ section.register {
     border-bottom: solid 1px #F6F6F6 !important;
     box-shadow: none !important; }
 
-#mktoForm_3106 > div:nth-child(11) > div.mktoFieldDescriptor.mktoFormCol > div.mktoFieldWrap {
-  display: none; }
-
 #mktoForm_3106 > div:nth-child(12) > div.mktoFieldDescriptor.mktoFormCol > div.mktoFieldWrap > label {
   width: 200px !important;
   padding: 5px;
