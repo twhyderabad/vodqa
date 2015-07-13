@@ -1,4 +1,37 @@
 section.register
   .mktoForm
-    .mktoRequiredField label.mktoLabel
-      font-weight: normal
+    width: auto !important
+    margin: 2em 0
+    .mktoFormRow
+      margin-top: .5em
+
+      &:nth-child(5)
+        margin-top: 2em
+      &:nth-child(9)
+        margin-top: 2em
+      &:nth-child(12)
+        margin-top: 2em
+      .mktoFormCol, .mktoFieldWrap
+        @media all and ("max-width: 530px")
+          float: none
+      label.mktoLabel
+        font-weight: normal
+        width: 15em
+        text-align: right
+        line-height: 2em
+        @media all and ("max-width: 530px")
+          text-align: left
+          width: auto
+      input, textarea, select
+        width: 20em
+        margin-left: 0.5em
+        padding: .5em .5em
+        @media all and ("max-width: 650px")
+          width: 15em
+        @media all and ("max-width: 530px")
+          width: 100%
+          margin-left: 0
+          clear: both
+      select
+        -webkit-appearance: none
+        border-radius: 0

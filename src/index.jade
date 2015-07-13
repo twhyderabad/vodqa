@@ -36,13 +36,13 @@ html(lang="en")
     script
       | MktoForms2.loadForm("//app-e.marketo.com",
       |"199-QDE-291", 3106);
-
 body
   include data/agenda.jade
 
   //include sections/navigation/navigation.jade
   include sections/header/header.jade
   include sections/about/about.jade
-  include sections/contact/contact.jade
   include sections/register/register.jade
+  include sections/contact/contact.jade
   include sections/footer/footer.jade
+  script(src="dist/assets/js/mkto-style-overrides.js")
