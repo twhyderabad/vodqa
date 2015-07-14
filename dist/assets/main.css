@@ -171,7 +171,13 @@ section.header-register {
       font-size: 0.8em; }
 
 section.about .content {
-  line-height: 1.8em; }
+  line-height: 1.9em;
+  text-align: justify; }
+  section.about .content .themeTagLine {
+    font-style: italic;
+    font-weight: 200;
+    font-size: 22px;
+    padding: 10px; }
 
 section.agenda {
   background: #00B348; }
@@ -340,6 +346,9 @@ section.contact {
 
 section.register {
   background: #CCDC85; }
+  section.register .notifications {
+    font-style: italic;
+    font-weight: 100; }
 
 section.register .mktoForm {
   width: auto !important;
