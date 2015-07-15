@@ -34,6 +34,8 @@ section.register
           outline-color: $secondary
           outline-offset: -2
           outline-width: 2px
+        @media all and ("max-width: 480px")
+          height: auto
         @media all and ("max-width: 650px")
           width: 15em
         @media all and ("max-width: 530px")
@@ -41,8 +43,12 @@ section.register
           margin-left: 0
           clear: both
       select
+        padding: .65em .5em
         -webkit-appearance: none
+        -moz-appearance: none
+        appearance: none
         border-radius: 0
+        background: url(images/downarrow.png) no-repeat center right #FFF
 
 .register
   .mktoForm

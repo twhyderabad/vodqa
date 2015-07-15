@@ -386,6 +386,9 @@ section.register .mktoForm {
         outline-color: #00B348;
         outline-offset: -2;
         outline-width: 2px; }
+      @media all and (max-width: 480px) {
+        section.register .mktoForm .mktoFormRow input, section.register .mktoForm .mktoFormRow textarea, section.register .mktoForm .mktoFormRow select {
+          height: auto; } }
       @media all and (max-width: 650px) {
         section.register .mktoForm .mktoFormRow input, section.register .mktoForm .mktoFormRow textarea, section.register .mktoForm .mktoFormRow select {
           width: 15em; } }
@@ -395,8 +398,12 @@ section.register .mktoForm {
           margin-left: 0;
           clear: both; } }
     section.register .mktoForm .mktoFormRow select {
+      padding: 0.65em 0.5em;
       -webkit-appearance: none;
-      border-radius: 0; }
+      -moz-appearance: none;
+      appearance: none;
+      border-radius: 0;
+      background: url(images/downarrow.png) no-repeat center right #FFF; }
 
 .register .mktoForm .mktoError .mktoErrorMsg {
   display: block;
