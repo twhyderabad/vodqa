@@ -3,7 +3,6 @@ section.invite
   background-size: cover
   height: 30em
 
-
 section.invite
   .box
     background: rgba($primary, 0.95)
@@ -13,16 +12,29 @@ section.invite
     float: right
     margin: 5em 2em
     padding: 2em
+    @media all and (max-width: 768px)
+      margin: 5em 1em
+      width: 20em
+    @media all and (max-width: 480px)
+      margin: 10em 1em
+      width: 14em
+
     .date
       font-size: 1.5em
       font-weight: 400
       margin-top: 1em
       padding: 1em 0.5em
       background: rgba(#FFF, 0.2)
+      @media all and (max-width: 768px)
+        font-size: 1em
     .invite-msg
       font-size: 2em
       font-weight: 100
       margin-top: 1.5em
+      @media all and (max-width: 480px)
+        height: 1.5em
+        font-size: 1.5em
+
     .btn
       background: $secondary
       color: #FFF
@@ -37,3 +49,5 @@ section.invite
       height: 1em
       vertical-align: middle
       font-weight: 400
+      @media all and (max-width: 480px)
+        width: 8em

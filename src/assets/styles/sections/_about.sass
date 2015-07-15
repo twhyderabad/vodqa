@@ -14,6 +14,11 @@ section.about
       font-style: italic
       font-weight: 100
       line-height: 4em
+      @media all and (max-width: 768px)
+        line-height: 1.5em
+        font-size: 1.25em
+        text-align: left
+        float: none
 
     blockquote:before
       color: #ccc
@@ -22,9 +27,16 @@ section.about
       line-height: 0.1em
       margin-right: 0.25em
       vertical-align: -0.4em
+      @media all and (max-width: 768px)
+        margin-right: 0.1em
+        font-size: 3em
 
     blockquote + p
       margin: 1em 0 0
+      float: left
+      @media all and (min-width: 768px)
+        float: none
+
 
     .themeTagLine
       font-style: italic

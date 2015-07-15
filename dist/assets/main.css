@@ -94,7 +94,8 @@ sup {
 h2 {
   font-size: 2em;
   margin: 1em 0 0.5em;
-  font-weight: 100; }
+  font-weight: 100;
+  line-height: 1.25em; }
 
 .navigator {
   box-sizing: border-box;
@@ -118,22 +119,36 @@ h2 {
 
 section.header {
   text-align: left;
-  padding-top: 2em;
   color: #333;
-  padding: 0; }
+  padding: .5em; }
+  @media all and (max-width: 1024px) {
+    section.header {
+      padding: 1em 2em 0; } }
   section.header .logo {
-    max-width: 10em;
     float: left;
     margin: 0.5 0; }
+    @media all and (max-width: 768px) {
+      section.header .logo {
+        float: none;
+        margin: 0.5 auto;
+        display: block;
+        text-align: center; } }
+    section.header .logo img {
+      max-width: 10em; }
   section.header .caption {
     float: right;
     color: #999;
     font-weight: 100;
     text-transform: uppercase;
-    font-size: 2em;
-    line-height: 2.25em;
     font-size: 1.5em;
     line-height: 3em; }
+    @media all and (max-width: 768px) {
+      section.header .caption {
+        clear: both;
+        float: none;
+        text-align: center;
+        display: block;
+        line-height: 1.25em; } }
 
 section.invite {
   background: url("images/bg.jpg") no-repeat fixed top center;
@@ -148,16 +163,31 @@ section.invite .box {
   float: right;
   margin: 5em 2em;
   padding: 2em; }
+  @media all and (max-width: 768px) {
+    section.invite .box {
+      margin: 5em 1em;
+      width: 20em; } }
+  @media all and (max-width: 480px) {
+    section.invite .box {
+      margin: 10em 1em;
+      width: 14em; } }
   section.invite .box .date {
     font-size: 1.5em;
     font-weight: 400;
     margin-top: 1em;
     padding: 1em 0.5em;
     background: rgba(255, 255, 255, 0.2); }
+    @media all and (max-width: 768px) {
+      section.invite .box .date {
+        font-size: 1em; } }
   section.invite .box .invite-msg {
     font-size: 2em;
     font-weight: 100;
     margin-top: 1.5em; }
+    @media all and (max-width: 480px) {
+      section.invite .box .invite-msg {
+        height: 1.5em;
+        font-size: 1.5em; } }
   section.invite .box .btn {
     background: #00B348;
     color: #FFF;
@@ -172,6 +202,9 @@ section.invite .box {
     height: 1em;
     vertical-align: middle;
     font-weight: 400; }
+    @media all and (max-width: 480px) {
+      section.invite .box .btn {
+        width: 8em; } }
 
 section.about .content {
   line-height: 1.9em;
@@ -187,6 +220,12 @@ section.about .content {
     font-style: italic;
     font-weight: 100;
     line-height: 4em; }
+    @media all and (max-width: 768px) {
+      section.about .content blockquote {
+        line-height: 1.5em;
+        font-size: 1.25em;
+        text-align: left;
+        float: none; } }
   section.about .content blockquote:before {
     color: #ccc;
     content: open-quote;
@@ -194,8 +233,16 @@ section.about .content {
     line-height: 0.1em;
     margin-right: 0.25em;
     vertical-align: -0.4em; }
+    @media all and (max-width: 768px) {
+      section.about .content blockquote:before {
+        margin-right: 0.1em;
+        font-size: 3em; } }
   section.about .content blockquote + p {
-    margin: 1em 0 0; }
+    margin: 1em 0 0;
+    float: left; }
+    @media all and (min-width: 768px) {
+      section.about .content blockquote + p {
+        float: none; } }
   section.about .content .themeTagLine {
     font-style: italic;
     font-weight: 200;
@@ -430,6 +477,29 @@ section.register .mktoForm {
       appearance: none;
       border-radius: 0;
       background: url(images/downarrow.png) no-repeat center right #FFF; }
+  section.register .mktoForm .mktoButtonRow {
+    display: block; }
+    section.register .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple {
+      display: block; }
+      section.register .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple .mktoButton {
+        background-image: none;
+        background: #00B348;
+        border: none;
+        width: 100%;
+        border-radius: 0;
+        padding: 0.5em;
+        color: #FFF;
+        font-size: 1.25em;
+        margin: 1em auto 0;
+        padding: 1em;
+        text-transform: uppercase;
+        text-align: center;
+        vertical-align: middle;
+        font-weight: 400; }
+        @media all and (min-width: 560px) {
+          section.register .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple .mktoButton {
+            margin-left: 12.5em;
+            width: 10em; } }
 
 .register .mktoForm .mktoError .mktoErrorMsg {
   display: block;
