@@ -417,3 +417,6 @@ section.register .mktoForm {
   max-width: 16em;
   padding: 0.4em 0.6em;
   text-shadow: #901100 0 -1px 0; }
+
+section.footer p {
+  text-align: right; }
