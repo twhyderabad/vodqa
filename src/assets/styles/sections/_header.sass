@@ -1,58 +1,19 @@
 section.header
-  background: url("images/bg.jpg") no-repeat fixed top center
-  text-align: center
+  text-align: left
   padding-top: 2em
-  @media (max-width: 768px)
-    img
-      width: 80%
-  .register-button
-    background: $primary
-    width: 30%
-    padding: 15px
-    margin-top: 40px
-    font-size: 1.3em
-    font-weight: 400
-    text-align: center
-    a
-      text-decoration: none
-      color: #000000
-      line-height: 1em
-    @media (max-width: 768px)
-      font-size: 1em
-      width: 50%
-  .register-button a:hover
-    color: $grey-1
-  .notification
-    font-size: 22px
-    font-weight: 300
-    font-style: italic
-    margin-top: 25px
-
-
-
-section.header-register
-  overflow: hidden
-  .content
-    width: 50em
-    margin: 0 auto
-  .btn
-    background: $primary
-    color: #FFF
-    padding: 0.5em 1em
-    font-size: 1.25em
-    text-decoration: none
-    width: 15em
-    margin: 1em
-    display: table-cell
-    text-align: center
+  color: $grey2
+  padding: 0
+  .logo
+    max-width: 10em
     float: left
-    height: 3em
-    vertical-align: middle
+    margin: 0.5 0
+  .caption
+    float: right
+    color: $grey0
     font-weight: 100
-    &.speaker
-      line-height: 3em
-    &.disabled
-      background: $grey2
-    span
-      display: block
-      font-size: 0.8em
+    text-transform: uppercase
+    font-size: 2em
+    line-height: 2.25em
+    // @media all and (max-width: 768px)
+    font-size: 1.5em
+    line-height: 3em

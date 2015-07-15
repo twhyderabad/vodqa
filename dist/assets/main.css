@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -70,7 +71,9 @@ body {
   line-height: 150%;
   overflow-x: hidden; }
   body > section {
-    padding: 1em; }
+    padding: 1em;
+    clear: both;
+    overflow: hidden; }
     body > section > h2 {
       margin: 1em auto 0.5em; }
       @media all and (min-width: 1024px) {
@@ -81,7 +84,8 @@ body {
       padding: 0 0.5em 1em 0; }
       @media all and (min-width: 1024px) {
         body > section > .content {
-          width: 1024px; } }
+          width: 1024px;
+          padding: 0.25em; } }
 
 sup {
   vertical-align: super;
@@ -113,66 +117,85 @@ h2 {
           border-bottom: 2px #CCC solid; }
 
 section.header {
-  background: url("images/bg.jpg") no-repeat fixed top center;
-  text-align: center;
-  padding-top: 2em; }
-  @media (max-width: 768px) {
-    section.header img {
-      width: 80%; } }
-  section.header .register-button {
-    background: #B2BC18;
-    width: 30%;
-    padding: 15px;
-    margin-top: 40px;
-    font-size: 1.3em;
-    font-weight: 400;
-    text-align: center; }
-    section.header .register-button a {
-      text-decoration: none;
-      color: #000000;
-      line-height: 1em; }
-    @media (max-width: 768px) {
-      section.header .register-button {
-        font-size: 1em;
-        width: 50%; } }
-  section.header .register-button a:hover {
-    color: #CCC; }
-  section.header .notification {
-    font-size: 22px;
-    font-weight: 300;
-    font-style: italic;
-    margin-top: 25px; }
+  text-align: left;
+  padding-top: 2em;
+  color: #333;
+  padding: 0; }
+  section.header .logo {
+    max-width: 10em;
+    float: left;
+    margin: 0.5 0; }
+  section.header .caption {
+    float: right;
+    color: #999;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 2.25em;
+    font-size: 1.5em;
+    line-height: 3em; }
 
-section.header-register {
-  overflow: hidden; }
-  section.header-register .content {
-    width: 50em;
-    margin: 0 auto; }
-  section.header-register .btn {
-    background: #B2BC18;
+section.invite {
+  background: url("images/bg.jpg") no-repeat fixed top center;
+  background-size: cover;
+  height: 30em; }
+
+section.invite .box {
+  background: rgba(178, 188, 24, 0.95);
+  color: #333;
+  text-align: center;
+  width: 25em;
+  float: right;
+  margin: 5em 2em;
+  padding: 2em; }
+  section.invite .box .date {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-top: 1em;
+    padding: 1em 0.5em;
+    background: rgba(255, 255, 255, 0.2); }
+  section.invite .box .invite-msg {
+    font-size: 2em;
+    font-weight: 100;
+    margin-top: 1.5em; }
+  section.invite .box .btn {
+    background: #00B348;
     color: #FFF;
-    padding: 0.5em 1em;
     font-size: 1.25em;
     text-decoration: none;
-    width: 15em;
-    margin: 1em;
-    display: table-cell;
+    width: 12em;
+    margin: 1em auto 0;
+    padding: 1em;
+    display: block;
+    text-transform: uppercase;
     text-align: center;
-    float: left;
-    height: 3em;
+    height: 1em;
     vertical-align: middle;
-    font-weight: 100; }
-    section.header-register .btn.speaker {
-      line-height: 3em; }
-    section.header-register .btn.disabled {
-      background: #333; }
-    section.header-register .btn span {
-      display: block;
-      font-size: 0.8em; }
+    font-weight: 400; }
 
 section.about .content {
   line-height: 1.9em;
   text-align: justify; }
+  section.about .content blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1em 0.5em 0.5em 0;
+    padding: 0.5em 1em;
+    quotes: "“" "”" "‘" "’";
+    float: left;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 100;
+    line-height: 4em; }
+  section.about .content blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em; }
+  section.about .content blockquote + p {
+    margin: 1em 0 0; }
   section.about .content .themeTagLine {
     font-style: italic;
     font-weight: 200;
@@ -337,15 +360,18 @@ section.contact {
     section.contact .content .map iframe {
       border-top: 50px solid #ffffff;
       border-bottom: 50px solid #ffffff;
-      height: 200px;
-      width: 40%; }
+      height: 250px;
+      width: 40%;
+      float: right;
+      border: 3px solid #FFF; }
       @media (max-width: 768px) {
         section.contact .content .map iframe {
           width: 100%;
           margin-top: 20px; } }
 
 section.register {
-  background: #CCDC85; }
+  background: #CCDC85;
+  color: #333; }
   section.register .notifications {
     font-style: italic;
     font-weight: 100; }
