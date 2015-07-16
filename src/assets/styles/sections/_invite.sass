@@ -1,7 +1,11 @@
 section.invite
-  background: url("images/bg.jpg") no-repeat fixed top center
+  background: url("images/bg.jpg") no-repeat fixed center center
   background-size: cover
   height: 30em
+  @media all and (max-width: 1024px)
+    background: url("images/bg-tablet.jpg") no-repeat fixed center center
+  @media all and (max-width: 768px)
+    background: url("images/bg-mobile.jpg") no-repeat fixed center center
 
 section.invite
   .box
@@ -13,10 +17,10 @@ section.invite
     margin: 5em 2em
     padding: 2em
     @media all and (max-width: 768px)
-      margin: 5em 1em
+      margin: 10em 1em
       width: 20em
     @media all and (max-width: 480px)
-      margin: 10em 1em
+      margin: 8em 1em
       width: 14em
 
     .date

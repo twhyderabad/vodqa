@@ -97,6 +97,10 @@ h2 {
   font-weight: 100;
   line-height: 1.25em; }
 
+a {
+  color: #11AA58;
+  text-decoration: none; }
+
 .navigator {
   box-sizing: border-box;
   width: 100%;
@@ -112,7 +116,7 @@ h2 {
       padding: 0.3em; }
       .navigator ul li a {
         text-decoration: none;
-        color: #B2BC18;
+        color: #B5B935;
         padding: 0.15em 0.5em; }
         .navigator ul li a.current {
           border-bottom: 2px #CCC solid; }
@@ -151,12 +155,18 @@ section.header {
         line-height: 1.25em; } }
 
 section.invite {
-  background: url("images/bg.jpg") no-repeat fixed top center;
+  background: url("images/bg.jpg") no-repeat fixed center center;
   background-size: cover;
   height: 30em; }
+  @media all and (max-width: 1024px) {
+    section.invite {
+      background: url("images/bg-tablet.jpg") no-repeat fixed center center; } }
+  @media all and (max-width: 768px) {
+    section.invite {
+      background: url("images/bg-mobile.jpg") no-repeat fixed center center; } }
 
 section.invite .box {
-  background: rgba(178, 188, 24, 0.95);
+  background: rgba(181, 185, 53, 0.95);
   color: #333;
   text-align: center;
   width: 25em;
@@ -165,11 +175,11 @@ section.invite .box {
   padding: 2em; }
   @media all and (max-width: 768px) {
     section.invite .box {
-      margin: 5em 1em;
+      margin: 10em 1em;
       width: 20em; } }
   @media all and (max-width: 480px) {
     section.invite .box {
-      margin: 10em 1em;
+      margin: 8em 1em;
       width: 14em; } }
   section.invite .box .date {
     font-size: 1.5em;
@@ -189,7 +199,7 @@ section.invite .box {
         height: 1.5em;
         font-size: 1.5em; } }
   section.invite .box .btn {
-    background: #00B348;
+    background: #11AA58;
     color: #FFF;
     font-size: 1.25em;
     text-decoration: none;
@@ -250,7 +260,7 @@ section.about .content {
     padding: 10px; }
 
 section.agenda {
-  background: #00B348; }
+  background: #11AA58; }
   section.agenda h2 {
     color: #333; }
   section.agenda .track .topic {
@@ -279,7 +289,7 @@ section.agenda .track .session {
   section.agenda .track .session.talk {
     background: #F6F6F6; }
   section.agenda .track .session.break {
-    background: #12a14c; }
+    background: #249759; }
 
 section.agenda .duration-5m {
   height: 20px;
@@ -400,10 +410,17 @@ section.contact {
   background: #F6F6F6; }
   section.contact .content {
     max-width: 100%; }
+    section.contact .content h3 {
+      color: #999;
+      font-size: .75em; }
     section.contact .content .details {
-      max-width: 50%;
+      color: #333;
+      width: 50%;
       float: left;
       padding: 0 30px 20px 0; }
+      @media all and (max-width: 768px) {
+        section.contact .content .details {
+          width: 100%; } }
     section.contact .content .map iframe {
       border-top: 50px solid #ffffff;
       border-bottom: 50px solid #ffffff;
@@ -417,7 +434,7 @@ section.contact {
           margin-top: 20px; } }
 
 section.register {
-  background: #CCDC85;
+  background: #B5B935;
   color: #333; }
   section.register .notifications {
     font-style: italic;
@@ -456,7 +473,7 @@ section.register .mktoForm {
       border: 1px solid rgba(0, 0, 0, 0.2);
       background: #fff; }
       section.register .mktoForm .mktoFormRow input:focus, section.register .mktoForm .mktoFormRow textarea:focus, section.register .mktoForm .mktoFormRow select:focus {
-        outline-color: #00B348;
+        outline-color: #11AA58;
         outline-offset: -2;
         outline-width: 2px; }
       @media all and (max-width: 480px) {
@@ -483,7 +500,7 @@ section.register .mktoForm {
       display: block; }
       section.register .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple .mktoButton {
         background-image: none;
-        background: #00B348;
+        background: #11AA58;
         border: none;
         width: 100%;
         border-radius: 0;
