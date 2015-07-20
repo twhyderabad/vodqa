@@ -8,6 +8,8 @@ section.invite
     background: url("images/bg-mobile.jpg") no-repeat fixed center center
 
 section.invite
+  .content
+    text-align: center
   .box
     background: rgba($primary, 0.95)
     color: $grey2
@@ -17,11 +19,13 @@ section.invite
     margin: 5em 2em
     padding: 2em
     @media all and (max-width: 768px)
-      margin: 10em 1em
+      margin: 3em 1em
       width: 20em
     @media all and (max-width: 480px)
-      margin: 8em 1em
+      margin: 3em 0em
       width: 14em
+      float: none;
+      display: inline-block;
 
     .date
       font-size: 1.5em
