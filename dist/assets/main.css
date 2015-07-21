@@ -105,21 +105,35 @@ a {
   box-sizing: border-box;
   width: 100%;
   position: fixed;
-  background: white; }
+  background: white;
+  z-index: 100; }
+  .navigator .logo {
+    float: left;
+    width: 30%; }
+    @media all and (max-width: 768px) {
+      .navigator .logo {
+        float: none;
+        margin: 0.5em  auto;
+        display: block;
+        text-align: center; } }
+    .navigator .logo img {
+      max-width: 10em; }
   .navigator ul {
     text-align: right;
-    list-style: none; }
+    list-style: none;
+    margin-top: 1.5em; }
     .navigator ul li {
       display: inline-block;
-      font-size: 1em;
+      font-size: 1.2em;
       font-weight: 300;
       padding: 0.3em; }
       .navigator ul li a {
         text-decoration: none;
         color: #B5B935;
         padding: 0.15em 0.5em; }
-        .navigator ul li a.current {
-          border-bottom: 2px #CCC solid; }
+
+.navigation a.active {
+  border-bottom: 2px #CCC solid; }
 
 section.header {
   text-align: left;
@@ -174,7 +188,7 @@ section.invite .box {
   text-align: center;
   width: 25em;
   float: right;
-  margin: 5em 2em;
+  margin: 8em 2em;
   padding: 2em; }
   @media all and (max-width: 768px) {
     section.invite .box {
@@ -196,7 +210,7 @@ section.invite .box {
       section.invite .box .date {
         font-size: 1em; } }
   section.invite .box .invite-msg {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 100;
     margin-top: 1.5em; }
     @media all and (max-width: 480px) {
@@ -449,7 +463,8 @@ section.register .mktoForm {
   width: auto !important;
   margin: 2em 0;
   background: rgba(255, 255, 255, 0.2);
-  padding: 1em; }
+  padding: 1em;
+  z-index: 0; }
   section.register .mktoForm .mktoFormRow {
     margin-top: .5em; }
     section.register .mktoForm .mktoFormRow:nth-child(5) {

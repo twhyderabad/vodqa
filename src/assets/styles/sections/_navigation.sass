@@ -3,17 +3,31 @@
   width: 100%
   position: fixed
   background: white
+  z-index: 100
+  .logo
+    float: left
+    width: 30%
+    @media all and (max-width: 768px)
+      float: none
+      margin: 0.5em  auto
+      display: block
+      text-align: center
+    img
+      max-width: 10em
+
   ul
     text-align: right
     list-style: none
+    margin-top: 1.5em
     li
       display: inline-block
-      font-size: 1em
+      font-size: 1.2em
       font-weight: 300
       padding: 0.3em
       a
         text-decoration: none
         color: $primary
         padding: .15em .5em
-        &.current
-          border-bottom: 2px $grey-1 solid
+
+.navigation a.active
+  border-bottom: 2px $grey-1 solid

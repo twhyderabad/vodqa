@@ -20,18 +20,34 @@
       });
     </script>
     <script>
-      jQuery(document).ready(function($) {
-        var scrollTo = function(element) {
-            $('.current').removeClass('current');
-            $('html, body').animate({
-                scrollTop: element.offset().top
-            }, 250);
-        }
-      $('#nav a').click(function(e) {
-        scrollTo($($(this).attr('href')));
-         $($(this)).addClass('current');
-       return false;
+      $(document).ready(function($){
+         var parPosition = [];
+         $('.content').each(function() {
+             parPosition.push($(this).offset().top);
+         });
+             $('a').click(function(){
+             $('html, body').animate({
+                 scrollTop: $( $.attr(this, 'href') ).offset().top-100
+             }, 500);
+             return false;
+         });
+             $(document).on('scroll', function() {
+             var position = $(document).scrollTop()+100,
+                 index = 0;
+                 for (var i=0; i<parPosition.length; i++) {
+                 if (position <= parPosition[i]) {
+                     index = i;
+                       console.log(index);
+                     break;
+                 }
+             }
+                 $('ul li a').removeClass('active');
+             $('ul li a:eq('+index+')').addClass('active');
       });
+                $(' ul li a').click(function () {
+             $(' ul li a').removeClass('active');
+                 $(this).addClass('active');
+         });
       });
     </script>
     <script src="//app-e.marketo.com/js/forms2/js/forms2.min.js"></script>
@@ -42,10 +58,18 @@
   </head>
 </html>
 <body>
-  <!--include sections/navigation/navigation.jade-->
-  <section class="header">
-    <div id="home" class="content"><span class="logo"><img src="dist/assets/images/logo.png"></span><span class="caption">Conference for Quality Analysts</span></div>
+  <section class="navigator">
+    <div class="content"><span class="logo"><img src="dist/assets/images/logo.png"></span>
+      <ul class="navigation">
+        <li><a href="#about" class="current">About</a></li>
+        <!--li: a(href="#speakers") Speakers-->
+        <!--li: a(href="#agenda") Agenda-->
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#register">Register</a></li>
+      </ul>
+    </div>
   </section>
+  <!--include sections/header/header.jade-->
   <section class="invite">
     <div class="content">
       <div class="box">
@@ -54,7 +78,7 @@
           Saturday, 
           22<sup>nd</sup>August 2015
         </div>
-        <h3 class="invite-msg">Inviting Speakers</h3><a href="#register" class="btn speaker">Register</a>
+        <h3 class="invite-msg">Conference for Quality Analysts</h3><a href="#register" class="btn speaker">Register</a>
       </div>
     </div>
   </section>
