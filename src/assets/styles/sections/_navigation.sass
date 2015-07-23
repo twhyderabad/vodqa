@@ -6,6 +6,7 @@
   background: white
   z-index: 10000
   .navigation-toggle
+    display: none
     position: absolute
     top: 0
     left: 0
@@ -48,6 +49,8 @@
     margin-top: 1.5em
     @media all and (max-width: 768px)
       display: none
+      margin-top: 0
+      float: none
     li
       display: inline-block
       font-size: 1.2em
@@ -59,3 +62,12 @@
         padding: .15em .5em
       a.current
         border-bottom: 2px $grey-1 solid
+        @media all and (max-width: 768px)
+          border-bottom: 0
+
+      @media all and (max-width: 768px)
+        display: block;
+        text-align: center;
+        width: 100%;
+        background-color: #eee;
+        border-bottom: #ccc solid 1px;

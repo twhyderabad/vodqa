@@ -109,6 +109,7 @@ a {
   background: white;
   z-index: 10000; }
   .navigator .navigation-toggle {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -153,7 +154,9 @@ a {
     margin-top: 1.5em; }
     @media all and (max-width: 768px) {
       .navigator ul {
-        display: none; } }
+        display: none;
+        margin-top: 0;
+        float: none; } }
     .navigator ul li {
       display: inline-block;
       font-size: 1.2em;
@@ -165,6 +168,16 @@ a {
         padding: 0.15em 0.5em; }
       .navigator ul li a.current {
         border-bottom: 2px #CCC solid; }
+        @media all and (max-width: 768px) {
+          .navigator ul li a.current {
+            border-bottom: 0; } }
+      @media all and (max-width: 768px) {
+        .navigator ul li {
+          display: block;
+          text-align: center;
+          width: 100%;
+          background-color: #eee;
+          border-bottom: #ccc solid 1px; } }
 
 section.header {
   text-align: left;

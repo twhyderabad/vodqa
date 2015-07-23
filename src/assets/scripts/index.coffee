@@ -17,3 +17,5 @@ $(document).ready ($) ->
 
     $('ul li a').removeClass 'current'
     $('ul li a:eq(' + currentParaIndex + ')').addClass 'current'
+  $('.navigation-toggle').click ()->
+    $('.navigation').slideToggle()

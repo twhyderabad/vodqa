@@ -17,7 +17,7 @@ $(document).ready(function($) {
     $('ul li a').removeClass('current');
     return $(this).addClass('current');
   });
-  return $(document).on('scroll', function() {
+  $(document).on('scroll', function() {
     var currentParaIndex, currentScrollTop, headerHeight;
     if (window.scrolling) {
       return;
@@ -29,5 +29,8 @@ $(document).ready(function($) {
     }).length - 1);
     $('ul li a').removeClass('current');
     return $('ul li a:eq(' + currentParaIndex + ')').addClass('current');
+  });
+  return $('.navigation-toggle').click(function() {
+    return $('.navigation').slideToggle();
   });
 });
