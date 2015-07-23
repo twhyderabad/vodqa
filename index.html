@@ -22,32 +22,31 @@
     <script>
       $(document).ready(function($){
          var parPosition = [];
-         $('.content').each(function() {
+         $('.content.para').each(function() {
              parPosition.push($(this).offset().top);
          });
              $('a').click(function(){
              $('html, body').animate({
-                 scrollTop: $( $.attr(this, 'href') ).offset().top-100
+                 scrollTop: $( $.attr(this, 'href') ).offset().top
              }, 500);
              return false;
          });
-             $(document).on('scroll', function() {
-             var position = $(document).scrollTop()+100,
+                $('ul li a').click(function () {
+             $('ul li a').removeClass('current');
+                 $(this).addClass('current');
+         });
+      $(document).on('scroll', function() {
+             var position = $(document).scrollTop(),
                  index = 0;
                  for (var i=0; i<parPosition.length; i++) {
-                 if (position <= parPosition[i]) {
+                 if (position <=parPosition[i]) {
                      index = i;
-                       console.log(index);
                      break;
                  }
              }
-                 $('ul li a').removeClass('active');
-             $('ul li a:eq('+index+')').addClass('active');
+                 $('ul li a').removeClass('current');
+             $('ul li a:eq('+index+')').addClass('current');
       });
-                $(' ul li a').click(function () {
-             $(' ul li a').removeClass('active');
-                 $(this).addClass('active');
-         });
       });
     </script>
     <script src="//app-e.marketo.com/js/forms2/js/forms2.min.js"></script>
@@ -58,10 +57,18 @@
   </head>
 </html>
 <body>
-  <!--include sections/navigation/navigation.jade-->
-  <section class="header">
-    <div id="home" class="content"><span class="logo"><img src="dist/assets/images/logo.png"></span><span class="caption">Conference for Quality Analysts</span></div>
+  <section class="navigator">
+    <div class="content"><span class="logo"><img src="dist/assets/images/logo.png"></span>
+      <ul id="nav" class="navigation">
+        <li><a href="#about" class="current">About</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#register">Register</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </section>
+  <!--include sections/header/header.jade-->
   <section class="invite">
     <div class="content">
       <div class="box">
@@ -76,7 +83,7 @@
   </section>
   <section id="about" class="about">
     <h2>About</h2>
-    <div class="content">
+    <div class="content para">
       <p>
          
         'vodQA' -​ stands for Value Oriented Discussion for Quality Analysts. 
@@ -92,8 +99,51 @@
       </p>
     </div>
   </section>
+  <section id="speakers" class="speakers">
+    <h2>Speakers</h2>
+    <div class="content para">
+      <div class="speaker-slider">
+        <ul class="bxslider">
+          <li><img src="dist/assets/images/pic-1.png" title="&lt;h3&gt;SPEAKER-1&lt;/h3&gt;  &lt;br/&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum"></li>
+          <li><img src="dist/assets/images/pic-2.png" title="&lt;h3&gt;SPEAKER-1&lt;/h3&gt;  &lt;br/&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum"></li>
+          <li><img src="dist/assets/images/pic-1.png" title="&lt;h3&gt;SPEAKER-1&lt;/h3&gt;  &lt;br/&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum"></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="agenda" class="agenda">
+    <h2>Agenda</h2>
+    <div class="content para">
+      <div class="tracks tracks-2">
+        <div class="track">
+          <h3>Track 1</h3>
+          <div class="session talk duration-30m">
+            <h4 class="topic">session1</h4><span class="speaker">speaker 1</span>
+          </div>
+          <div class="session talk duration-60m">
+            <h4 class="topic">session2</h4><span class="speaker">speaker2</span>
+          </div>
+          <div class="session break duration-15m">
+            <h4 class="topic">Break</h4><span class="speaker"></span>
+          </div>
+        </div>
+        <div class="track">
+          <h3>Track 2</h3>
+          <div class="session talk duration-15m">
+            <h4 class="topic">session1</h4><span class="speaker">speaker1</span>
+          </div>
+          <div class="session break duration-15m">
+            <h4 class="topic">Break</h4><span class="speaker"></span>
+          </div>
+          <div class="session talk duration-75m">
+            <h4 class="topic">session 2</h4><span class="speaker">speaker 2</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section id="register" class="register">
-    <div class="content">
+    <div class="content para">
       <h2>Speaker Registration</h2>
       <p class="notifications">Submit your talk below and if you like to make more than one submission do reach out to us at<em> vodqa-hyderabad@thoughtworks.com</em><br/>
         Example categories:
@@ -106,7 +156,7 @@
     </div>
   </section>
   <section id="contact" class="contact">
-    <div class="content">
+    <div class="content para">
       <h2>Contact us</h2>
       <div class="details"><br>
         <h3>EMAIL</h3>

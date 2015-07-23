@@ -131,9 +131,8 @@ a {
         text-decoration: none;
         color: #B5B935;
         padding: 0.15em 0.5em; }
-
-.navigation a.active {
-  border-bottom: 2px #CCC solid; }
+      .navigator ul li a.current {
+        border-bottom: 2px #CCC solid; }
 
 section.header {
   text-align: left;

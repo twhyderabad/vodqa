@@ -22,32 +22,31 @@ html(lang="en")
     script
         |$(document).ready(function($){
         |    var parPosition = [];
-        |    $('.content').each(function() {
+        |    $('.content.para').each(function() {
         |        parPosition.push($(this).offset().top);
         |    });
         |        $('a').click(function(){
         |        $('html, body').animate({
-        |            scrollTop: $( $.attr(this, 'href') ).offset().top-100
+        |            scrollTop: $( $.attr(this, 'href') ).offset().top
         |        }, 500);
         |        return false;
         |    });
-        |        $(document).on('scroll', function() {
-        |        var position = $(document).scrollTop()+100,
+        |           $('ul li a').click(function () {
+        |        $('ul li a').removeClass('current');
+        |            $(this).addClass('current');
+        |    });
+        |$(document).on('scroll', function() {
+        |        var position = $(document).scrollTop(),
         |            index = 0;
         |            for (var i=0; i<parPosition.length; i++) {
-        |            if (position <= parPosition[i]) {
+        |            if (position <=parPosition[i]) {
         |                index = i;
-        |                  console.log(index);
         |                break;
         |            }
         |        }
-        |            $('ul li a').removeClass('active');
-        |        $('ul li a:eq('+index+')').addClass('active');
+        |            $('ul li a').removeClass('current');
+        |        $('ul li a:eq('+index+')').addClass('current');
         |});
-        |           $(' ul li a').click(function () {
-        |        $(' ul li a').removeClass('active');
-        |            $(this).addClass('active');
-        |    });
         |});
 
     script(src="//app-e.marketo.com/js/forms2/js/forms2.min.js")
@@ -57,10 +56,12 @@ html(lang="en")
 body
   include data/agenda.jade
 
-  //include sections/navigation/navigation.jade
-  include sections/header/header.jade
+  include sections/navigation/navigation.jade
+  //include sections/header/header.jade
   include sections/invite/invite.jade
   include sections/about/about.jade
+  include sections/speakers/speakers.jade
+  include sections/agenda/agenda.jade
   include sections/register/register.jade
   include sections/contact/contact.jade
   include sections/footer/footer.jade
