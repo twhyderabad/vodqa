@@ -1,8 +1,8 @@
 $(document).ready(function($) {
-  var parPosition;
-  parPosition = [];
+  var paraPositions;
+  paraPositions = [];
   $('.content.para').each(function() {
-    return parPosition.push($(this).offset().top);
+    return paraPositions.push($(this).offset().top);
   });
   $('a').click(function() {
     window.scrolling = true;
@@ -18,21 +18,16 @@ $(document).ready(function($) {
     return $(this).addClass('current');
   });
   return $(document).on('scroll', function() {
-    var i, index, position;
+    var currentParaIndex, currentScrollTop, headerHeight;
     if (window.scrolling) {
       return;
     }
-    position = $(document).scrollTop();
-    index = 0;
-    i = 0;
-    while (i < parPosition.length) {
-      if (position <= parPosition[i]) {
-        index = i;
-        break;
-      }
-      i++;
-    }
+    currentScrollTop = $(document).scrollTop();
+    headerHeight = 123;
+    currentParaIndex = Math.max(0, paraPositions.filter(function(p) {
+      return p < currentScrollTop + headerHeight;
+    }).length - 1);
     $('ul li a').removeClass('current');
-    return $('ul li a:eq(' + index + ')').addClass('current');
+    return $('ul li a:eq(' + currentParaIndex + ')').addClass('current');
   });
 });

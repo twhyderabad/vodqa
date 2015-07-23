@@ -1,7 +1,7 @@
 $(document).ready ($) ->
-  parPosition = []
+  paraPositions = []
   $('.content.para').each ->
-    parPosition.push $(this).offset().top
+    paraPositions.push $(this).offset().top
   $('a').click ->
     window.scrolling = true
     $('html, body').animate {scrollTop: $($.attr(this, 'href')).offset().top}, 500, "swing", -> window.scrolling = false
@@ -11,13 +11,9 @@ $(document).ready ($) ->
     $(this).addClass 'current'
   $(document).on 'scroll', ->
     return if window.scrolling
-    position = $(document).scrollTop()
-    index = 0
-    i = 0
-    while i < parPosition.length
-      if position <= parPosition[i]
-        index = i
-        break
-      i++
+    currentScrollTop = $(document).scrollTop()
+    headerHeight = 123;
+    currentParaIndex = Math.max(0, paraPositions.filter((p) -> p < currentScrollTop + headerHeight).length - 1)
+
     $('ul li a').removeClass 'current'
-    $('ul li a:eq(' + index + ')').addClass 'current'
+    $('ul li a:eq(' + currentParaIndex + ')').addClass 'current'
