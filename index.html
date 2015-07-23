@@ -19,36 +19,7 @@
       });
       });
     </script>
-    <script>
-      $(document).ready(function($){
-         var parPosition = [];
-         $('.content.para').each(function() {
-             parPosition.push($(this).offset().top);
-         });
-             $('a').click(function(){
-             $('html, body').animate({
-                 scrollTop: $( $.attr(this, 'href') ).offset().top
-             }, 500);
-             return false;
-         });
-                $('ul li a').click(function () {
-             $('ul li a').removeClass('current');
-                 $(this).addClass('current');
-         });
-      $(document).on('scroll', function() {
-             var position = $(document).scrollTop(),
-                 index = 0;
-                 for (var i=0; i<parPosition.length; i++) {
-                 if (position <=parPosition[i]) {
-                     index = i;
-                     break;
-                 }
-             }
-                 $('ul li a').removeClass('current');
-             $('ul li a:eq('+index+')').addClass('current');
-      });
-      });
-    </script>
+    <script src="dist/assets/index.js"></script>
     <script src="//app-e.marketo.com/js/forms2/js/forms2.min.js"></script>
     <script>
       MktoForms2.loadForm("//app-e.marketo.com",
