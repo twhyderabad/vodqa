@@ -108,6 +108,24 @@ a {
   top: 0;
   background: white;
   z-index: 10000; }
+  .navigator .navigation-toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: .5em;
+    margin: 9px 1em;
+    border-radius: 4px;
+    background: transparent;
+    border: #B5B935 solid 2px; }
+    .navigator .navigation-toggle hr {
+      height: 2px;
+      margin: 3px 0;
+      width: 15px;
+      background: #B5B935;
+      border: 0; }
+    @media all and (max-width: 768px) {
+      .navigator .navigation-toggle {
+        display: inline-block; } }
   @media all and (max-width: 768px) {
     .navigator {
       padding: 0; }
