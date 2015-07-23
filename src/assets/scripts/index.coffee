@@ -3,12 +3,14 @@ $(document).ready ($) ->
   $('.content.para').each ->
     parPosition.push $(this).offset().top
   $('a').click ->
-    $('html, body').animate {scrollTop: $($.attr(this, 'href')).offset().top}, 500
+    window.scrolling = true
+    $('html, body').animate {scrollTop: $($.attr(this, 'href')).offset().top}, 500, "swing", -> window.scrolling = false
     false
   $('ul li a').click ->
     $('ul li a').removeClass 'current'
     $(this).addClass 'current'
   $(document).on 'scroll', ->
+    return if window.scrolling
     position = $(document).scrollTop()
     index = 0
     i = 0

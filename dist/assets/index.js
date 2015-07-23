@@ -5,9 +5,12 @@ $(document).ready(function($) {
     return parPosition.push($(this).offset().top);
   });
   $('a').click(function() {
+    window.scrolling = true;
     $('html, body').animate({
       scrollTop: $($.attr(this, 'href')).offset().top
-    }, 500);
+    }, 500, "swing", function() {
+      return window.scrolling = false;
+    });
     return false;
   });
   $('ul li a').click(function() {
@@ -16,6 +19,9 @@ $(document).ready(function($) {
   });
   return $(document).on('scroll', function() {
     var i, index, position;
+    if (window.scrolling) {
+      return;
+    }
     position = $(document).scrollTop();
     index = 0;
     i = 0;
