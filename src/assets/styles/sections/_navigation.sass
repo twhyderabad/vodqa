@@ -2,23 +2,34 @@
   box-sizing: border-box
   width: 100%
   position: fixed
+  top: 0
   background: white
   z-index: 10000
+  @media all and (max-width: 768px)
+    padding: 0
+    .content
+      margin: 0
+      padding: 0
   .logo
     float: left
     width: 30%
+    line-height: 0
     @media all and (max-width: 768px)
       float: none
-      margin: 0.5em  auto
-      display: block
+      margin: 0 auto
       text-align: center
     img
       max-width: 10em
+      @media all and (max-width: 768px)
+        height: 50px
 
   ul
+    float: right;
     text-align: right
     list-style: none
     margin-top: 1.5em
+    @media all and (max-width: 768px)
+      display: none
     li
       display: inline-block
       font-size: 1.2em

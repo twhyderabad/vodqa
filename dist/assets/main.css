@@ -67,12 +67,11 @@ body {
   color: #666;
   margin: 0;
   padding: 0;
-  font-family: "open sans", Arial;
+  font-family: "Open Sans", Arial, sans-serif;
   line-height: 150%;
   overflow-x: hidden; }
   body > section {
     padding: 1em;
-    clear: both;
     overflow: hidden; }
     body > section > h2 {
       margin: 1em auto 0.5em; }
@@ -81,7 +80,8 @@ body {
           width: 1024px; } }
     body > section > .content {
       margin: 0 auto;
-      padding: 0 0.5em 1em 0; }
+      padding: 0 0.5em 1em 0;
+      clear: both; }
       @media all and (min-width: 1024px) {
         body > section > .content {
           width: 1024px;
@@ -105,23 +105,37 @@ a {
   box-sizing: border-box;
   width: 100%;
   position: fixed;
+  top: 0;
   background: white;
   z-index: 10000; }
+  @media all and (max-width: 768px) {
+    .navigator {
+      padding: 0; }
+      .navigator .content {
+        margin: 0;
+        padding: 0; } }
   .navigator .logo {
     float: left;
-    width: 30%; }
+    width: 30%;
+    line-height: 0; }
     @media all and (max-width: 768px) {
       .navigator .logo {
         float: none;
-        margin: 0.5em  auto;
-        display: block;
+        margin: 0 auto;
         text-align: center; } }
     .navigator .logo img {
       max-width: 10em; }
+      @media all and (max-width: 768px) {
+        .navigator .logo img {
+          height: 50px; } }
   .navigator ul {
+    float: right;
     text-align: right;
     list-style: none;
     margin-top: 1.5em; }
+    @media all and (max-width: 768px) {
+      .navigator ul {
+        display: none; } }
     .navigator ul li {
       display: inline-block;
       font-size: 1.2em;
@@ -176,6 +190,7 @@ section.invite {
       background: url("images/bg-tablet.jpg") no-repeat fixed center center; } }
   @media all and (max-width: 768px) {
     section.invite {
+      margin-top: 50px;
       background: url("images/bg-mobile.jpg") no-repeat fixed center center; } }
 
 section.invite .content {
