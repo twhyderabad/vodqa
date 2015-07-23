@@ -106,7 +106,7 @@ a {
   width: 100%;
   position: fixed;
   background: white;
-  z-index: 100; }
+  z-index: 10000; }
   .navigator .logo {
     float: left;
     width: 30%; }
