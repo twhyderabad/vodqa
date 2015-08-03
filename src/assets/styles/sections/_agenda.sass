@@ -28,6 +28,32 @@ section.agenda
       margin-right: 2%
 
 
+section.agenda
+  .track
+    .session
+      .track-title
+        font-style: italic
+        font-weight: bold
+        margin-bottom: 10px
+      .time
+        float: left
+        text-align: right
+        width: 200px
+        margin-right: 20px
+        color: #B5B935
+        &.time-track
+          margin-top: 2em
+      .details
+        float: left
+        &.details-half
+          &:last-child
+            padding-left: 20px
+            border-left: dotted 2px #B5B933
+            margin-left: 20px
+      &:after
+        clear: both
+        display: table
+        content: ""
 // track types
 
 section.agenda

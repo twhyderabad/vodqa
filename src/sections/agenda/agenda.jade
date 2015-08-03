@@ -1,13 +1,66 @@
 section#agenda.agenda
   .content.para
     h2 Agenda
-    div(class="tracks tracks-#{tracks.length}")
-
-      each track in tracks
-        .track
-          h3= track.title
-
-          each session in track.sessions
-            div(class="session #{session.type} duration-#{session.duration}")
-              h4.topic= session.topic
-              span.speaker= session.speaker
+    div(class="tracks tracks-1")
+      .track
+        div(class="session talk")
+          p.time 9:30 - 10:00 a.m.
+          .details
+            h4.topic Registration
+        div(class="session talk")
+          p.time 10:00 - 10:15 a.m.
+          .details
+            h4.topic Keynote
+            span.speaker Mayur Wadhwa
+        div(class="session talk")
+          p.time 10:15 - 10:55 a.m.
+          .details
+            h4.topic Presentation 1
+            span.speaker Anand Bagmar
+        div(class="session break")
+          p.time 10:55 - 11:10 a.m.
+          .details
+            h4.topic Break
+        div(class="session talk")
+          p.time 11:10 - 11:50 a.m.
+          .details
+            h4.topic Presentation 2
+            span.speaker Anand Bagmar
+        div(class="session talk")
+          p.time 11:15 - 12:05 p.m.
+          .details
+            h4.topic Lightning Talk 1
+            span.speaker Shilpakala Ramam
+        div(class="session talk")
+          p.time 12:05 - 12:45 p.m.
+          .details
+            h4.topic Presentation 3
+            span.speaker Abdulsattar
+        div(class="session break")
+          p.time 12:45 - 1:30 p.m.
+          .details
+            h4.topic Lunch
+        div(class="session talk")
+          p.time 01:30 - 01:45 p.m.
+          .details
+            h4.topic Interactive Session
+        div(class="session talk")
+          p.time 01:45 - 02:00 p.m.
+          .details
+            h4.topic Lightning Talk 2
+            span.speaker Lalu Prasad Yadav
+        div(class="session talk")
+          p.time.time-track 02:00 - 04:00 p.m.
+          .details.details-half
+            p.track-title Track 1
+            h4.topic Behavior Driven Development
+            span.speaker Workshop
+          .details.details-half
+            p.track-title Track 2
+            h4.topic Mobile Automation
+            span.speaker Workshop
+        div(class="session talk")
+          p.time 04:00 - 04:30 p.m.
+          .details
+            h4.topic Networking
+            span.speaker and Closing

@@ -346,6 +346,32 @@ section.agenda {
     width: 46%;
     margin-right: 2%; }
 
+section.agenda .track .session .track-title {
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 10px; }
+
+section.agenda .track .session .time {
+  float: left;
+  text-align: right;
+  width: 200px;
+  margin-right: 20px;
+  color: #B5B935; }
+  section.agenda .track .session .time.time-track {
+    margin-top: 2em; }
+
+section.agenda .track .session .details {
+  float: left; }
+  section.agenda .track .session .details.details-half:last-child {
+    padding-left: 20px;
+    border-left: dotted 2px #B5B933;
+    margin-left: 20px; }
+
+section.agenda .track .session:after {
+  clear: both;
+  display: table;
+  content: ""; }
+
 section.agenda .track .session {
   margin: 0.5em 0 0;
   padding: 1em;
