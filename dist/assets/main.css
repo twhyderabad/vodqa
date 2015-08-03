@@ -357,15 +357,24 @@ section.agenda .track .session .time {
   width: 200px;
   margin-right: 20px;
   color: #B5B935; }
-  section.agenda .track .session .time.time-track {
-    margin-top: 2em; }
+  @media all and (max-width: 768px) {
+    section.agenda .track .session .time {
+      float: none;
+      text-align: left;
+      font-size: .8em; } }
+  @media all and (min-width: 768px) {
+    section.agenda .track .session .time.time-track {
+      margin-top: 2em; } }
 
-section.agenda .track .session .details {
-  float: left; }
+@media all and (min-width: 768px) {
+  section.agenda .track .session .details {
+    float: left; } }
+
+@media all and (min-width: 768px) {
   section.agenda .track .session .details.details-half:last-child {
     padding-left: 20px;
     border-left: dotted 2px #B5B933;
-    margin-left: 20px; }
+    margin-left: 20px; } }
 
 section.agenda .track .session:after {
   clear: both;

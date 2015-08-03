@@ -41,15 +41,22 @@ section.agenda
         width: 200px
         margin-right: 20px
         color: #B5B935
-        &.time-track
-          margin-top: 2em
+        @media all and (max-width: 768px)
+          float: none
+          text-align: left
+          font-size: .8em
+        @media all and (min-width: 768px)
+          &.time-track
+            margin-top: 2em
       .details
-        float: left
+        @media all and (min-width: 768px)
+          float: left
         &.details-half
-          &:last-child
-            padding-left: 20px
-            border-left: dotted 2px #B5B933
-            margin-left: 20px
+          @media all and (min-width: 768px)
+            &:last-child
+              padding-left: 20px
+              border-left: dotted 2px #B5B933
+              margin-left: 20px
       &:after
         clear: both
         display: table
