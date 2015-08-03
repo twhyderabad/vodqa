@@ -279,6 +279,12 @@ section.invite .box {
     @media all and (max-width: 480px) {
       section.invite .box .btn {
         width: 8em; } }
+  section.invite .box .agenda {
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    text-emphasis: #11aa58;
+    font-style: italic; }
 
 section.about .content {
   line-height: 1.9em;
