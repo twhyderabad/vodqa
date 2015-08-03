@@ -1,13 +1,14 @@
 $(document).ready(function($) {
-  var paraPositions;
+  var headerHeight, paraPositions;
   paraPositions = [];
+  headerHeight = 123;
   $('.content.para').each(function() {
     return paraPositions.push($(this).offset().top);
   });
   $('a').click(function() {
     window.scrolling = true;
     $('html, body').animate({
-      scrollTop: $($.attr(this, 'href')).offset().top
+      scrollTop: $($.attr(this, 'href')).offset().top - headerHeight + 20
     }, 500, "swing", function() {
       return window.scrolling = false;
     });
@@ -18,12 +19,11 @@ $(document).ready(function($) {
     return $(this).addClass('current');
   });
   $(document).on('scroll', function() {
-    var currentParaIndex, currentScrollTop, headerHeight;
+    var currentParaIndex, currentScrollTop;
     if (window.scrolling) {
       return;
     }
     currentScrollTop = $(document).scrollTop();
-    headerHeight = 123;
     currentParaIndex = Math.max(0, paraPositions.filter(function(p) {
       return p < currentScrollTop + headerHeight;
     }).length - 1);
