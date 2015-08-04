@@ -273,12 +273,11 @@ section.invite .box {
     display: block;
     text-transform: uppercase;
     text-align: center;
-    height: 1em;
     vertical-align: middle;
     font-weight: 400; }
     @media all and (max-width: 480px) {
       section.invite .box .btn {
-        width: 8em; } }
+        width: 9em; } }
   section.invite .box .agenda {
     font-size: 1em;
     text-align: center;
