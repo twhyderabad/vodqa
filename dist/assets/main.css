@@ -556,14 +556,27 @@ section.contact {
 
 section.register {
   background: #B5B935;
-  color: #333; }
+  color: #333;
+  padding-bottom: 0; }
+  section.register .content {
+    padding-bottom: 0; }
   section.register .notifications {
     font-style: italic;
     font-weight: 100; }
+  section.register .social {
+    background-color: #fff;
+    margin: 0 -20px;
+    padding-left: 2em;
+    padding-top: 10px; }
+    @media (min-width: 560px) {
+      section.register .social {
+        padding-left: 16.5em; } }
+    section.register .social img {
+      margin: 10px; }
 
 section.register .mktoForm {
   width: auto !important;
-  margin: 2em 0;
+  margin: 2em 0 1em 0;
   background: rgba(255, 255, 255, 0.2);
   padding: 1em;
   z-index: 0; }
