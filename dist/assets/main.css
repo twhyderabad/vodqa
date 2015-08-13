@@ -394,6 +394,13 @@ section.agenda .track .session {
     background: #F6F6F6; }
   section.agenda .track .session.break {
     background: url("images/bg.png") #fff; }
+    section.agenda .track .session.break .border {
+      background: #fff;
+      padding: .5em; }
+      section.agenda .track .session.break .border:after {
+        clear: both;
+        display: table;
+        content: ""; }
 
 section.agenda .duration-5m {
   height: 20px;
