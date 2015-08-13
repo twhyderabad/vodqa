@@ -393,7 +393,7 @@ section.agenda .track .session {
   section.agenda .track .session.talk {
     background: #F6F6F6; }
   section.agenda .track .session.break {
-    background: #249759; }
+    background: url("images/bg.png") #fff; }
 
 section.agenda .duration-5m {
   height: 20px;
