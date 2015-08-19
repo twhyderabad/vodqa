@@ -661,6 +661,13 @@ section.register .mktoForm {
           section.register .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple .mktoButton {
             margin-left: 12.5em;
             width: 10em; } }
+    section.register .mktoForm .mktoButtonRow .tag {
+      font-size: .8em;
+      font-style: italic;
+      text-transform: none; }
+      @media all and (min-width: 560px) {
+        section.register .mktoForm .mktoButtonRow .tag {
+          margin-left: 20em; } }
 
 .register .mktoForm .mktoError .mktoErrorMsg {
   display: block;
