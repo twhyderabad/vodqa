@@ -108,6 +108,10 @@ a {
   top: 0;
   background: white;
   z-index: 10000; }
+  .navigator .register {
+    background-color: #11AA58;
+    padding: 10px;
+    color: #fff; }
   .navigator .navigation-toggle {
     display: none;
     position: absolute;
