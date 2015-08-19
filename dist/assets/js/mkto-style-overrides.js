@@ -4,7 +4,7 @@ MktoForms2.onFormRender(function() {
   e.removeAttr("style")
   $("#mktoForm_3219").removeAttr("style")
   $("#job_title__c").val('Tester');
-  $('#Industry').val('Computers & Electronics');
+  $('#Industry').val('Software & Internet');
 })
 
 $(window).resize(function() {
