@@ -3,6 +3,8 @@ MktoForms2.onFormRender(function() {
   e = $(".register .mktoForm *")
   e.removeAttr("style")
   $("#mktoForm_3219").removeAttr("style")
+  $("#job_title__c").val('Tester');
+  $('#Industry').val('Computers & Electronics');
 })
 
 $(window).resize(function() {
