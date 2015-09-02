@@ -362,9 +362,9 @@ section.agenda {
 section.agenda a.link {
   display: inline-block;
   margin-left: 20px; }
-  section.agenda a.link:before {
-    content: "\2b07";
-    margin-right: 5px; }
+  section.agenda a.link img {
+    width: 1em;
+    margin-right: .3em; }
 
 section.agenda .track .session .track-title {
   font-style: italic;
