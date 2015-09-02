@@ -287,7 +287,11 @@ section.invite .box {
     text-align: center;
     text-decoration: none;
     text-emphasis: #11aa58;
-    font-style: italic; }
+    font-style: italic;
+    margin-top: .5em; }
+    section.invite .box .agenda a {
+      color: #333;
+      text-decoration: underline; }
 
 section.about .content {
   line-height: 1.9em;
