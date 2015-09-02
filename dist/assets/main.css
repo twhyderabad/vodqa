@@ -355,6 +355,13 @@ section.agenda {
     width: 46%;
     margin-right: 2%; }
 
+section.agenda a.link {
+  display: inline-block;
+  margin-left: 20px; }
+  section.agenda a.link:before {
+    content: "\2b07";
+    margin-right: 5px; }
+
 section.agenda .track .session .track-title {
   font-style: italic;
   font-weight: bold;
