@@ -1,0 +1,57 @@
+//- Tracks
+
+- tracks = []
+
+- track = {}
+- track.title = "Track 1"
+- track.sessions = []
+- tracks[0] = track
+
+- track = {}
+- track.title = "Track 2"
+- track.sessions = []
+- tracks[1] = track
+
+//- Sessions - Track 1
+
+- session = {}
+- session.topic = "session1"
+- session.speaker = "speaker 1"
+- session.duration = "30m"
+- session.type = "talk"
+- tracks[0].sessions[0] = session
+
+- session = {}
+- session.topic = "session2"
+- session.speaker = "speaker2"
+- session.duration = "60m"
+- session.type = "talk"
+- tracks[0].sessions[1] = session
+
+- session = {}
+- session.topic = "Break"
+- session.duration = "15m"
+- session.type = "break"
+- tracks[0].sessions[2] = session
+
+//- Sessions - Track 2
+
+- session = {}
+- session.topic = "session1"
+- session.speaker = "speaker1"
+- session.duration = "15m"
+- session.type = "talk"
+- tracks[1].sessions[0] = session
+
+- session = {}
+- session.topic = "Break"
+- session.duration = "15m"
+- session.type = "break"
+- tracks[1].sessions[1] = session
+
+- session = {}
+- session.topic = "session 2"
+- session.speaker = "speaker 2"
+- session.duration = "75m"
+- session.type = "talk"
+- tracks[1].sessions[2] = session
