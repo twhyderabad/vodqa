@@ -1,23 +1,40 @@
 doctype html
 html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1")
-        title vodQA 2015
-        script(src="webcomponentsjs/webcomponents.min.js")
-        link(rel="stylesheet", href="home-section/home-section.css")
-        link(rel="stylesheet", href="register-section/register-section.css")
-        link(rel="stylesheet", href="blank-section/blank-section.css")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title
+        include sections/title/title.jade
+    link(rel="icon" href="favicon.ico")
+    script(src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js")
+    script(src="dist/assets/js/jquery.bxslider.min.js")
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,300,600,400,700,900' rel='stylesheet' type='text/css')
+    link(rel="stylesheet", href="dist/assets/main.css")
+    link(rel="stylesheet", href="dist/assets/lib/jquery.bxslider.css")
+    script
+      |$(document).ready(function(){
+      | $('.bxslider').bxSlider({
+      |   mode: 'fade',
+      |captions: true
+      |});
+      |});
 
+    script(src="dist/assets/index.js")
+    script(src="//app-e.marketo.com/js/forms2/js/forms2.min.js")
+    script
+      | MktoForms2.loadForm("//app-e.marketo.com",
+      |"199-QDE-291", 3219);
+body
+  include data/agenda.jade
 
-        link(rel="import", href="polymer/polymer.html")
-        link(rel="import", href="home-section/home-section.html")
-        link(rel="import", href="app-header/app-header.html")
-        link(rel="import", href="register-section/register-section.html")
-        link(rel="import", href="blank-section/blank-section.html")
-    body
-        home-section
-        app-header
-        blank-section
-        register-section
+  include sections/navigation/navigation.jade
+  //include sections/header/header.jade
+  include sections/invite/invite.jade
+  include sections/about/about.jade
+  include sections/speakers/speakers.jade
+  include sections/register/register.jade
+  include sections/agenda/agenda.jade
+  include sections/contact/contact.jade
+  include sections/footer/footer.jade
+  script(src="dist/assets/js/mkto-style-overrides.js")
 

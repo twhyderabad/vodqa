@@ -1,4 +1,7 @@
-node_modules
-dist
-bower_components
-.idea
+/.sass-cache
+/node_modules
+/.idea
+/psd
+/vendor
+*.iml
+.DS_Store

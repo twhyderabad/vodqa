@@ -7,6 +7,6 @@ app = express()
 
 gulp.task "serve", ->
   app.use express.static path.resolve "./vendor/bower_components"
-  app.use express.static path.resolve "./dist"
+  app.use express.static path.resolve "./"
   app.listen 5454
   gutil.log "Listening on port: 5454"
