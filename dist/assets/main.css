@@ -98,7 +98,7 @@ h2 {
   line-height: 1.25em; }
 
 a {
-  color: #B5B935;
+  color: rgba(17, 121, 170, 0.95);
   text-decoration: none; }
 
 .navigator {
@@ -121,12 +121,12 @@ a {
     margin: 9px 1em;
     border-radius: 4px;
     background: transparent;
-    border: #11AA58 solid 2px; }
+    border: rgba(17, 121, 170, 0.95) solid 2px; }
     .navigator .navigation-toggle hr {
       height: 2px;
       margin: 3px 0;
       width: 15px;
-      background: #11AA58;
+      background: rgba(17, 121, 170, 0.95);
       border: 0; }
     @media all and (max-width: 768px) {
       .navigator .navigation-toggle {
@@ -168,7 +168,7 @@ a {
       padding: 0.3em; }
       .navigator ul li a {
         text-decoration: none;
-        color: #11AA58;
+        color: rgba(17, 121, 170, 0.95);
         padding: 0.15em 0.5em; }
       .navigator ul li a.current {
         border-bottom: 2px #CCC solid; }
@@ -220,25 +220,18 @@ section.invite {
   background: url("images/bg.jpg") no-repeat fixed center center;
   background-size: cover;
   height: 30em; }
-  @media all and (max-width: 1024px) {
-    section.invite {
-      background: url("images/bg-tablet.jpg") no-repeat fixed center center; } }
-  @media all and (max-width: 768px) {
-    section.invite {
-      margin-top: 50px;
-      background: url("images/bg-mobile.jpg") no-repeat fixed center center; } }
 
 section.invite .content {
   text-align: center; }
 
 section.invite .box {
-  background: rgba(17, 170, 88, 0.95);
-  color: #333;
+  background: rgba(17, 121, 170, 0.95);
   text-align: center;
   width: 25em;
   float: right;
   margin: 8em 2em;
-  padding: 2em; }
+  padding: 2em;
+  color: #ddd; }
   @media all and (max-width: 768px) {
     section.invite .box {
       margin: 3em 1em;
@@ -249,26 +242,27 @@ section.invite .box {
       width: 14em;
       float: none;
       display: inline-block; } }
+  section.invite .box h4 {
+    font-weight: normal; }
   section.invite .box .date {
     font-size: 1.5em;
     font-weight: 400;
     margin-top: 1em;
-    padding: 1em 0.5em;
-    background: rgba(255, 255, 255, 0.2); }
+    padding: 1em 0.5em; }
     @media all and (max-width: 768px) {
       section.invite .box .date {
         font-size: 1em; } }
   section.invite .box .invite-msg {
     font-size: 1.5em;
     font-weight: 100;
-    margin-top: 1.5em; }
+    margin-top: 1em; }
     @media all and (max-width: 480px) {
       section.invite .box .invite-msg {
         height: 1.5em;
         font-size: 1.5em; } }
   section.invite .box .btn {
-    background: #B5B935;
-    color: #FFF;
+    background: rgba(17, 121, 170, 0.95);
+    color: #fff;
     font-size: 1.25em;
     text-decoration: none;
     width: 12em;
@@ -287,11 +281,13 @@ section.invite .box {
     text-align: center;
     text-decoration: none;
     text-emphasis: #11aa58;
-    font-style: italic;
-    margin-top: .5em; }
+    margin-top: 1em; }
     section.invite .box .agenda a {
-      color: #333;
-      text-decoration: underline; }
+      color: #ddd;
+      text-decoration: none;
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 2px 2px 0 #265e7f; }
 
 section.about .content {
   line-height: 1.9em;
@@ -337,9 +333,9 @@ section.about .content {
     padding: 10px; }
 
 section.agenda {
-  background: #B5B935; }
+  background: rgba(17, 121, 170, 0.95); }
   section.agenda h2 {
-    color: #333; }
+    color: #ddd; }
   section.agenda .track .topic {
     font-size: 1.5em;
     font-weight: 200; }
@@ -376,7 +372,7 @@ section.agenda .track .session .time {
   text-align: right;
   width: 200px;
   margin-right: 20px;
-  color: #B5B935; }
+  color: rgba(17, 121, 170, 0.95); }
   @media all and (max-width: 768px) {
     section.agenda .track .session .time {
       float: none;
@@ -403,7 +399,7 @@ section.agenda .track .session:after {
 
 section.agenda .track .session {
   margin: 0.5em 0 0;
-  padding: 1em;
+  padding: 0.5em;
   box-sizing: border-box; }
   section.agenda .track .session.talk {
     background: #F6F6F6; }
@@ -510,7 +506,8 @@ section.agenda .duration-115m {
   max-height: auto; }
 
 section.speakers {
-  background: #ccdc85; }
+  background: rgba(17, 121, 170, 0.95);
+  color: #ddd; }
 
 .speaker-block {
   box-sizing: border-box;
@@ -530,7 +527,7 @@ section.speakers {
       float: none;
       margin: 1em 0; }
       .speaker-block .details {
-        padding-left: 15px;
+        padding: 25px 15px;
         box-sizing: border-box;
         float: left;
         width: 75%; } }
@@ -539,7 +536,7 @@ section.speakers {
   .speaker-block .speaker-img img {
     width: 100px;
     height: 100px;
-    border: #ccc solid 5px;
+    border: #ccc solid 1px;
     border-radius: 50%; }
   @media all and (max-width: 768px) {
     .speaker-block .speaker-img {
@@ -577,7 +574,7 @@ section.contact {
           margin-top: 20px; } }
 
 section.register {
-  background: #11AA58;
+  background: #fff;
   color: #333;
   padding-bottom: 0; }
   section.register .content {
@@ -597,7 +594,7 @@ section.register {
 section.register .mktoForm {
   width: auto !important;
   margin: 2em 0 1em 0;
-  background: rgba(255, 255, 255, 0.2);
+  background: #e3edf1;
   padding: 1em;
   z-index: 0; }
   section.register .mktoForm .mktoFormRow {
@@ -628,7 +625,7 @@ section.register .mktoForm {
       border: 1px solid rgba(0, 0, 0, 0.2);
       background: #fff; }
       section.register .mktoForm .mktoFormRow input:focus, section.register .mktoForm .mktoFormRow textarea:focus, section.register .mktoForm .mktoFormRow select:focus {
-        outline-color: #B5B935;
+        outline-color: rgba(17, 121, 170, 0.95);
         outline-offset: -2;
         outline-width: 2px; }
       @media all and (max-width: 480px) {
@@ -654,12 +651,11 @@ section.register .mktoForm {
     section.register .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple {
       display: block; }
       section.register .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple .mktoButton {
-        background-image: none;
-        background: #B5B935;
+        background: rgba(17, 121, 170, 0.95);
+        border-radius: 9999px;
+        box-shadow: 0 2px 2px 0 #265e7f;
         border: none;
         width: 100%;
-        border-radius: 0;
-        padding: 0.5em;
         color: #FFF;
         font-size: 1.25em;
         margin: 1em auto 0;
