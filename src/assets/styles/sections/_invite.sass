@@ -1,17 +1,20 @@
 section.invite
   background: url("images/bg.jpg") no-repeat fixed center center
   background-size: cover
-  height: 30em
 
 section.invite
+  margin-top: 117px
+  @media(max-width: 480px)
+    margin-top: 50px
   .content
     text-align: center
+    padding: 0
   .box
     background: rgba($primary, 0.95)
     text-align: center
     width: 25em
     float: right
-    margin: 8em 2em
+    margin: 2em
     padding: 2em
     color: #ddd
     @media all and (max-width: 768px)
@@ -25,29 +28,29 @@ section.invite
 
     h4
       font-weight: normal
+      margin-bottom: 15px
     .date
       font-size: 1.5em
       font-weight: 400
-      margin-top: 1em
-      padding: 1em 0.5em
+      margin-bottom: 30px
       @media all and (max-width: 768px)
         font-size: 1em
     .invite-msg
       font-size: 1.5em
+      line-height: 1.5em
       font-weight: 100
-      margin-top: 1em
-      @media all and (max-width: 480px)
-        height: 1.5em
-        font-size: 1.5em
+      margin-bottom: 30px
+      //@media all and (max-width: 480px)
+      //  font-size: 1.5em
 
     .btn
-      background: $secondary
       color: #fff
       font-size: 1.25em
       text-decoration: none
       width: 12em
       margin: 1em auto 0
-      padding: 1em
+      padding: 15px
+      font-style: italic
       display: block
       text-transform: uppercase
       text-align: center
@@ -63,9 +66,9 @@ section.invite
       text-emphasis: #11aa58
       margin-top: 1em
       a
-        color: #ddd
+        color: #516169
         text-decoration: none
-        border-radius: 9999px
-        background: rgba(#FFF, 0.2)
+        background: rgba(255, 177, 82, 0.85)
         box-shadow: 0 2px 2px 0 #265e7f
+        font-weight: bold
 

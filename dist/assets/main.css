@@ -218,80 +218,84 @@ section.header {
 
 section.invite {
   background: url("images/bg.jpg") no-repeat fixed center center;
-  background-size: cover;
-  height: 30em; }
+  background-size: cover; }
 
-section.invite .content {
-  text-align: center; }
-
-section.invite .box {
-  background: rgba(17, 121, 170, 0.95);
-  text-align: center;
-  width: 25em;
-  float: right;
-  margin: 8em 2em;
-  padding: 2em;
-  color: #ddd; }
-  @media all and (max-width: 768px) {
-    section.invite .box {
-      margin: 3em 1em;
-      width: 20em; } }
-  @media all and (max-width: 480px) {
-    section.invite .box {
-      margin: 3em 0em;
-      width: 14em;
-      float: none;
-      display: inline-block; } }
-  section.invite .box h4 {
-    font-weight: normal; }
-  section.invite .box .date {
-    font-size: 1.5em;
-    font-weight: 400;
-    margin-top: 1em;
-    padding: 1em 0.5em; }
-    @media all and (max-width: 768px) {
-      section.invite .box .date {
-        font-size: 1em; } }
-  section.invite .box .invite-msg {
-    font-size: 1.5em;
-    font-weight: 100;
-    margin-top: 1em; }
-    @media all and (max-width: 480px) {
-      section.invite .box .invite-msg {
-        height: 1.5em;
-        font-size: 1.5em; } }
-  section.invite .box .btn {
+section.invite {
+  margin-top: 117px; }
+  @media (max-width: 480px) {
+    section.invite {
+      margin-top: 50px; } }
+  section.invite .content {
+    text-align: center;
+    padding: 0; }
+  section.invite .box {
     background: rgba(17, 121, 170, 0.95);
-    color: #fff;
-    font-size: 1.25em;
-    text-decoration: none;
-    width: 12em;
-    margin: 1em auto 0;
-    padding: 1em;
-    display: block;
-    text-transform: uppercase;
     text-align: center;
-    vertical-align: middle;
-    font-weight: 400; }
+    width: 25em;
+    float: right;
+    margin: 2em;
+    padding: 2em;
+    color: #ddd; }
+    @media all and (max-width: 768px) {
+      section.invite .box {
+        margin: 3em 1em;
+        width: 20em; } }
     @media all and (max-width: 480px) {
-      section.invite .box .btn {
-        width: 9em; } }
-  section.invite .box .agenda {
-    font-size: 1em;
-    text-align: center;
-    text-decoration: none;
-    text-emphasis: #11aa58;
-    margin-top: 1em; }
-    section.invite .box .agenda a {
-      color: #ddd;
+      section.invite .box {
+        margin: 3em 0em;
+        width: 14em;
+        float: none;
+        display: inline-block; } }
+    section.invite .box h4 {
+      font-weight: normal;
+      margin-bottom: 15px; }
+    section.invite .box .date {
+      font-size: 1.5em;
+      font-weight: 400;
+      margin-bottom: 30px; }
+      @media all and (max-width: 768px) {
+        section.invite .box .date {
+          font-size: 1em; } }
+    section.invite .box .invite-msg {
+      font-size: 1.5em;
+      line-height: 1.5em;
+      font-weight: 100;
+      margin-bottom: 30px; }
+    section.invite .box .btn {
+      color: #fff;
+      font-size: 1.25em;
       text-decoration: none;
-      border-radius: 9999px;
-      background: rgba(255, 255, 255, 0.2);
-      box-shadow: 0 2px 2px 0 #265e7f; }
+      width: 12em;
+      margin: 1em auto 0;
+      padding: 15px;
+      font-style: italic;
+      display: block;
+      text-transform: uppercase;
+      text-align: center;
+      vertical-align: middle;
+      font-weight: 400; }
+      @media all and (max-width: 480px) {
+        section.invite .box .btn {
+          width: 9em; } }
+    section.invite .box .agenda {
+      font-size: 1em;
+      text-align: center;
+      text-decoration: none;
+      text-emphasis: #11aa58;
+      margin-top: 1em; }
+      section.invite .box .agenda a {
+        color: #516169;
+        text-decoration: none;
+        background: rgba(255, 177, 82, 0.85);
+        box-shadow: 0 2px 2px 0 #265e7f;
+        font-weight: bold; }
 
 section.about .content {
   line-height: 1.9em;
   text-align: justify; }
+  section.about .content h2.main {
+    text-align: center;
+    font-weight: bold; }
   section.about .content blockquote {
     background: #f9f9f9;
     border-left: 10px solid #ccc;
@@ -652,12 +656,11 @@ section.register .mktoForm {
       display: block; }
       section.register .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple .mktoButton {
         background: rgba(17, 121, 170, 0.95);
-        border-radius: 9999px;
         box-shadow: 0 2px 2px 0 #265e7f;
+        font-style: italic;
         border: none;
         width: 100%;
         color: #FFF;
-        font-size: 1.25em;
         margin: 1em auto 0;
         padding: 1em;
         text-transform: uppercase;
@@ -674,7 +677,7 @@ section.register .mktoForm {
       text-transform: none; }
       @media all and (min-width: 560px) {
         section.register .mktoForm .mktoButtonRow .tag {
-          margin-left: 20em; } }
+          margin-left: 15.5em; } }
 
 .register .mktoForm .mktoError .mktoErrorMsg {
   display: block;
