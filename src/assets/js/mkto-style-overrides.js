@@ -5,7 +5,7 @@ MktoForms2.onFormRender(function() {
   $("#mktoForm_3823").removeAttr("style");
   $("#job_title__c").val('Tester');
   $('#Industry').val('Software & Internet');
-  $('.mktoButton').html("Register").parent().after('<span class="tag">*No Charges Applicable</span>');
+  $('.mktoButton').html("Register").parent().after('<p class="tag">*No Charges Applicable.<br/>We recommend you to carry your laptops.</p>');
 });
 
 $(window).resize(function() {
