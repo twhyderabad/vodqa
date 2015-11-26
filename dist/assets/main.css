@@ -610,24 +610,24 @@ section.register .mktoForm {
         section.register .mktoForm .mktoFormRow label.mktoLabel {
           text-align: left;
           width: auto; } }
-    section.register .mktoForm .mktoFormRow input, section.register .mktoForm .mktoFormRow textarea, section.register .mktoForm .mktoFormRow select {
+    section.register .mktoForm .mktoFormRow input[type="text"], section.register .mktoForm .mktoFormRow input[type="email"], section.register .mktoForm .mktoFormRow input[type="tel"], section.register .mktoForm .mktoFormRow textarea, section.register .mktoForm .mktoFormRow select {
       width: 20em;
       margin-left: 0.5em;
       padding: 0.5em 0.5em;
       border: 1px solid rgba(0, 0, 0, 0.2);
       background: #fff; }
-      section.register .mktoForm .mktoFormRow input:focus, section.register .mktoForm .mktoFormRow textarea:focus, section.register .mktoForm .mktoFormRow select:focus {
+      section.register .mktoForm .mktoFormRow input[type="text"]:focus, section.register .mktoForm .mktoFormRow input[type="email"]:focus, section.register .mktoForm .mktoFormRow input[type="tel"]:focus, section.register .mktoForm .mktoFormRow textarea:focus, section.register .mktoForm .mktoFormRow select:focus {
         outline-color: rgba(17, 121, 170, 0.95);
         outline-offset: -2;
         outline-width: 2px; }
       @media all and (max-width: 480px) {
-        section.register .mktoForm .mktoFormRow input, section.register .mktoForm .mktoFormRow textarea, section.register .mktoForm .mktoFormRow select {
+        section.register .mktoForm .mktoFormRow input[type="text"], section.register .mktoForm .mktoFormRow input[type="email"], section.register .mktoForm .mktoFormRow input[type="tel"], section.register .mktoForm .mktoFormRow textarea, section.register .mktoForm .mktoFormRow select {
           height: auto; } }
       @media all and (max-width: 650px) {
-        section.register .mktoForm .mktoFormRow input, section.register .mktoForm .mktoFormRow textarea, section.register .mktoForm .mktoFormRow select {
+        section.register .mktoForm .mktoFormRow input[type="text"], section.register .mktoForm .mktoFormRow input[type="email"], section.register .mktoForm .mktoFormRow input[type="tel"], section.register .mktoForm .mktoFormRow textarea, section.register .mktoForm .mktoFormRow select {
           width: 15em; } }
       @media all and (max-width: 530px) {
-        section.register .mktoForm .mktoFormRow input, section.register .mktoForm .mktoFormRow textarea, section.register .mktoForm .mktoFormRow select {
+        section.register .mktoForm .mktoFormRow input[type="text"], section.register .mktoForm .mktoFormRow input[type="email"], section.register .mktoForm .mktoFormRow input[type="tel"], section.register .mktoForm .mktoFormRow textarea, section.register .mktoForm .mktoFormRow select {
           width: 100%;
           margin-left: 0;
           clear: both; } }
