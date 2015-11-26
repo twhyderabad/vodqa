@@ -57,20 +57,21 @@ section.register
         .mktoButton
           background: $secondary
           box-shadow: 0 2px 2px 0 #265e7f
-          font-style: italic
+          font-weight: 100
+          border-radius: 2px
           border: none
           width: 100%
           color: #FFF
-          //font-size: 1.25em
           margin: 1em auto 0
-          padding: 1em
-          text-transform: uppercase
+          padding: .5em
           text-align: center
           vertical-align: middle
-          font-weight: 400
+          transition: all .2s ease-out
+          &:hover
+            transform: translate(0,-2px)
           @media all and (min-width: 560px)
             margin-left: 15.5em
-            width: 10em
+            width: 8em
       .tag
         font-size: .8em
         font-style: italic

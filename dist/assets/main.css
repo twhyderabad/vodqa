@@ -262,33 +262,25 @@ section.invite {
       font-weight: 100;
       margin-bottom: 30px; }
     section.invite .box .btn {
-      color: #fff;
+      color: #555;
       font-size: 1.25em;
+      font-weight: 100;
       text-decoration: none;
-      width: 12em;
+      width: 8em;
       margin: 1em auto 0;
       padding: 15px;
-      font-style: italic;
       display: block;
-      text-transform: uppercase;
       text-align: center;
       vertical-align: middle;
-      font-weight: 400; }
+      background: rgba(255, 177, 82, 0.85);
+      box-shadow: 0 2px 2px 0 #265e7f;
+      border-radius: 2px;
+      transition: all 0.2s ease-out; }
+      section.invite .box .btn:hover {
+        transform: translate(0, -2px); }
       @media all and (max-width: 480px) {
         section.invite .box .btn {
           width: 9em; } }
-    section.invite .box .agenda {
-      font-size: 1em;
-      text-align: center;
-      text-decoration: none;
-      text-emphasis: #11aa58;
-      margin-top: 1em; }
-      section.invite .box .agenda a {
-        color: #516169;
-        text-decoration: none;
-        background: rgba(255, 177, 82, 0.85);
-        box-shadow: 0 2px 2px 0 #265e7f;
-        font-weight: bold; }
 
 section.about .content {
   line-height: 1.9em;
@@ -657,20 +649,22 @@ section.register .mktoForm {
       section.register .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple .mktoButton {
         background: rgba(17, 121, 170, 0.95);
         box-shadow: 0 2px 2px 0 #265e7f;
-        font-style: italic;
+        font-weight: 100;
+        border-radius: 2px;
         border: none;
         width: 100%;
         color: #FFF;
         margin: 1em auto 0;
-        padding: 1em;
-        text-transform: uppercase;
+        padding: .5em;
         text-align: center;
         vertical-align: middle;
-        font-weight: 400; }
+        transition: all 0.2s ease-out; }
+        section.register .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple .mktoButton:hover {
+          transform: translate(0, -2px); }
         @media all and (min-width: 560px) {
           section.register .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple .mktoButton {
             margin-left: 15.5em;
-            width: 10em; } }
+            width: 8em; } }
     section.register .mktoForm .mktoButtonRow .tag {
       font-size: .8em;
       font-style: italic;
