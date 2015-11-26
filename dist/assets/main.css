@@ -602,7 +602,7 @@ section.register .mktoForm {
         float: none; } }
     section.register .mktoForm .mktoFormRow label.mktoLabel {
       font-weight: normal;
-      width: 15em;
+      width: 16em;
       text-align: right;
       line-height: 2em;
       opacity: 0.75; }
@@ -642,6 +642,12 @@ section.register .mktoForm {
     display: block; }
     section.register .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple {
       display: block; }
+      section.register .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple.actions {
+        text-align: center;
+        width: 20em; }
+        @media all and (min-width: 560px) {
+          section.register .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple.actions {
+            margin-left: 16em; } }
       section.register .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple .mktoButton {
         background: rgba(17, 121, 170, 0.95);
         box-shadow: 0 2px 2px 0 #265e7f;
@@ -659,19 +665,15 @@ section.register .mktoForm {
           transform: translate(0, -2px); }
         @media all and (min-width: 560px) {
           section.register .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple .mktoButton {
-            margin-left: 15.5em;
             width: 8em;
             margin-top: 10px; } }
     section.register .mktoForm .mktoButtonRow .tag {
       font-size: .8em;
       font-style: italic;
       text-transform: none; }
-      @media all and (min-width: 560px) {
-        section.register .mktoForm .mktoButtonRow .tag {
-          margin-left: 19.5em; } }
 
 #customFormQuestionCareerOpportunities {
-  margin-top: 41px; }
+  margin: 10px 0 0 5px; }
 
 .register .mktoForm .mktoError .mktoErrorMsg {
   display: block;
