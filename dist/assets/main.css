@@ -262,9 +262,9 @@ section.invite {
       font-weight: 400;
       margin-bottom: 15px; }
     section.invite .box .btn {
-      color: #555;
+      color: #ECE6E6;
       font-size: 1.25em;
-      font-weight: 100;
+      font-weight: normal;
       text-decoration: none;
       width: 8em;
       margin: 1em auto 0;
@@ -272,7 +272,7 @@ section.invite {
       display: block;
       text-align: center;
       vertical-align: middle;
-      background: rgba(255, 177, 82, 0.85);
+      background: #A8AB2F;
       box-shadow: 0 2px 2px 0 #265e7f;
       border-radius: 2px;
       transition: all 0.2s ease-out; }
