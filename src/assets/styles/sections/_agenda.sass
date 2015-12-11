@@ -1,7 +1,7 @@
 section.agenda
   background: $secondary
   h2
-    color: $grey2
+    color: #ddd
   .track
     .topic
       font-size: 1.5em
@@ -47,7 +47,7 @@ section.agenda
         text-align: right
         width: 200px
         margin-right: 20px
-        color: #B5B935
+        color: $primary
         @media all and (max-width: 768px)
           float: none
           text-align: left
@@ -74,15 +74,15 @@ section.agenda
   .track
     .session
       margin: 0.5em 0 0
-      padding: 1em
+      padding: 0.5em
       box-sizing: border-box
       &.talk
         background: $grey-3
       &.break
         background: url('images/bg.png') #fff
         .border
-          background: #fff;
-          padding: .5em;
+          background: #fff
+          padding: .5em
           &:after
             clear: both
             display: table

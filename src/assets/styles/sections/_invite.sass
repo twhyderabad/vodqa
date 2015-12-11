@@ -1,73 +1,64 @@
 section.invite
   background: url("images/bg.jpg") no-repeat fixed center center
   background-size: cover
-  height: 30em
-  @media all and (max-width: 1024px)
-    background: url("images/bg-tablet.jpg") no-repeat fixed center center
-  @media all and (max-width: 768px)
-    margin-top: 50px
-    background: url("images/bg-mobile.jpg") no-repeat fixed center center
 
 section.invite
+  margin-top: 117px
+  @media(max-width: 480px)
+    margin-top: 50px
   .content
     text-align: center
+    padding: 0
   .box
     background: rgba($primary, 0.95)
-    color: $grey2
     text-align: center
-    width: 25em
+    width: 26em
     float: right
-    margin: 8em 2em
+    margin: 2em
     padding: 2em
+    color: #ddd
     @media all and (max-width: 768px)
       margin: 3em 1em
       width: 20em
     @media all and (max-width: 480px)
       margin: 3em 0em
       width: 14em
-      float: none;
-      display: inline-block;
+      float: none
+      display: inline-block
 
+    h4
+      font-weight: normal
+      margin-bottom: 15px
     .date
-      font-size: 1.5em
-      font-weight: 400
-      margin-top: 1em
-      padding: 1em 0.5em
-      background: rgba(#FFF, 0.2)
+      font-size: 1em
+      font-weight: 100
+      margin-bottom: 30px
       @media all and (max-width: 768px)
         font-size: 1em
     .invite-msg
       font-size: 1.5em
-      font-weight: 100
-      margin-top: 1.5em
-      @media all and (max-width: 480px)
-        height: 1.5em
-        font-size: 1.5em
+      line-height: 1.5em
+      font-weight: 400
+      margin-bottom: 15px
+      //@media all and (max-width: 480px)
+      //  font-size: 1.5em
 
     .btn
-      background: $secondary
-      color: #FFF
+      color: #ECE6E6
       font-size: 1.25em
+      font-weight: normal
       text-decoration: none
-      width: 12em
+      width: 8em
       margin: 1em auto 0
-      padding: 1em
+      padding: 15px
       display: block
-      text-transform: uppercase
       text-align: center
       vertical-align: middle
-      font-weight: 400
+      background: #A8AB2F
+      box-shadow: 0 2px 2px 0 #265e7f
+      border-radius: 2px
+      transition: all .2s ease-out
+      &:hover
+        transform: translate(0,-2px)
       @media all and (max-width: 480px)
         width: 9em
-
-    .agenda
-      font-size: 1em
-      text-align: center
-      text-decoration: none
-      text-emphasis: #11aa58
-      font-style: italic
-      margin-top: .5em;
-      a
-        color: $grey2;
-        text-decoration: underline;
-
