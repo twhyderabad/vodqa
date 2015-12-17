@@ -281,6 +281,11 @@ section.invite {
       @media all and (max-width: 480px) {
         section.invite .box .btn {
           width: 9em; } }
+  section.invite .agenda p {
+    font-style: italic; }
+    section.invite .agenda p a {
+      color: #fff;
+      text-decoration: underline; }
 
 section.about .content {
   line-height: 1.9em;
