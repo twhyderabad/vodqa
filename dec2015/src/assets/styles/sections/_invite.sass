@@ -1,0 +1,69 @@
+section.invite
+  background: url("images/bg.jpg") no-repeat fixed center center
+  background-size: cover
+
+section.invite
+  margin-top: 117px
+  @media(max-width: 480px)
+    margin-top: 50px
+  .content
+    text-align: center
+    padding: 0
+  .box
+    background: rgba($primary, 0.95)
+    text-align: center
+    width: 26em
+    float: right
+    margin: 2em
+    padding: 2em
+    color: #ddd
+    @media all and (max-width: 768px)
+      margin: 3em 1em
+      width: 20em
+    @media all and (max-width: 480px)
+      margin: 3em 0em
+      width: 14em
+      float: none
+      display: inline-block
+
+    h4
+      font-weight: normal
+      margin-bottom: 15px
+    .date
+      font-size: 1em
+      font-weight: 100
+      margin-bottom: 30px
+      @media all and (max-width: 768px)
+        font-size: 1em
+    .invite-msg
+      font-size: 1.5em
+      line-height: 1.5em
+      font-weight: 400
+      margin-bottom: 15px
+      //@media all and (max-width: 480px)
+      //  font-size: 1.5em
+
+    .btn
+      color: #ECE6E6
+      font-size: 1.25em
+      font-weight: normal
+      text-decoration: none
+      width: 8em
+      margin: 1em auto 0
+      padding: 15px
+      display: block
+      text-align: center
+      vertical-align: middle
+      background: #A8AB2F
+      box-shadow: 0 2px 2px 0 #265e7f
+      border-radius: 2px
+      transition: all .2s ease-out
+      &:hover
+        transform: translate(0,-2px)
+      @media all and (max-width: 480px)
+        width: 9em
+  .agenda p
+    font-style: italic
+    a
+      color: #fff
+      text-decoration: underline

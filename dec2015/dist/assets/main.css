@@ -1,0 +1,704 @@
+@charset "UTF-8";
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+body {
+  color: #666;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 150%;
+  overflow-x: hidden; }
+  body > section {
+    padding: 1em;
+    overflow: hidden; }
+    body > section > h2 {
+      margin: 1em auto 0.5em; }
+      @media all and (min-width: 1024px) {
+        body > section > h2 {
+          width: 1024px; } }
+    body > section > .content {
+      margin: 0 auto;
+      padding: 0 .5em 1em 0;
+      clear: both; }
+      @media all and (min-width: 1024px) {
+        body > section > .content {
+          width: 1024px;
+          padding: 0.25em; } }
+
+sup {
+  vertical-align: super;
+  font-size: .7em; }
+
+h2 {
+  font-size: 2em;
+  margin: 1em 0 .5em;
+  font-weight: 100;
+  line-height: 1.25em; }
+
+a {
+  color: rgba(17, 121, 170, 0.95);
+  text-decoration: none; }
+
+.navigator {
+  box-sizing: border-box;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: white;
+  z-index: 10000; }
+  .navigator .register {
+    background-color: #11AA58;
+    padding: 10px;
+    color: #fff; }
+  .navigator .navigation-toggle {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: .5em;
+    margin: 9px 1em;
+    border-radius: 4px;
+    background: transparent;
+    border: rgba(17, 121, 170, 0.95) solid 2px; }
+    .navigator .navigation-toggle hr {
+      height: 2px;
+      margin: 3px 0;
+      width: 15px;
+      background: rgba(17, 121, 170, 0.95);
+      border: 0; }
+    @media all and (max-width: 768px) {
+      .navigator .navigation-toggle {
+        display: inline-block; } }
+  @media all and (max-width: 768px) {
+    .navigator {
+      padding: 0; }
+      .navigator .content {
+        margin: 0;
+        padding: 0; } }
+  .navigator .logo {
+    float: left;
+    width: 30%;
+    line-height: 0; }
+    @media all and (max-width: 768px) {
+      .navigator .logo {
+        float: none;
+        margin: 0 auto;
+        text-align: center; } }
+    .navigator .logo img {
+      max-width: 10em; }
+      @media all and (max-width: 768px) {
+        .navigator .logo img {
+          height: 50px; } }
+  .navigator ul {
+    float: right;
+    text-align: right;
+    list-style: none;
+    margin-top: 1.5em; }
+    @media all and (max-width: 768px) {
+      .navigator ul {
+        display: none;
+        margin-top: 0;
+        float: none; } }
+    .navigator ul li {
+      display: inline-block;
+      font-size: 1.2em;
+      font-weight: 300;
+      padding: 0.3em; }
+      .navigator ul li a {
+        text-decoration: none;
+        color: rgba(17, 121, 170, 0.95);
+        padding: .15em .5em; }
+      .navigator ul li a.current {
+        border-bottom: 2px #CCC solid; }
+        @media all and (max-width: 768px) {
+          .navigator ul li a.current {
+            border-bottom: 0; } }
+      @media all and (max-width: 768px) {
+        .navigator ul li {
+          display: block;
+          text-align: center;
+          width: 100%;
+          background-color: #eee;
+          border-bottom: #ccc solid 1px; } }
+
+section.header {
+  text-align: left;
+  color: #333;
+  padding: .5em; }
+  @media all and (max-width: 1024px) {
+    section.header {
+      padding: 1em 2em 0; } }
+  section.header .logo {
+    float: left;
+    margin: 0.5 0; }
+    @media all and (max-width: 768px) {
+      section.header .logo {
+        float: none;
+        margin: 0.5 auto;
+        display: block;
+        text-align: center; } }
+    section.header .logo img {
+      max-width: 10em; }
+  section.header .caption {
+    float: right;
+    color: #999;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    line-height: 3em; }
+    @media all and (max-width: 768px) {
+      section.header .caption {
+        clear: both;
+        float: none;
+        text-align: center;
+        display: block;
+        line-height: 1.25em; } }
+
+section.invite {
+  background: url("images/bg.jpg") no-repeat fixed center center;
+  background-size: cover; }
+
+section.invite {
+  margin-top: 117px; }
+  @media (max-width: 480px) {
+    section.invite {
+      margin-top: 50px; } }
+  section.invite .content {
+    text-align: center;
+    padding: 0; }
+  section.invite .box {
+    background: rgba(17, 121, 170, 0.95);
+    text-align: center;
+    width: 26em;
+    float: right;
+    margin: 2em;
+    padding: 2em;
+    color: #ddd; }
+    @media all and (max-width: 768px) {
+      section.invite .box {
+        margin: 3em 1em;
+        width: 20em; } }
+    @media all and (max-width: 480px) {
+      section.invite .box {
+        margin: 3em 0em;
+        width: 14em;
+        float: none;
+        display: inline-block; } }
+    section.invite .box h4 {
+      font-weight: normal;
+      margin-bottom: 15px; }
+    section.invite .box .date {
+      font-size: 1em;
+      font-weight: 100;
+      margin-bottom: 30px; }
+      @media all and (max-width: 768px) {
+        section.invite .box .date {
+          font-size: 1em; } }
+    section.invite .box .invite-msg {
+      font-size: 1.5em;
+      line-height: 1.5em;
+      font-weight: 400;
+      margin-bottom: 15px; }
+    section.invite .box .btn {
+      color: #ECE6E6;
+      font-size: 1.25em;
+      font-weight: normal;
+      text-decoration: none;
+      width: 8em;
+      margin: 1em auto 0;
+      padding: 15px;
+      display: block;
+      text-align: center;
+      vertical-align: middle;
+      background: #A8AB2F;
+      box-shadow: 0 2px 2px 0 #265e7f;
+      border-radius: 2px;
+      transition: all .2s ease-out; }
+      section.invite .box .btn:hover {
+        transform: translate(0, -2px); }
+      @media all and (max-width: 480px) {
+        section.invite .box .btn {
+          width: 9em; } }
+  section.invite .agenda p {
+    font-style: italic; }
+    section.invite .agenda p a {
+      color: #fff;
+      text-decoration: underline; }
+
+section.about .content {
+  line-height: 1.9em;
+  text-align: justify; }
+  section.about .content h2.main {
+    text-align: center;
+    font-weight: bold; }
+  section.about .content blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1em 0.5em 0.5em 0;
+    padding: 0.5em 1em;
+    quotes: "“" "”" "‘" "’";
+    float: left;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 100;
+    line-height: 4em; }
+    @media all and (max-width: 768px) {
+      section.about .content blockquote {
+        line-height: 1.5em;
+        font-size: 1.25em;
+        text-align: left;
+        float: none; } }
+  section.about .content blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    font-family: Georgia, serif;
+    vertical-align: -0.4em; }
+    @media all and (max-width: 768px) {
+      section.about .content blockquote:before {
+        margin-right: 0.1em;
+        font-size: 3em; } }
+  section.about .content blockquote + p {
+    margin: 1em 0 0;
+    float: left; }
+    @media all and (min-width: 768px) {
+      section.about .content blockquote + p {
+        float: none; } }
+  section.about .content .themeTagLine {
+    font-style: italic;
+    font-weight: 200;
+    font-size: 22px;
+    padding: 10px; }
+
+section.agenda {
+  background: rgba(17, 121, 170, 0.95); }
+  section.agenda h2 {
+    color: #ddd; }
+  section.agenda .track .topic {
+    font-size: 1.5em;
+    font-weight: 200; }
+  section.agenda .track .speaker {
+    font-size: 1em;
+    font-style: italic;
+    line-height: 2.5em; }
+
+.tracks {
+  overflow: hidden;
+  width: 100%; }
+  .tracks .track {
+    float: left; }
+  .tracks.tracks-1 .track {
+    width: 100%; }
+  .tracks.tracks-2 .track {
+    width: 46%;
+    margin-right: 2%; }
+
+section.agenda a.link {
+  display: inline-block;
+  margin-left: 20px; }
+  section.agenda a.link img {
+    width: 1em;
+    margin-right: .3em; }
+
+section.agenda .track .session .track-title {
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 10px; }
+
+section.agenda .track .session .time {
+  float: left;
+  text-align: right;
+  width: 200px;
+  margin-right: 20px;
+  color: rgba(17, 121, 170, 0.95); }
+  @media all and (max-width: 768px) {
+    section.agenda .track .session .time {
+      float: none;
+      text-align: left;
+      font-size: .8em; } }
+  @media all and (min-width: 768px) {
+    section.agenda .track .session .time.time-track {
+      margin-top: 2em; } }
+
+@media all and (min-width: 768px) {
+  section.agenda .track .session .details {
+    float: left; } }
+
+@media all and (min-width: 768px) {
+  section.agenda .track .session .details.details-half:last-child {
+    padding-left: 20px;
+    border-left: dotted 2px #B5B933;
+    margin-left: 20px; } }
+
+section.agenda .track .session:after {
+  clear: both;
+  display: table;
+  content: ""; }
+
+section.agenda .track .session {
+  margin: 0.5em 0 0;
+  padding: 0.5em;
+  box-sizing: border-box; }
+  section.agenda .track .session.talk {
+    background: #F6F6F6; }
+  section.agenda .track .session.break {
+    background: url("images/bg.png") #fff; }
+    section.agenda .track .session.break .border {
+      background: #fff;
+      padding: .5em; }
+      section.agenda .track .session.break .border:after {
+        clear: both;
+        display: table;
+        content: ""; }
+
+section.agenda .duration-5m {
+  height: 20px;
+  max-height: auto; }
+
+section.agenda .duration-10m {
+  height: 40px;
+  max-height: auto; }
+
+section.agenda .duration-15m {
+  height: 60px;
+  max-height: auto; }
+
+section.agenda .duration-20m {
+  height: 80px;
+  max-height: auto; }
+
+section.agenda .duration-25m {
+  height: 100px;
+  max-height: auto; }
+
+section.agenda .duration-30m {
+  height: 120px;
+  max-height: auto; }
+
+section.agenda .duration-35m {
+  height: 140px;
+  max-height: auto; }
+
+section.agenda .duration-40m {
+  height: 160px;
+  max-height: auto; }
+
+section.agenda .duration-45m {
+  height: 180px;
+  max-height: auto; }
+
+section.agenda .duration-50m {
+  height: 200px;
+  max-height: auto; }
+
+section.agenda .duration-55m {
+  height: 220px;
+  max-height: auto; }
+
+section.agenda .duration-60m {
+  height: 240px;
+  max-height: auto; }
+
+section.agenda .duration-65m {
+  height: 260px;
+  max-height: auto; }
+
+section.agenda .duration-70m {
+  height: 280px;
+  max-height: auto; }
+
+section.agenda .duration-75m {
+  height: 300px;
+  max-height: auto; }
+
+section.agenda .duration-80m {
+  height: 320px;
+  max-height: auto; }
+
+section.agenda .duration-85m {
+  height: 340px;
+  max-height: auto; }
+
+section.agenda .duration-90m {
+  height: 360px;
+  max-height: auto; }
+
+section.agenda .duration-95m {
+  height: 380px;
+  max-height: auto; }
+
+section.agenda .duration-100m {
+  height: 400px;
+  max-height: auto; }
+
+section.agenda .duration-105m {
+  height: 420px;
+  max-height: auto; }
+
+section.agenda .duration-110m {
+  height: 440px;
+  max-height: auto; }
+
+section.agenda .duration-115m {
+  height: 460px;
+  max-height: auto; }
+
+section.speakers {
+  background: rgba(17, 121, 170, 0.95);
+  color: #ddd; }
+
+.speaker-block {
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  width: 33%;
+  padding: 15px; }
+  .speaker-block:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media all and (max-width: 768px) {
+    .speaker-block {
+      padding: 0;
+      text-align: left;
+      width: 100%;
+      float: none;
+      margin: 1em 0; }
+      .speaker-block .details {
+        padding: 25px 15px;
+        box-sizing: border-box;
+        float: left;
+        width: 75%; } }
+  .speaker-block h3 {
+    margin-bottom: 10px; }
+  .speaker-block .speaker-img img {
+    width: 100px;
+    height: 100px;
+    border: #ccc solid 1px;
+    border-radius: 50%; }
+  @media all and (max-width: 768px) {
+    .speaker-block .speaker-img {
+      float: left;
+      width: 25%; }
+      .speaker-block .speaker-img img {
+        width: 75px;
+        height: 75px; } }
+
+section.contact {
+  background: #F6F6F6; }
+  section.contact .content {
+    max-width: 100%; }
+    section.contact .content h3 {
+      color: #999;
+      font-size: .75em; }
+    section.contact .content .details {
+      color: #333;
+      width: 50%;
+      float: left;
+      padding: 0 30px 20px 0; }
+      @media all and (max-width: 768px) {
+        section.contact .content .details {
+          width: 100%; } }
+    section.contact .content .map iframe {
+      border-top: 50px solid #ffffff;
+      border-bottom: 50px solid #ffffff;
+      height: 250px;
+      width: 40%;
+      float: right;
+      border: 3px solid #FFF; }
+      @media (max-width: 768px) {
+        section.contact .content .map iframe {
+          width: 100%;
+          margin-top: 20px; } }
+
+section.register {
+  background: #fff;
+  color: #333;
+  padding-bottom: 0; }
+  section.register .content {
+    padding-bottom: 0; }
+  section.register .notifications {
+    font-style: italic;
+    font-weight: 100; }
+  section.register .social {
+    padding-left: 2em;
+    padding-top: 10px; }
+    @media (min-width: 560px) {
+      section.register .social {
+        padding-left: 16.5em; } }
+    section.register .social img {
+      margin: 10px; }
+
+section.register .mktoForm {
+  width: auto !important;
+  margin: 2em 0 1em 0;
+  background: #e3edf1;
+  padding: 1em;
+  z-index: 0; }
+  section.register .mktoForm .mktoFormRow {
+    margin-top: .5em; }
+    section.register .mktoForm .mktoFormRow:nth-child(5) {
+      margin-top: 2em; }
+    @media all and (max-width: 530px) {
+      section.register .mktoForm .mktoFormRow .mktoFormCol, section.register .mktoForm .mktoFormRow .mktoFieldWrap {
+        float: none; } }
+    section.register .mktoForm .mktoFormRow label.mktoLabel {
+      font-weight: normal;
+      width: 16em;
+      text-align: right;
+      line-height: 2em;
+      opacity: 0.75; }
+      @media all and (max-width: 530px) {
+        section.register .mktoForm .mktoFormRow label.mktoLabel {
+          text-align: left;
+          width: auto; } }
+    section.register .mktoForm .mktoFormRow input[type="text"], section.register .mktoForm .mktoFormRow input[type="email"], section.register .mktoForm .mktoFormRow input[type="tel"], section.register .mktoForm .mktoFormRow textarea, section.register .mktoForm .mktoFormRow select {
+      width: 20em;
+      margin-left: 0.5em;
+      padding: .5em .5em;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      background: #fff; }
+      section.register .mktoForm .mktoFormRow input[type="text"]:focus, section.register .mktoForm .mktoFormRow input[type="email"]:focus, section.register .mktoForm .mktoFormRow input[type="tel"]:focus, section.register .mktoForm .mktoFormRow textarea:focus, section.register .mktoForm .mktoFormRow select:focus {
+        outline-color: rgba(17, 121, 170, 0.95);
+        outline-offset: -2;
+        outline-width: 2px; }
+      @media all and (max-width: 480px) {
+        section.register .mktoForm .mktoFormRow input[type="text"], section.register .mktoForm .mktoFormRow input[type="email"], section.register .mktoForm .mktoFormRow input[type="tel"], section.register .mktoForm .mktoFormRow textarea, section.register .mktoForm .mktoFormRow select {
+          height: auto; } }
+      @media all and (max-width: 650px) {
+        section.register .mktoForm .mktoFormRow input[type="text"], section.register .mktoForm .mktoFormRow input[type="email"], section.register .mktoForm .mktoFormRow input[type="tel"], section.register .mktoForm .mktoFormRow textarea, section.register .mktoForm .mktoFormRow select {
+          width: 15em; } }
+      @media all and (max-width: 530px) {
+        section.register .mktoForm .mktoFormRow input[type="text"], section.register .mktoForm .mktoFormRow input[type="email"], section.register .mktoForm .mktoFormRow input[type="tel"], section.register .mktoForm .mktoFormRow textarea, section.register .mktoForm .mktoFormRow select {
+          width: 100%;
+          margin-left: 0;
+          clear: both; } }
+    section.register .mktoForm .mktoFormRow select {
+      padding: .65em .5em;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border-radius: 0;
+      background: url(images/downarrow.png) no-repeat center right #FFF; }
+  section.register .mktoForm .mktoButtonRow {
+    display: block; }
+    section.register .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple {
+      display: block; }
+      section.register .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple.actions {
+        text-align: center;
+        width: 20em; }
+        @media all and (min-width: 560px) {
+          section.register .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple.actions {
+            margin-left: 16em; } }
+      section.register .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple .mktoButton {
+        background: rgba(17, 121, 170, 0.95);
+        box-shadow: 0 2px 2px 0 #265e7f;
+        font-weight: 100;
+        border-radius: 2px;
+        border: none;
+        width: 100%;
+        color: #FFF;
+        margin: 1em auto 0;
+        padding: .5em;
+        text-align: center;
+        vertical-align: middle;
+        transition: all .2s ease-out; }
+        section.register .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple .mktoButton:hover {
+          transform: translate(0, -2px); }
+        @media all and (min-width: 560px) {
+          section.register .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple .mktoButton {
+            width: 8em;
+            margin-top: 10px; } }
+    section.register .mktoForm .mktoButtonRow .tag {
+      font-size: .8em;
+      font-style: italic;
+      text-transform: none; }
+
+#customFormQuestionCareerOpportunities {
+  margin: 10px 0 0 5px; }
+
+.register .mktoForm .mktoError .mktoErrorMsg {
+  display: block;
+  margin-top: 7px;
+  background-color: #e51b00;
+  background-image: -webkit-linear-gradient(#e51b00 43%, #ba1600 100%);
+  background-image: -moz-linear-gradient(#e51b00 43%, #ba1600 100%);
+  background-image: linear-gradient(#e51b00 43%, #ba1600 100%);
+  background-image: -ms-linear-gradient(#e51b00 43%, #ba1600 100%);
+  border: 1px solid #9f1300;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 2px 2px, inset #ff3c3c 0 1px 0px;
+  box-shadow: rgba(0, 0, 0, 0.65) 0 2px 7px, inset #ff3c3c 0 1px 0px;
+  color: #f3f3f3;
+  font-size: 1em;
+  line-height: 1.2em;
+  max-width: 16em;
+  padding: 0.4em 0.6em;
+  text-shadow: #901100 0 -1px 0; }
+
+section.footer p {
+  text-align: right; }
