@@ -236,7 +236,7 @@ section.invite {
     text-align: center;
     float: right;
     margin: 3em 2em;
-    padding: 2em;
+    padding: 4em;
     color: #FFF; }
     @media all and (max-width: 768px) {
       section.invite .box {
@@ -245,26 +245,36 @@ section.invite {
     @media all and (max-width: 480px) {
       section.invite .box {
         margin: 3em 0;
-        width: 14em;
+        width: auto;
         float: none;
+        padding: 1em;
         display: inline-block; } }
     section.invite .box .tw-logo {
       width: 450px; }
       @media all and (max-width: 480px) {
         section.invite .box .tw-logo {
           width: 100%; } }
+    section.invite .box h4.tw-name {
+      font-weight: 100;
+    }
     section.invite .box h3.event-name, section.invite .box h3.present-talk-text {
       font-size: 2em;
-      font-weight: 100;
+      font-weight: 400;
       padding: 20px; }
       @media all and (max-width: 480px) {
         section.invite .box h3.event-name, section.invite .box h3.present-talk-text {
           font-size: 1.3em;
           padding: 15px 10px; } }
-    section.invite .box .date {
-      font-size: 1em;
+    section.invite .box h4.event-theme {
+      font-style: italic;
       font-weight: 100;
-      margin-bottom: 30px; }
+    }
+
+    section.invite .box .date {
+      font-size: 1.2em;
+      font-weight: 100;
+      margin-bottom: 30px;
+      margin-top: 15px; }
       @media all and (max-width: 768px) {
         section.invite .box .date {
           font-size: 1em; } }
@@ -277,10 +287,9 @@ section.invite {
       text-align: center;
       color: #FFF;
       font-size: 2em;
-      text-transform: uppercase;
+      /*text-transform: uppercase;*/
       background: #19AB58;
-      padding: 17px 80px;
-      margin-top: 0.5em;
+      padding: 17px 30px;
       display: inline-block;
       font-weight: 100; }
       @media all and (max-width: 480px) {
@@ -294,7 +303,7 @@ section.invite {
       text-decoration: underline; }
 
 section.about .content {
-  line-height: 1.9em;
+  line-height: 1.7em;
   text-align: justify; }
   section.about .content h2.main {
     text-align: center;
@@ -340,6 +349,16 @@ section.about .content {
     line-height: 1.4em;
     font-weight: 400; }
 
+  section.present-form iframe{
+    width: 100%;
+    height: 1600px;
+  }
+  @media all and (max-width: 768px) {
+    section.present-form iframe{
+      width: 100%;
+      height:1900px
+    }
+}
 section.agenda {
   background: rgba(17, 121, 170, 0.95); }
   section.agenda h2 {
