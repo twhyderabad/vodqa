@@ -1,34 +1,46 @@
 section.invite
-  background: url("images/bg.jpg") no-repeat fixed center center
+  background: url("images/bg_new.jpg") no-repeat fixed center 60px
   background-size: cover
+  @media all and (max-width: 480px)
+    background-position-y: 47px
 
 section.invite
-  margin-top: 117px
+  margin-top: 115px
   @media(max-width: 480px)
     margin-top: 50px
   .content
     text-align: center
     padding: 0
   .box
-    background: rgba($primary, 0.95)
+    background: rgba($grey3, 0.67)
     text-align: center
-    width: 26em
     float: right
-    margin: 2em
+    margin: 3em 2em
     padding: 2em
-    color: #ddd
+    color: $secondary
     @media all and (max-width: 768px)
       margin: 3em 1em
       width: 20em
     @media all and (max-width: 480px)
-      margin: 3em 0em
+      margin: 3em 0
       width: 14em
       float: none
       display: inline-block
 
-    h4
-      font-weight: normal
-      margin-bottom: 15px
+    .tw-logo
+      width: 450px
+      @media all and (max-width: 480px)
+        width: 100%
+
+    h3
+      &.event-name, &.present-talk-text
+        font-size: 2em
+        font-weight: 100
+        padding: 20px
+        @media all and (max-width: 480px)
+          font-size: 1.3em
+          padding: 15px 10px
+
     .date
       font-size: 1em
       font-weight: 100
@@ -44,24 +56,18 @@ section.invite
       //  font-size: 1.5em
 
     .btn
-      color: #ECE6E6
-      font-size: 1.25em
-      font-weight: normal
-      text-decoration: none
-      width: 8em
-      margin: 1em auto 0
-      padding: 15px
-      display: block
       text-align: center
-      vertical-align: middle
-      background: #A8AB2F
-      box-shadow: 0 2px 2px 0 #265e7f
-      border-radius: 2px
-      transition: all .2s ease-out
-      &:hover
-        transform: translate(0,-2px)
+      color: $secondary
+      font-size: 2em
+      text-transform: uppercase
+      background: $btn-primary-background
+      padding: 17px 80px
+      margin-top: 0.5em
+      display: inline-block
+      font-weight: 100
       @media all and (max-width: 480px)
-        width: 9em
+        font-size: 1.3em
+        padding: 10px 45px
   .agenda p
     font-style: italic
     a

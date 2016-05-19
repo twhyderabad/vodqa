@@ -217,11 +217,14 @@ section.header {
         line-height: 1.25em; } }
 
 section.invite {
-  background: url("images/bg.jpg") no-repeat fixed center center;
+  background: url("images/bg_new.jpg") no-repeat fixed center 60px;
   background-size: cover; }
+  @media all and (max-width: 480px) {
+    section.invite {
+      background-position-y: 47px; } }
 
 section.invite {
-  margin-top: 117px; }
+  margin-top: 115px; }
   @media (max-width: 480px) {
     section.invite {
       margin-top: 50px; } }
@@ -229,26 +232,35 @@ section.invite {
     text-align: center;
     padding: 0; }
   section.invite .box {
-    background: rgba(17, 121, 170, 0.95);
+    background: rgba(34, 34, 34, 0.67);
     text-align: center;
-    width: 26em;
     float: right;
-    margin: 2em;
+    margin: 3em 2em;
     padding: 2em;
-    color: #ddd; }
+    color: #FFF; }
     @media all and (max-width: 768px) {
       section.invite .box {
         margin: 3em 1em;
         width: 20em; } }
     @media all and (max-width: 480px) {
       section.invite .box {
-        margin: 3em 0em;
+        margin: 3em 0;
         width: 14em;
         float: none;
         display: inline-block; } }
-    section.invite .box h4 {
-      font-weight: normal;
-      margin-bottom: 15px; }
+    section.invite .box .tw-logo {
+      width: 450px; }
+      @media all and (max-width: 480px) {
+        section.invite .box .tw-logo {
+          width: 100%; } }
+    section.invite .box h3.event-name, section.invite .box h3.present-talk-text {
+      font-size: 2em;
+      font-weight: 100;
+      padding: 20px; }
+      @media all and (max-width: 480px) {
+        section.invite .box h3.event-name, section.invite .box h3.present-talk-text {
+          font-size: 1.3em;
+          padding: 15px 10px; } }
     section.invite .box .date {
       font-size: 1em;
       font-weight: 100;
@@ -262,25 +274,19 @@ section.invite {
       font-weight: 400;
       margin-bottom: 15px; }
     section.invite .box .btn {
-      color: #ECE6E6;
-      font-size: 1.25em;
-      font-weight: normal;
-      text-decoration: none;
-      width: 8em;
-      margin: 1em auto 0;
-      padding: 15px;
-      display: block;
       text-align: center;
-      vertical-align: middle;
-      background: #A8AB2F;
-      box-shadow: 0 2px 2px 0 #265e7f;
-      border-radius: 2px;
-      transition: all .2s ease-out; }
-      section.invite .box .btn:hover {
-        transform: translate(0, -2px); }
+      color: #FFF;
+      font-size: 2em;
+      text-transform: uppercase;
+      background: #19AB58;
+      padding: 17px 80px;
+      margin-top: 0.5em;
+      display: inline-block;
+      font-weight: 100; }
       @media all and (max-width: 480px) {
         section.invite .box .btn {
-          width: 9em; } }
+          font-size: 1.3em;
+          padding: 10px 45px; } }
   section.invite .agenda p {
     font-style: italic; }
     section.invite .agenda p a {
@@ -327,11 +333,12 @@ section.about .content {
     @media all and (min-width: 768px) {
       section.about .content blockquote + p {
         float: none; } }
-  section.about .content .themeTagLine {
-    font-style: italic;
-    font-weight: 200;
-    font-size: 22px;
-    padding: 10px; }
+  section.about .content .event-theme-tagline {
+    font-size: 1.8em;
+    margin: 1em;
+    text-align: center;
+    line-height: 1.4em;
+    font-weight: 100; }
 
 section.agenda {
   background: rgba(17, 121, 170, 0.95); }
@@ -507,8 +514,7 @@ section.agenda .duration-115m {
   max-height: auto; }
 
 section.speakers {
-  background: rgba(17, 121, 170, 0.95);
-  color: #ddd; }
+  background: #F6F6F6; }
 
 .speaker-block {
   box-sizing: border-box;
@@ -558,15 +564,15 @@ section.contact {
       color: #333;
       width: 50%;
       float: left;
-      padding: 0 30px 20px 0; }
+      padding: 0 30px 20px 0;
+      box-sizing: border-box; }
       @media all and (max-width: 768px) {
         section.contact .content .details {
           width: 100%; } }
     section.contact .content .map iframe {
-      border-top: 50px solid #ffffff;
-      border-bottom: 50px solid #ffffff;
-      height: 250px;
-      width: 40%;
+      height: 380px;
+      width: 50%;
+      box-sizing: border-box;
       float: right;
       border: 3px solid #FFF; }
       @media (max-width: 768px) {
@@ -699,6 +705,50 @@ section.register .mktoForm {
   max-width: 16em;
   padding: 0.4em 0.6em;
   text-shadow: #901100 0 -1px 0; }
+
+#editions {
+  padding-bottom: 3em; }
+  #editions .editions {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+    #editions .editions li {
+      display: inline-block;
+      width: 7.8em; }
+  #editions .editions a {
+    display: block;
+    overflow: hidden;
+    padding: .25em;
+    background-color: #b3b3b3;
+    border-radius: .5em; }
+    #editions .editions a:hover, #editions .editions a.active {
+      background-color: rgba(17, 121, 170, 0.95); }
+    #editions .editions a .month {
+      color: #FFF;
+      line-height: 1.5em;
+      margin: 0;
+      font-size: 2em;
+      font-weight: 400; }
+      #editions .editions a .month:before, #editions .editions a .month:after {
+        content: '\2022';
+        display: inline-block; }
+      #editions .editions a .month:before {
+        float: left; }
+      #editions .editions a .month:after {
+        float: right; }
+    #editions .editions a .day {
+      background-color: #FFF;
+      margin: 0;
+      line-height: 1.25em;
+      color: black;
+      font-size: 2.5em;
+      padding: 5px 0px; }
+    #editions .editions a .year {
+      background-color: #FFF;
+      border-top: 1px dashed #b3b3b3;
+      line-height: 2em;
+      border-radius: 0 0 .25em .25em; }
 
 section.footer p {
   text-align: right; }
