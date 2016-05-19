@@ -266,7 +266,7 @@ section.invite {
           font-size: 1.3em;
           padding: 15px 10px; } }
     section.invite .box h4.event-theme {
-      font-style: italic;
+      /*font-style: italic;*/
       font-weight: 100;
     }
 
@@ -768,6 +768,7 @@ section.register .mktoForm {
       border-top: 1px dashed #b3b3b3;
       line-height: 2em;
       border-radius: 0 0 .25em .25em; }
+
 
 section.footer p {
   text-align: right; }
