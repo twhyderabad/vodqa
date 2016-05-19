@@ -334,11 +334,11 @@ section.about .content {
       section.about .content blockquote + p {
         float: none; } }
   section.about .content .event-theme-tagline {
-    font-size: 1.8em;
+    font-size: 1.6em;
     margin: 1em;
     text-align: center;
     line-height: 1.4em;
-    font-weight: 100; }
+    font-weight: 400; }
 
 section.agenda {
   background: rgba(17, 121, 170, 0.95); }
