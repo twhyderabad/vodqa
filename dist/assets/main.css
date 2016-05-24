@@ -287,13 +287,16 @@ section.invite {
       color: #fff;
       text-decoration: underline; }
 
-section.about .content {
+section.about .content,
+section.theme .content {
   line-height: 1.9em;
   text-align: justify; }
-  section.about .content h2.main {
+  section.about .content h2.main,
+  section.theme .content h2.main {
     text-align: center;
     font-weight: bold; }
-  section.about .content blockquote {
+  section.about .content blockquote,
+  section.theme .content blockquote {
     background: #f9f9f9;
     border-left: 10px solid #ccc;
     margin: 1em 0.5em 0.5em 0;
@@ -305,12 +308,14 @@ section.about .content {
     font-weight: 100;
     line-height: 4em; }
     @media all and (max-width: 768px) {
-      section.about .content blockquote {
+      section.about .content blockquote,
+      section.theme .content blockquote {
         line-height: 1.5em;
         font-size: 1.25em;
         text-align: left;
         float: none; } }
-  section.about .content blockquote:before {
+  section.about .content blockquote:before,
+  section.theme .content blockquote:before {
     color: #ccc;
     content: open-quote;
     font-size: 4em;
@@ -318,16 +323,20 @@ section.about .content {
     font-family: Georgia, serif;
     vertical-align: -0.4em; }
     @media all and (max-width: 768px) {
-      section.about .content blockquote:before {
+      section.about .content blockquote:before,
+      section.theme .content blockquote:before {
         margin-right: 0.1em;
         font-size: 3em; } }
-  section.about .content blockquote + p {
+  section.about .content blockquote + p,
+  section.theme .content blockquote + p {
     margin: 1em 0 0;
     float: left; }
     @media all and (min-width: 768px) {
-      section.about .content blockquote + p {
+      section.about .content blockquote + p,
+      section.theme .content blockquote + p {
         float: none; } }
-  section.about .content .event-theme-tagline {
+  section.about .content .event-theme-tagline,
+  section.theme .content .event-theme-tagline {
     font-size: 1.8em;
     margin: 1em;
     text-align: center;
