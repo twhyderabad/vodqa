@@ -401,7 +401,7 @@ section.agenda .track .session .time {
   section.agenda .track .session .details.details-half:last-child {
     padding-left: 20px;
     border-left: dotted 2px #B5B933;
-    margin-left: 20px; } }
+    margin-left: 201px; } }
 
 section.agenda .track .session:after {
   clear: both;
