@@ -525,7 +525,7 @@ section.speakers {
   box-sizing: border-box;
   float: left;
   text-align: center;
-  width: 33%;
+  width: 25%;
   padding: 15px; }
   .speaker-block:after {
     content: "";
