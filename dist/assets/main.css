@@ -217,7 +217,7 @@ section.header {
         line-height: 1.25em; } }
 
 section.invite {
-  background: url("images/bg_new.jpg") no-repeat fixed center 50px;
+  background: url("images/bg_new.jpg") no-repeat fixed center -250px;
   background-size: cover; }
   @media all and (max-width: 480px) {
     section.invite {
@@ -227,12 +227,13 @@ section.invite {
   margin-top: 115px; }
   @media (max-width: 480px) {
     section.invite {
-      margin-top: 50px; } }
+      margin-top: 50px;
+      background-position-y: -270px; } }
   section.invite .content {
     text-align: center;
     padding: 0; }
   section.invite .box {
-    background: rgba(34, 34, 34, 0.67);
+    background: rgba(34, 34, 34, 0.75);
     text-align: center;
     float: right;
     margin: 3em 2em;
