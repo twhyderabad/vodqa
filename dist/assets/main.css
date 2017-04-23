@@ -217,7 +217,7 @@ section.header {
         line-height: 1.25em; } }
 
 section.invite {
-  background: url("images/bg_new.jpg") no-repeat fixed center -200px;
+  background: url("images/bg_new.jpg") no-repeat fixed center -150px;
   background-size: cover; }
   @media all and (max-width: 480px) {
     section.invite {
@@ -228,6 +228,9 @@ section.invite {
 
 section.invite {
   margin-top: 115px; }
+  @media all and (max-width: 768px) {
+    section.invite {
+      margin-top: 0; } }
   @media (max-width: 480px) {
     section.invite {
       margin-top: 50px;
@@ -281,6 +284,10 @@ section.invite {
       padding: 13px 35px;
       display: inline-block;
       font-weight: 100; }
+      section.invite .box .btn.participate {
+        background: #427b5b;
+        margin-top: 1rem;
+        display: block; }
       @media all and (max-width: 480px) {
         section.invite .box .btn {
           font-size: 1.3em;
