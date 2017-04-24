@@ -234,7 +234,7 @@ section.invite {
   @media (max-width: 480px) {
     section.invite {
       margin-top: 50px;
-      background-position-y: -270px; } }
+      background-position-y: -210px; } }
   section.invite .content {
     text-align: center;
     padding: 0; }
@@ -287,7 +287,8 @@ section.invite {
       section.invite .box .btn.participate {
         background: #427b5b;
         margin-top: 1rem;
-        display: block; }
+        display: block;
+        text-decoration: line-through; }
       @media all and (max-width: 480px) {
         section.invite .box .btn {
           font-size: 1.3em;
