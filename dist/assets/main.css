@@ -285,10 +285,9 @@ section.invite {
       display: inline-block;
       font-weight: 100; }
       section.invite .box .btn.participate {
-        background: #427b5b;
+        background: #19AB58;
         margin-top: 1rem;
-        display: block;
-        text-decoration: line-through; }
+        display: block; }
       @media all and (max-width: 480px) {
         section.invite .box .btn {
           font-size: 1.3em;
