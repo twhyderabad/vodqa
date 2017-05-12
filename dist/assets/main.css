@@ -532,9 +532,6 @@ section.agenda .duration-115m {
   height: 460px;
   max-height: auto; }
 
-section.speakers {
-  background: #F6F6F6; }
-
 .speaker-block {
   box-sizing: border-box;
   float: left;
@@ -598,6 +595,14 @@ section.contact {
         section.contact .content .map iframe {
           width: 100%;
           margin-top: 20px; } }
+
+.faqs {
+  background: #F6F6F6; }
+  .faqs ol {
+    margin-left: 1rem;
+    margin-bottom: 1.3rem; }
+  .faqs h1 {
+    margin: 1rem 0 .2rem; }
 
 section.register {
   background: #fff;
