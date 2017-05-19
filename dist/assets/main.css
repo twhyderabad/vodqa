@@ -276,6 +276,9 @@ section.invite {
       line-height: 1.5em;
       font-weight: 400;
       margin-bottom: 15px; }
+    section.invite .box .contact-us {
+      color: #fff;
+      text-decoration: underline; }
     section.invite .box .btn {
       text-align: center;
       color: #FFF;
@@ -286,7 +289,7 @@ section.invite {
       font-weight: 100; }
       section.invite .box .btn.participate {
         margin-top: 1rem; }
-      section.invite .box .btn.submit-talk {
+      section.invite .box .btn.submit-talk, section.invite .box .btn.participate {
         background: #427b5b;
         text-decoration: line-through;
         margin-bottom: .5rem;
