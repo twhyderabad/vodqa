@@ -291,7 +291,6 @@ section.invite {
         margin-top: 1rem; }
       section.invite .box .btn.submit-talk, section.invite .box .btn.participate {
         background: #427b5b;
-        text-decoration: line-through;
         margin-bottom: .5rem;
         display: block; }
       @media all and (max-width: 480px) {
