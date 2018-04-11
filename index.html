@@ -27,6 +27,7 @@
   </head>
 </html>
 <body>
+  <!--include data/agenda.jade-->
   <section class="navigator">
     <div class="content">
       <h1 class="logo"><img src="./dist/assets/images/logo.png"></h1>
@@ -38,7 +39,7 @@
       <ul id="nav" class="navigation">
         <li><a href="#about" class="current">About</a></li>
         <!--li: a(href="#speakers") Speakers-->
-        <li><a href="#agenda">Agenda</a></li>
+        <!--li: a(href="#agenda") Agenda-->
         <li><a href="#editions">Past Editions</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -70,130 +71,8 @@
       <p>vodQA, Value Oriented Discussion about Quality Analysis is a forum that sports the motto - 'come learn something new'. The forum offers a unique platform for the software testing industry to strengthen the QA community through knowledge sharing.</p>
     </div>
   </section>
-  <section id="agenda" class="agenda">
-    <div class="content para">
-      <h2>Agenda</h2>
-      <div class="tracks tracks-1">
-        <div class="track">
-          <div class="session talk">
-            <p class="time">9:30 - 10:00 a.m.</p>
-            <div class="details">
-              <h4 class="topic">Registration</h4>
-            </div>
-          </div>
-          <div class="session talk">
-            <p class="time">10:00 - 10:15 a.m.</p>
-            <div class="details">
-              <h4 class="topic">Keynote</h4><span class="speaker">Ramesh Baskarasubramanian</span>
-            </div>
-          </div>
-          <div class="session talk">
-            <p class="time">10:15 - 10:55 a.m.</p>
-            <div class="details">
-              <h4 class="topic">Dockerize the Tests</h4><span class="speaker">Nalinikanth Meesala</span>
-            </div>
-          </div>
-          <div class="session break">
-            <div class="border">
-              <p class="time">10:55 - 11:10 a.m.</p>
-              <div class="details">
-                <h4 class="topic">Break</h4>
-              </div>
-            </div>
-          </div>
-          <div class="session talk">
-            <p class="time">11:10 - 11:50 a.m.</p>
-            <div class="details">
-              <h4 class="topic">Pyramidarize your Tests</h4><span class="speaker">Shivaling Sannalli</span>
-            </div>
-          </div>
-          <div class="session talk">
-            <p class="time">11:50 - 12:05 p.m.</p>
-            <div class="details details-half">
-              <p class="track-title">Lightning talk</p>
-              <h4 class="topic">Dev QA Synergy</h4>
-              <p>Prateek Srivastava</p>
-            </div>
-            <div class="details details-half">
-              <p class="track-title">Lightning talk</p>
-              <h4 class="topic">Whats Next in Testing</h4>
-              <p>Cheitanya</p>
-            </div>
-          </div>
-          <div class="session talk">
-            <p class="time">12:05 - 12:45 p.m.</p>
-            <div class="details">
-              <h4 class="topic">Multiply and Divide Test with Appium</h4><span class="speaker">Sai Krishna</span>
-            </div>
-          </div>
-          <div class="session break">
-            <div class="border">
-              <p class="time">12:45 - 1:30 p.m.</p>
-              <div class="details">
-                <h4 class="topic">Lunch</h4>
-              </div>
-            </div>
-          </div>
-          <div class="session talk">
-            <p class="time">01:30 - 01:45 p.m.</p>
-            <div class="details">
-              <h4 class="topic">Fishbowl Session</h4>
-            </div>
-          </div>
-          <div class="session talk">
-            <p class="time time-track">02:00 - 04:00 p.m.</p>
-            <div class="details details-half">
-              <p class="track-title">Workshop</p>
-              <h4 class="topic">on BDD</h4>
-            </div>
-            <div class="details details-half">
-              <p class="track-title">Workshop</p>
-              <h4 class="topic">on Test Framework Designs</h4>
-            </div>
-          </div>
-          <div class="session talk">
-            <p class="time">04:00 - 04:30 p.m.</p>
-            <div class="details">
-              <h4 class="topic">Closing notes and Networking</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="speakers" class="speakers">
-    <div class="content para">
-      <h2>Speakers</h2>
-      <div class="speaker-block">
-        <p class="speaker-img"><img src="./dist/assets/images/shivaS.png"></p>
-        <div class="details">
-          <h3>Shivaling Sannalli</h3>
-          <p class="role">Software Quality Evangelist</p>
-        </div>
-      </div>
-      <div class="speaker-block">
-        <p class="speaker-img"><img src="./dist/assets/images/sai.jpg"></p>
-        <div class="details">
-          <h3>Sai Krishna</h3>
-          <p class="role">Software Quality Enthusiast</p>
-        </div>
-      </div>
-      <div class="speaker-block">
-        <p class="speaker-img"><img src="./dist/assets/images/chaitanya.jpg"></p>
-        <div class="details">
-          <h3>Cheitanya </h3>
-          <p class="role">QA</p>
-        </div>
-      </div>
-      <div class="speaker-block">
-        <p class="speaker-img"><img src="./dist/assets/images/nalini.jpg"></p>
-        <div class="details">
-          <h3>Nalinikanth Meesala</h3>
-          <p class="role">Quality Analyst</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!--include sections/agenda/agenda.jade-->
+  <!--include sections/speakers/speakers.jade-->
   <section class="faqs">
     <div class="content">
       <h2>FAQs</h2>
