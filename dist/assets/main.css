@@ -288,7 +288,8 @@ section.invite {
       display: inline-block;
       font-weight: 100; }
       section.invite .box .btn.participate {
-        margin-top: 1rem; }
+        margin-top: 1rem;
+        text-decoration: line-through; }
       section.invite .box .btn.submit-talk, section.invite .box .btn.participate {
         background: #427b5b;
         margin-bottom: .5rem;
