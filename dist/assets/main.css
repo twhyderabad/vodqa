@@ -362,6 +362,10 @@ section.agenda {
   background: rgba(17, 121, 170, 0.95); }
   section.agenda h2 {
     color: #ddd; }
+  section.agenda p {
+    font-size: 20px;
+    margin-top: 1em;
+    color: #ddd; }
   section.agenda .track .topic {
     font-size: 1.5em;
     font-weight: 200; }
