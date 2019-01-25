@@ -284,7 +284,8 @@ section.invite {
       display: inline-block;
       font-weight: 100; }
       section.invite .box .btn.participate {
-        margin-top: 1rem; }
+        margin-top: 1rem;
+        text-decoration: line-through; }
         section.invite .box .btn.participate sub {
           font-size: 15px;
           vertical-align: middle; }
