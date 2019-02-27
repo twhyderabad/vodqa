@@ -5,3 +5,4 @@
 /vendor
 *.iml
 .DS_Store
+.talismanignore

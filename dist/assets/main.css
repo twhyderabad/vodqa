@@ -284,8 +284,7 @@ section.invite {
       display: inline-block;
       font-weight: 100; }
       section.invite .box .btn.participate {
-        margin-top: 1rem;
-        text-decoration: line-through; }
+        margin-top: 1rem; }
         section.invite .box .btn.participate sub {
           font-size: 15px;
           vertical-align: middle; }
@@ -362,10 +361,6 @@ section.theme .content {
 section.agenda {
   background: rgba(17, 121, 170, 0.95); }
   section.agenda h2 {
-    color: #ddd; }
-  section.agenda p {
-    font-size: 20px;
-    margin-top: 1em;
     color: #ddd; }
   section.agenda .track .topic {
     font-size: 1.5em;
