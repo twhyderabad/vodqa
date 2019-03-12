@@ -288,12 +288,11 @@ section.invite {
         section.invite .box .btn.participate sub {
           font-size: 15px;
           vertical-align: middle; }
-      section.invite .box .btn.submit-talk {
-        text-decoration: line-through; }
       section.invite .box .btn.submit-talk, section.invite .box .btn.participate {
         background: #427b5b;
         margin-bottom: .5rem;
-        display: block; }
+        display: block;
+        text-decoration: line-through; }
       @media all and (max-width: 480px) {
         section.invite .box .btn {
           font-size: 1.3em;
