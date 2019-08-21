@@ -361,7 +361,8 @@ section.theme .content {
     font-weight: 100; }
 
 section.agenda {
-  background: rgba(17, 121, 170, 0.95); }
+  background: rgba(17, 121, 170, 0.95); 
+  color: #ddd007; }
   section.agenda h2 {
     color: #ddd; }
   section.agenda .track .topic {
