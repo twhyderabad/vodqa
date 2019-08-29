@@ -144,10 +144,10 @@ a {
     @media all and (max-width: 768px) {
       .navigator .logo {
         float: none;
-        margin: 0 auto;
+        margin-left: 4em;
         text-align: center; } }
     .navigator .logo img {
-      max-width: 10em; }
+      max-width: 15em; }
       @media all and (max-width: 768px) {
         .navigator .logo img {
           height: 50px; } }
@@ -217,8 +217,8 @@ section.header {
         line-height: 1.25em; } }
 
 section.invite {
-  background: url("images/vodqa-blore-2018.jpg") no-repeat fixed center 50px;
-  background-size: cover;
+  background: url("images/LPVodqa2.png") no-repeat right;
+  background-size: contain;
   margin-top: 100px; }
   @media all and (min-width: 1200px) {
     section.invite {
@@ -242,6 +242,9 @@ section.invite {
     padding: 4em;
     color: #FFF; }
     @media all and (max-width: 768px) {
+      section.invite {
+        background-size: cover;
+      }
       section.invite .box {
         margin: 3em 1em;
         width: 20em; } }
