@@ -100,7 +100,11 @@ h2 {
 a {
   color: rgba(17, 121, 170, 0.95);
   text-decoration: none; }
-
+@media only screen and (min-width: 990px) {
+    .column {
+        width: 197px !important;
+    }
+}
 .navigator {
   box-sizing: border-box;
   width: 100%;
@@ -364,7 +368,7 @@ section.theme .content {
     font-weight: 100; }
 
 section.agenda {
-  background: rgba(17, 121, 170, 0.95); 
+  background: rgba(17, 121, 170, 0.95);
   color: #FFF; }
   section.agenda h2 {
     color: #ddd; }
@@ -602,7 +606,11 @@ section.contact {
         section.contact .content .map iframe {
           width: 100%;
           margin-top: 20px; } }
-
+.flex {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
 .faqs {
   background: #F6F6F6; }
   .faqs ol {
@@ -667,7 +675,12 @@ section.register .mktoForm {
           height: auto; } }
       @media all and (max-width: 650px) {
         section.register .mktoForm .mktoFormRow input[type="text"], section.register .mktoForm .mktoFormRow input[type="email"], section.register .mktoForm .mktoFormRow input[type="tel"], section.register .mktoForm .mktoFormRow textarea, section.register .mktoForm .mktoFormRow select {
-          width: 15em; } }
+          width: 15em; }
+           .session.talk {
+               flex-direction:column;
+                align-items:center;
+                }
+               }
       @media all and (max-width: 530px) {
         section.register .mktoForm .mktoFormRow input[type="text"], section.register .mktoForm .mktoFormRow input[type="email"], section.register .mktoForm .mktoFormRow input[type="tel"], section.register .mktoForm .mktoFormRow textarea, section.register .mktoForm .mktoFormRow select {
           width: 100%;
