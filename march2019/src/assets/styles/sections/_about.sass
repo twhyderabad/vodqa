@@ -1,0 +1,50 @@
+section.about,
+section.theme
+  .content
+    line-height: 1.9em
+    text-align: justify
+
+    h2.main
+      text-align: center
+      font-weight: bold
+
+    blockquote
+      background: #f9f9f9
+      border-left: 10px solid #ccc
+      margin: 1em 0.5em 0.5em 0
+      padding: 0.5em 1em
+      quotes: "\201C""\201D""\2018""\2019"
+      float: left
+      font-size: 2em
+      font-style: italic
+      font-weight: 100
+      line-height: 4em
+      @media all and (max-width: 768px)
+        line-height: 1.5em
+        font-size: 1.25em
+        text-align: left
+        float: none
+
+    blockquote:before
+      color: #ccc
+      content: open-quote
+      font-size: 4em
+      line-height: 0.1em
+      font-family: Georgia, serif
+      vertical-align: -0.4em
+      @media all and (max-width: 768px)
+        margin-right: 0.1em
+        font-size: 3em
+
+    blockquote + p
+      margin: 1em 0 0
+      float: left
+      @media all and (min-width: 768px)
+        float: none
+
+    .event-theme-tagline
+      font-size: 1.8em
+      margin: 1em
+      text-align: center
+      line-height: 1.4em
+      font-weight: 100

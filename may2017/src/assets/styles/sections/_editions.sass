@@ -1,0 +1,56 @@
+#editions
+  $main-fg: $primary
+  $main-bg: $secondary
+  $alt-fg: $primary
+
+  padding-bottom: 3em
+
+  .editions
+    list-style-type: none
+    margin: 0
+    padding: 0
+    text-align: center
+
+    li
+      display: inline-block
+      width: 7.8em
+
+  .editions a
+    display: block
+    overflow: hidden
+    padding: .25em
+    background-color: darken($main-bg, 30%)
+    border-radius: .5em
+
+    &:hover, &.active
+      background-color: $alt-fg
+
+    .month
+      color: $main-bg
+      line-height: 1.5em
+      margin: 0
+      font-size: 2em
+      font-weight: 400
+
+      &:before,
+      &:after
+        content: '\2022'
+        display: inline-block
+      &:before
+        float: left
+      &:after
+        float: right
+
+    .day
+      background-color: $main-bg
+      margin: 0
+      line-height: 1.25em
+      color: black
+      font-size: 2.5em
+      padding: 5px 0px
+
+    .year
+      background-color: $main-bg
+      border-top: 1px dashed darken($main-bg, 30%)
+      line-height: 2em
+      border-radius: 0 0 .25em .25em
