@@ -217,7 +217,7 @@ section.header {
         line-height: 1.25em; } }
 
 section.invite {
-  background: url("images/vodQA_Banner copy.png") no-repeat  center 50px;
+  background: url("images/vodQA_Banner.png") no-repeat  center 50px;
   background-size: 100%;
   margin-top: 90px; }
   @media all and (min-width: 1200px) {
