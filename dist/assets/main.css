@@ -100,7 +100,7 @@ h2 {
 a {
   color: rgba(17, 121, 170, 0.95);
   text-decoration: none; }
-  
+
 .navigator {
   box-sizing: border-box;
   width: 100%;
@@ -217,7 +217,7 @@ section.header {
         line-height: 1.25em; } }
 
 section.invite {
-  background: url("images/vodQA_Banner.png") no-repeat  center 50px;
+  background: url("images/vodQA_Banner.png") no-repeat center 50px;
   background-size: 100%;
   margin-top: 90px; }
   @media all and (min-width: 1200px) {
@@ -231,82 +231,83 @@ section.invite {
     section.invite {
       background-position-y: 0;
       margin-top: 50px; } }
-  section.invite .content {
-    text-align: center;
-    padding: 0; }
-  section.invite .box {
-    background: rgba(34, 34, 34, 0.75);
-    text-align: center;
-    float: right;
-    margin: 3em 2em;
-    padding: 2em;
-    color: #FFF; }
-    @media all and (max-width: 768px) {
-      section.invite .box {
-        margin: 3em 1em;
-        width: 20em; } }
+
+section.invite .content {
+  text-align: center;
+  padding: 0; }
+
+section.invite .box {
+  background: rgba(34, 34, 34, 0.75);
+  text-align: center;
+  float: right;
+  margin: 3em 2em;
+  padding: 2em;
+  color: #FFF; }
+  @media all and (max-width: 768px) {
+    section.invite .box {
+      margin: 3em 1em;
+      width: 20em; } }
+  @media all and (max-width: 480px) {
+    section.invite .box {
+      margin: 3em 0;
+      width: auto;
+      padding: 8em;
+      float: none;
+      display: inline-block; } }
+  section.invite .box h4 {
+    font-weight: 100; }
+  section.invite .box h3.event-name {
+    font-size: 2em;
+    font-weight: 400;
+    padding: 20px; }
     @media all and (max-width: 480px) {
-      section.invite .box {
-        margin: 3em 0;
-        width: auto;
-        padding: 8em;
-        float: none;
-        display: inline-block; } }
-    section.invite .box h4 {
-      font-weight: 100; }
-    section.invite .box h3.event-name {
-      font-size: 2em;
-      font-weight: 400;
-      padding: 20px; }
-      @media all and (max-width: 480px) {
-        section.invite .box h3.event-name {
-          font-size: 1.3em;
-          padding: 15px 10px; } }
-    section.invite .box .date {
-      font-size: 1.2em;
-      font-weight: 100;
-      margin-bottom: 30px;
-      margin-top: 15px; }
-    section.invite .box .invite-msg {
-      font-size: 1.5em;
-      line-height: 1.5em;
-      font-weight: 400;
-      margin-bottom: 15px; }
-    section.invite .box .contact-us {
-      color: #fff;
-      text-decoration: underline; }
-    section.invite .box .btn {
-      text-align: center;
-      color: #FFF;
-      font-size: 2em;
-      background: #19AB58;
-      padding: 13px 35px;
-      display: inline-block;
-      font-weight: 100; }
-      section.invite .box .btn.participate {
-        margin-top: 1rem; }
-        section.invite .box .btn.participate sub {
-          font-size: 15px;
-          vertical-align: middle; }
-      section.invite .box .btn.submit-talk, section.invite .box .btn.participate {
-        background: #427b5b;
-        margin-bottom: .5rem;
-        display: block; }
-      @media all and (max-width: 480px) {
-        section.invite .box .btn {
-          font-size: 1.3em;
-          padding: 10px 45px; } }
-  section.invite .agenda p {
-    font-style: italic; }
-    section.invite .agenda p a {
-      color: #fff;
-      text-decoration: underline; }
+      section.invite .box h3.event-name {
+        font-size: 1.3em;
+        padding: 15px 10px; } }
+  section.invite .box .date {
+    font-size: 1.2em;
+    font-weight: 100;
+    margin-bottom: 30px;
+    margin-top: 15px; }
+  section.invite .box .invite-msg {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight: 400;
+    margin-bottom: 15px; }
+  section.invite .box .contact-us {
+    color: #fff;
+    text-decoration: underline; }
+  section.invite .box .btn {
+    text-align: center;
+    color: #FFF;
+    font-size: 2em;
+    background: #19AB58;
+    padding: 13px 35px;
+    display: inline-block;
+    font-weight: 100; }
+    section.invite .box .btn.participate {
+      margin-top: 1rem; }
+      section.invite .box .btn.participate sub {
+        font-size: 15px;
+        vertical-align: middle; }
+    section.invite .box .btn.submit-talk, section.invite .box .btn.participate {
+      background: #427b5b;
+      margin-bottom: .5rem;
+      display: block; }
+    @media all and (max-width: 480px) {
+      section.invite .box .btn {
+        font-size: 1.3em;
+        padding: 10px 45px; } }
 
+section.invite .agenda p {
+  font-style: italic; }
+  section.invite .agenda p a {
+    color: #fff;
+    text-decoration: underline; }
 
+section.about {
+  background-color: #F6F6F6; }
 
-section.about{
-  background-color: #F6F6F6;
-}
 section.about .content,
 section.theme .content {
   line-height: 1.9em;
@@ -781,4 +782,3 @@ section.register .mktoForm {
 
 section.footer p {
   text-align: right; }
-
