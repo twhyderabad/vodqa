@@ -53,7 +53,7 @@
         <hr>
       </button>
       <ul id="nav" class="navigation">
-        <li><a href="#why" class="current">About</a></li>
+        <li><a href="#about" class="current">About</a></li>
         <!--li: a(href="#speakers") Speakers-->
         <li><a href="#agenda">Agenda</a></li>
         <li><a href="#editions">Past Editions</a></li>
@@ -62,7 +62,7 @@
     </div>
   </section>
   <!--include sections/header/header.jade-->
-  <section class="invite">
+  <section id="about" class="invite">
     <div class="content">
       <div class="box">
         <h3 class="event-name">VodQA shots</h3>
@@ -79,27 +79,35 @@
   </section>
   <section class="theme">
     <div id="why" class="content para">
-      <h2><strong>Why VodQA shots?</strong></h2>
-      <p>
-        <strong>&ldquo;The illiterate of the 21st century will not be those who cannot read and write, but those who cannot learn, unlearn, and relearn.&rdquo;</strong> - <i>Alvin Toffler</i>
-        <br><br>
-        We bring you VodQA shots which is a bimonthly event scheduled to be held on last Thursday on alternate months where the QAs in Hyderabad will come together to explore new realms of testing. While VodQA provides a larger platform to engage with QA community in Hyderabad and share our learnings, it is logistically difficult to conduct it multiple times a year as the community had suggested few times. Technology is changing at the blink of an eye and we could not wait for a year to meet the community.
-      </p>
+      <!--h2 <strong>Why VodQA shots?</strong>-->
+      <!--p
+      | <strong>&ldquo;The illiterate of the 21st century will not be those who cannot read and write, but those who cannot learn, unlearn, and relearn.&rdquo;</strong> - <i>Alvin Toffler</i>
+      | <br><br>
+      | We bring you VodQA shots which is a bimonthly event scheduled to be held on last Thursday on alternate months where the QAs in Hyderabad will come together to explore new realms of testing. While VodQA provides a larger platform to engage with QA community in Hyderabad and share our learnings, it is logistically difficult to conduct it multiple times a year as the community had suggested few times. Technology is changing at the blink of an eye and we could not wait for a year to meet the community.
+      
+      -->
     </div>
   </section>
-  <section id="about" class="about">
+  <section id="agenda" class="about">
     <div class="content para">
-      <h2><strong>Topics</strong></h2>
-      <p>
-         
-        <strong> Run your tests on docker containers:  </strong>  
-        Docker Fundamentals and how docker can be used for reliably deploying and running automated tests.
-      </p><br>
+      <!--h2 <strong>Topics</strong>-->
+      <!--p 
+      | <strong> Run your tests on docker containers:  </strong>  
+      | Docker Fundamentals and how docker can be used for reliably deploying and running automated tests.
+      
+      -->
+      <!--<br>-->
     </div>
   </section>
   <section id="agenda" class="agenda">
     <div class="content para">
       <h2><strong>Agenda</strong></h2>
+      <!--h2 <strong>Topics</strong>-->
+      <p>
+         
+        <strong> Run your tests on docker containers:  </strong>  
+        Docker Fundamentals and how docker can be used for reliably deploying and running automated tests.
+      </p><br>
       <!--Specify the event date here in YYYY-MM-DD format-->
       <div id="shotsDate" class="shotsDate"></div>
       <div class="tracks tracks-1">
@@ -133,6 +141,21 @@
         </div>
       </div>
     </div>
+  </section>
+  <section id="editions" class="editions-section">
+    <div class="content para">
+      <h2>Past editions</h2>
+    </div>
+    <ul class="editions">
+      <li><a href="/vodqa/nov2019" target="_blank">
+          <div class="month">Nov</div>
+          <div class="day">28</div>
+          <div class="year">2019</div></a></li>
+      <li><a href="/vodqa/may2018" target="_blank">
+          <div class="month">Sept</div>
+          <div class="day">26</div>
+          <div class="year">2019</div></a></li>
+    </ul>
   </section>
   <!--include sections/speakers/speakers.jade-->
   <section class="faqs">

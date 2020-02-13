@@ -98,7 +98,7 @@ h2 {
   line-height: 1.25em; }
 
 a {
-  color: rgba(17, 121, 170, 0.95);
+  color: #427b5b;
   text-decoration: none; }
 
 .navigator {
@@ -121,12 +121,12 @@ a {
     margin: 9px 1em;
     border-radius: 4px;
     background: transparent;
-    border: rgba(17, 121, 170, 0.95) solid 2px; }
+    border: #427b5b solid 2px; }
     .navigator .navigation-toggle hr {
       height: 2px;
       margin: 3px 0;
       width: 15px;
-      background: rgba(17, 121, 170, 0.95);
+      background: #427b5b;
       border: 0; }
     @media all and (max-width: 768px) {
       .navigator .navigation-toggle {
@@ -164,11 +164,11 @@ a {
     .navigator ul li {
       display: inline-block;
       font-size: 1.2em;
-      font-weight: 300;
+      font-weight: 600;
       padding: 0.1em; }
       .navigator ul li a {
         text-decoration: none;
-        color: rgba(17, 121, 170, 0.95);
+        color: #427b5b;
         padding: .15em .5em; }
       .navigator ul li a.current {
         border-bottom: 2px #CCC solid; }
@@ -365,9 +365,11 @@ section.theme .content {
     font-weight: 100; }
 
 section.agenda {
-  background: rgba(17, 121, 170, 0.95); }
+  background: #427b5b; }
+  section.agenda p {
+    color: white; }
   section.agenda h2 {
-    color: #ddd; }
+    color: white; }
   section.agenda .track .topic {
     font-size: 1.5em;
     font-weight: 200; }
@@ -404,7 +406,7 @@ section.agenda .track .session .time {
   text-align: right;
   width: 200px;
   margin-right: 20px;
-  color: rgba(17, 121, 170, 0.95); }
+  color: #427b5b; }
   @media all and (max-width: 768px) {
     section.agenda .track .session .time {
       float: none;
@@ -658,7 +660,7 @@ section.register .mktoForm {
       border: 1px solid rgba(0, 0, 0, 0.2);
       background: #fff; }
       section.register .mktoForm .mktoFormRow input[type="text"]:focus, section.register .mktoForm .mktoFormRow input[type="email"]:focus, section.register .mktoForm .mktoFormRow input[type="tel"]:focus, section.register .mktoForm .mktoFormRow textarea:focus, section.register .mktoForm .mktoFormRow select:focus {
-        outline-color: rgba(17, 121, 170, 0.95);
+        outline-color: #427b5b;
         outline-offset: -2;
         outline-width: 2px; }
       @media all and (max-width: 480px) {
@@ -690,7 +692,7 @@ section.register .mktoForm {
           section.register .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple.actions {
             margin-left: 16em; } }
       section.register .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple .mktoButton {
-        background: rgba(17, 121, 170, 0.95);
+        background: #427b5b;
         box-shadow: 0 2px 2px 0 #265e7f;
         font-weight: 100;
         border-radius: 2px;
@@ -753,7 +755,7 @@ section.register .mktoForm {
     background-color: #b3b3b3;
     border-radius: .5em; }
     #editions .editions a:hover, #editions .editions a.active {
-      background-color: rgba(17, 121, 170, 0.95); }
+      background-color: #427b5b; }
     #editions .editions a .month {
       color: #FFF;
       line-height: 1.5em;
