@@ -223,7 +223,7 @@ section.invite {
   @media all and (min-width: 1200px) {
     section.invite {
       background-position-y: 40px;
-      margin-top: 115px; } }
+      margin-top: 66px; } }
   @media all and (max-width: 768px) {
     section.invite {
       margin-top: 40px; } }
@@ -234,7 +234,8 @@ section.invite {
 
 section.invite .content {
   text-align: center;
-  padding: 0; }
+  padding: 0;
+  height: 22.5em; }
 
 section.invite .box {
   background: rgba(34, 34, 34, 0.75);
@@ -784,3 +785,60 @@ section.register .mktoForm {
 
 section.footer p {
   text-align: right; }
+
+section.event-card {
+  background: #427b5b;
+  color: white;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  padding: 0; }
+  section.event-card .content {
+    padding: 0;
+    margin-bottom: 2em; }
+    section.event-card .content #event-title {
+      margin: 0.5em 0 0; }
+  section.event-card .event-topic {
+    font-size: 1.4em; }
+  section.event-card .content .btn-section {
+    margin-top: 4%;
+    padding-left: 1em; }
+    section.event-card .content .btn-section .btn {
+      text-align: center;
+      color: #FFF;
+      font-size: 2em;
+      padding: 13px 35px;
+      font-weight: 100;
+      width: 14%;
+      display: none;
+      margin-top: 1rem;
+      background: #604020;
+      margin-bottom: .5rem;
+      display: none;
+      margin-right: 1em;
+      border-radius: 5px; }
+      @media all and (max-width: 480px) {
+        section.event-card .content .btn-section .btn {
+          font-size: 1.3em;
+          padding: 10px 45px; } }
+  section.event-card .content #clockdiv {
+    font-family: sans-serif;
+    color: #fff;
+    display: none;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 1%; }
+  section.event-card .content #clockdiv > div {
+    padding: 10px;
+    border-radius: 3px;
+    background: #00b300;
+    display: inline-block; }
+  section.event-card .content #clockdiv div > span {
+    padding: 15px;
+    border-radius: 3px;
+    background: #669900;
+    display: inline-block; }
+  section.event-card .content .smalltext {
+    padding-top: 5px;
+    font-size: 16px; }

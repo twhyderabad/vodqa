@@ -1,0 +1,67 @@
+section.event-card
+    background: $primary
+    color: white
+    margin-top: 1em
+    margin-bottom: 1em
+    text-align: center
+    padding: 0
+    
+    .content
+        padding: 0
+        margin-bottom: 2em
+        #event-title
+            margin: 0.5em 0 0
+    .event-topic
+        font-size: 1.4em
+
+    .content .btn-section
+        margin-top: 4%
+        padding-left: 1em
+        .btn
+            text-align: center
+            color: $secondary
+            font-size: 2em
+            //background: $btn-primary-background
+            padding: 13px 35px
+            //display: inline-block
+            font-weight: 100
+            width: 14%
+            display: none
+            margin-top: 1rem
+            background: #604020
+            margin-bottom: .5rem
+            display: none
+            margin-right: 1em
+            border-radius: 5px
+                
+
+
+            @media all and (max-width: 480px)
+                font-size: 1.3em
+                padding: 10px 45px        
+
+    .content
+        #clockdiv
+            font-family: sans-serif
+            color: #fff
+            display: none
+            font-weight: 100
+            text-align: center
+            font-size: 30px
+            margin-top: 1%
+
+        #clockdiv > div
+            padding: 10px
+            border-radius: 3px
+            background: #00b300
+            display: inline-block
+
+        #clockdiv div > span
+            padding: 15px
+            border-radius: 3px
+            background: #669900
+            display: inline-block
+
+        .smalltext
+            padding-top: 5px
+            font-size: 16px

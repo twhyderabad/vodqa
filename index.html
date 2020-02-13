@@ -64,41 +64,45 @@
   <!--include sections/header/header.jade-->
   <section id="about" class="invite">
     <div class="content">
-      <div class="box">
-        <h3 class="event-name">VodQA shots</h3>
-        <h4 class="event-theme"></h4>
-        <div class="date">Thursday, 30<sup>th</sup>January 2020 (18:30 hrs)</div>
-        <div class="agenda">
-          <!-- a.btn.submit-talk(href="#") Submit talk -->
-          <!--p Speaker registration is now open--><a href="https://forms.gle/tS5hR22yfPHxocN4A" target="_blank" class="btn participate"><span>Participate</span></a>
-          <!-- br//sub closed on 12th March 2019
-          -->
-        </div><!--a(href="#agenda") Scroll down for slides-->
+      <!--.box
+      h3.event-name VodQA shots
+      
+      h4.event-theme
+      .date
+        | Thursday, 30
+        sup th
+        | January 2020 (18:30 hrs)
+      .agenda
+        a.btn.participate(href="https://forms.gle/tS5hR22yfPHxocN4A" target="_blank")
+          span Participate
+          br
+          sub closed on 12th March 2019
+      -->
+    </div>
+  </section>
+  <section id="event-card" class="event-card">
+    <div class="content">
+      <h2 id="event-title" class="event-title"><strong>Upcoming Event</strong></h2><br />
+      <p id="event-topic" class="event-topic"><strong>Docker Fundamentals</strong>  </p>
+      <p id="event-date" event-date="2020-03-25" class="event-date">Thursday, 30<sup>th</sup> January 2020 (18:30 hrs)</p>
+      <div id="clockdiv">
+        <div><span class="days"></span>
+          <div class="smalltext">Days</div>
+        </div>
+        <div><span class="hours"></span>
+          <div class="smalltext">Hours</div>
+        </div>
+        <div><span class="minutes"></span>
+          <div class="smalltext">Minutes</div>
+        </div>
+        <div><span class="seconds"></span>
+          <div class="smalltext">Seconds</div>
+        </div>
       </div>
+      <div class="btn-section"><a id="btn-attend" href="https://forms.gle/tS5hR22yfPHxocN4A" target="_blank" class="btn"><span>Attend</span></a><a id="btn-feedback" href="https://forms.gle/tS5hR22yfPHxocN4A" target="_blank" class="btn"><span>Feedback</span></a><a id="btn-talk" href="https://forms.gle/tS5hR22yfPHxocN4A" target="_blank" class="btn"><span>Give a Talk</span></a></div>
     </div>
   </section>
-  <section class="theme">
-    <div id="why" class="content para">
-      <!--h2 <strong>Why VodQA shots?</strong>-->
-      <!--p
-      | <strong>&ldquo;The illiterate of the 21st century will not be those who cannot read and write, but those who cannot learn, unlearn, and relearn.&rdquo;</strong> - <i>Alvin Toffler</i>
-      | <br><br>
-      | We bring you VodQA shots which is a bimonthly event scheduled to be held on last Thursday on alternate months where the QAs in Hyderabad will come together to explore new realms of testing. While VodQA provides a larger platform to engage with QA community in Hyderabad and share our learnings, it is logistically difficult to conduct it multiple times a year as the community had suggested few times. Technology is changing at the blink of an eye and we could not wait for a year to meet the community.
-      
-      -->
-    </div>
-  </section>
-  <section id="agenda" class="about">
-    <div class="content para">
-      <!--h2 <strong>Topics</strong>-->
-      <!--p 
-      | <strong> Run your tests on docker containers:  </strong>  
-      | Docker Fundamentals and how docker can be used for reliably deploying and running automated tests.
-      
-      -->
-      <!--<br>-->
-    </div>
-  </section>
+  <!--include sections/about/about.jade-->
   <section id="agenda" class="agenda">
     <div class="content para">
       <h2><strong>Agenda</strong></h2>
@@ -207,4 +211,5 @@
     </div>
   </section>
   <script src="dist/assets/js/mkto-style-overrides.js"></script>
+  <script src="dist/assets/js/event-card.js"></script>
 </body>

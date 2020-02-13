@@ -1,0 +1,29 @@
+section#event-card.event-card
+    .content
+        h2#event-title.event-title <strong>Upcoming Event</strong>
+        <br />
+        p#event-topic.event-topic <strong>Docker Fundamentals</strong>  
+        p(id="event-date" class="event-date" event-date="2020-03-25")
+            | Thursday, 30<sup>th</sup> January 2020 (18:30 hrs)
+        
+        div(id="clockdiv")
+            div
+                span(class="days")
+                div(class="smalltext") Days
+            div
+                span(class="hours")
+                div(class="smalltext") Hours
+            div
+                span(class="minutes")
+                div(class="smalltext") Minutes
+            div
+                span(class="seconds")
+                div(class="smalltext") Seconds
+
+        .btn-section
+            a#btn-attend.btn(href="https://forms.gle/tS5hR22yfPHxocN4A" target="_blank")
+                span Attend
+            a#btn-feedback.btn(href="https://forms.gle/tS5hR22yfPHxocN4A" target="_blank")
+                span Feedback
+            a#btn-talk.btn(href="https://forms.gle/tS5hR22yfPHxocN4A" target="_blank")
+                span Give a Talk
