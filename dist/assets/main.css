@@ -783,11 +783,70 @@ section.register .mktoForm {
       line-height: 2em;
       border-radius: 0 0 .25em .25em; }
 
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 100001;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s; }
+
+.overlay-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10%; }
+  .overlay-content h2 {
+    background: #666;
+    color: white;
+    height: 47px;
+    position: relative;
+    left: 25%;
+    width: 50%;
+    margin-bottom: 0; }
+  .overlay-content .talk, .overlay-content .break {
+    background: white;
+    margin-top: 1%;
+    position: relative;
+    left: 25%;
+    width: 50%; }
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s; }
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1; }
+
+.overlay .closebtn {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  font-size: 60px; }
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px; }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px; } }
+
 section.footer p {
   text-align: right; }
 
 section.event-card {
-  background: #427b5b;
+  background: #e6bf0e;
   color: white;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -797,9 +856,13 @@ section.event-card {
     padding: 0;
     margin-bottom: 2em; }
     section.event-card .content #event-title {
-      margin: 0.5em 0 0; }
+      margin: 0.5em 0 0;
+      color: #353535; }
+    section.event-card .content #event-date {
+      color: #353535; }
   section.event-card .event-topic {
-    font-size: 1.4em; }
+    font-size: 1.4em;
+    color: #353535; }
   section.event-card .content .btn-section {
     margin-top: 4%;
     padding-left: 1em; }
@@ -832,13 +895,15 @@ section.event-card {
   section.event-card .content #clockdiv > div {
     padding: 10px;
     border-radius: 3px;
-    background: #00b300;
+    background: white;
     display: inline-block; }
   section.event-card .content #clockdiv div > span {
     padding: 15px;
     border-radius: 3px;
-    background: #669900;
-    display: inline-block; }
+    background: #dddddd;
+    display: inline-block;
+    color: #353535; }
   section.event-card .content .smalltext {
     padding-top: 5px;
-    font-size: 16px; }
+    font-size: 16px;
+    color: #353535; }

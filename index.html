@@ -151,15 +151,20 @@
       <h2>Past editions</h2>
     </div>
     <ul class="editions">
-      <li><a href="/vodqa/nov2019" target="_blank">
+      <li onclick="openNav('/nov2019/index.html')"><a>
           <div class="month">Nov</div>
           <div class="day">28</div>
           <div class="year">2019</div></a></li>
-      <li><a href="/vodqa/may2018" target="_blank">
+      <li onclick="openNav('/may2018/index.html')"><a>
           <div class="month">Sept</div>
           <div class="day">26</div>
           <div class="year">2019</div></a></li>
+      
     </ul>
+    <div id="myNav" class="overlay"><a href="javascript:void(0)" onclick="closeNav()" class="closebtn">&times;</a>
+      <div class="overlay-content"></div>
+      <div style="display: none" class="temp-div"></div>
+    </div>
   </section>
   <!--include sections/speakers/speakers.jade-->
   <section class="faqs">
@@ -212,4 +217,5 @@
   </section>
   <script src="dist/assets/js/mkto-style-overrides.js"></script>
   <script src="dist/assets/js/event-card.js"></script>
+  <script src="dist/assets/js/editions.js"></script>
 </body>
