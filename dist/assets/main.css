@@ -606,12 +606,14 @@ section.contact {
           width: 100%;
           margin-top: 20px; } }
 
-.faqs ol {
-  margin-left: 1rem;
-  margin-bottom: 1.3rem; }
-
-.faqs h1 {
-  margin: 1rem 0 .2rem; }
+.faqs {
+  background: #427b5b;
+  color: white; }
+  .faqs ol {
+    margin-left: 1rem;
+    margin-bottom: 1.3rem; }
+  .faqs h1 {
+    margin: 1rem 0 .2rem; }
 
 section.register {
   background: #fff;
