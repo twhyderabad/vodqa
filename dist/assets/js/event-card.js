@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    console.log( "In event-card.js" );
+    //console.log( "In event-card.js" );
     
     let eventTitle = document.getElementById('event-title');
 
@@ -9,7 +9,9 @@ $( document ).ready(function() {
     let timerBox = document.getElementById('clockdiv');
 
     let eventDate = document.getElementById('event-date').getAttribute('event-date');
-    let remainingTime = (new Date(eventDate)) - (new Date());
+    let eventDateNew = new Date(eventDate);
+    eventDateNew.setHours(18, 30);
+    let remainingTime = eventDateNew - (new Date());
 
     if(remainingTime < 0) {
         eventTitle.innerHTML = "<strong>Last Event</strong>"
