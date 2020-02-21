@@ -5,17 +5,32 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1")
     meta(property='og:url', content='http://twhyderabad.github.io/vodqa/')
     meta(property='og:description', content="vodQA, Value Oriented Discussion about Quality Analysis is a forum that sports the motto - 'come learn something new'. The forum offers a unique platform for the software testing industry to strengthen the QA community through knowledge sharing.")
-    meta(property="og:image", content="http://twhyderabad.github.io/vodqa/dist/assets/images/vodqa-2018.jpg")
-    meta(property="og:title", content="vodQA - Seismic Shifts - 16 March 2019")
+    meta(property="og:image", content="http://twhyderabad.github.io/vodqa/dist/assets/images/vodQA_Banner.png")
+    meta(property="og:title", content="VodQA shots")
     title
         include sections/title/title.jade
     link(rel="icon" href="favicon.ico")
     script(src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js")
     script(src="dist/assets/js/jquery.bxslider.min.js")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
     link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,300,600,400,700,900' rel='stylesheet' type='text/css')
     link(rel="stylesheet", href="dist/assets/main.css")
     link(rel="stylesheet", href="dist/assets/lib/jquery.bxslider.css")
-    script
+    style(type='text/css'). 
+      .shots
+      {
+        display: none;
+      }
+      .shotsDate{
+        display: none;
+      }
+      .vodqaDate{
+        display: none;
+      }
+      .selected{
+        box-shadow:0px 12px 22px 1px #333;
+      }
+    script(type='text/javascript')
       |$(document).ready(function(){
       |   $('.bxslider').bxSlider({
       |     mode: 'fade',
@@ -33,12 +48,15 @@ body
   include sections/navigation/navigation.jade
   //include sections/header/header.jade
   include sections/invite/invite.jade
-  include sections/about/about.jade
+  include sections/event-card/event-card.jade
+  //include sections/about/about.jade
   include sections/agenda/agenda.jade
+  include sections/editions/editions.jade
   //include sections/speakers/speakers.jade
   include sections/faq/faq
   //- include sections/register/register.jade
-  //- include sections/editions/editions.jade
   include sections/contact/contact.jade
   include sections/footer/footer.jade
   script(src="dist/assets/js/mkto-style-overrides.js")
+  script(src="dist/assets/js/event-card.js")
+  script(src="dist/assets/js/editions.js")

@@ -98,9 +98,9 @@ h2 {
   line-height: 1.25em; }
 
 a {
-  color: rgba(17, 121, 170, 0.95);
+  color: #427b5b;
   text-decoration: none; }
-  
+
 .navigator {
   box-sizing: border-box;
   width: 100%;
@@ -121,12 +121,12 @@ a {
     margin: 9px 1em;
     border-radius: 4px;
     background: transparent;
-    border: rgba(17, 121, 170, 0.95) solid 2px; }
+    border: #427b5b solid 2px; }
     .navigator .navigation-toggle hr {
       height: 2px;
       margin: 3px 0;
       width: 15px;
-      background: rgba(17, 121, 170, 0.95);
+      background: #427b5b;
       border: 0; }
     @media all and (max-width: 768px) {
       .navigator .navigation-toggle {
@@ -164,11 +164,11 @@ a {
     .navigator ul li {
       display: inline-block;
       font-size: 1.2em;
-      font-weight: 300;
+      font-weight: 600;
       padding: 0.1em; }
       .navigator ul li a {
         text-decoration: none;
-        color: rgba(17, 121, 170, 0.95);
+        color: #427b5b;
         padding: .15em .5em; }
       .navigator ul li a.current {
         border-bottom: 2px #CCC solid; }
@@ -217,13 +217,13 @@ section.header {
         line-height: 1.25em; } }
 
 section.invite {
-  background: url("images/vodQA_Banner.png") no-repeat  center 50px;
+  background: url("images/vodQA_Banner.png") no-repeat center 50px;
   background-size: 100%;
   margin-top: 90px; }
   @media all and (min-width: 1200px) {
     section.invite {
       background-position-y: 40px;
-      margin-top: 115px; } }
+      margin-top: 66px; } }
   @media all and (max-width: 768px) {
     section.invite {
       margin-top: 40px; } }
@@ -231,82 +231,84 @@ section.invite {
     section.invite {
       background-position-y: 0;
       margin-top: 50px; } }
-  section.invite .content {
-    text-align: center;
-    padding: 0; }
-  section.invite .box {
-    background: rgba(34, 34, 34, 0.75);
-    text-align: center;
-    float: right;
-    margin: 3em 2em;
-    padding: 2em;
-    color: #FFF; }
-    @media all and (max-width: 768px) {
-      section.invite .box {
-        margin: 3em 1em;
-        width: 20em; } }
+
+section.invite .content {
+  text-align: center;
+  padding: 0;
+  height: 22.5em; }
+
+section.invite .box {
+  background: rgba(34, 34, 34, 0.75);
+  text-align: center;
+  float: right;
+  margin: 3em 2em;
+  padding: 2em;
+  color: #FFF; }
+  @media all and (max-width: 768px) {
+    section.invite .box {
+      margin: 3em 1em;
+      width: 20em; } }
+  @media all and (max-width: 480px) {
+    section.invite .box {
+      margin: 3em 0;
+      width: auto;
+      padding: 8em;
+      float: none;
+      display: inline-block; } }
+  section.invite .box h4 {
+    font-weight: 100; }
+  section.invite .box h3.event-name {
+    font-size: 2em;
+    font-weight: 400;
+    padding: 20px; }
     @media all and (max-width: 480px) {
-      section.invite .box {
-        margin: 3em 0;
-        width: auto;
-        padding: 8em;
-        float: none;
-        display: inline-block; } }
-    section.invite .box h4 {
-      font-weight: 100; }
-    section.invite .box h3.event-name {
-      font-size: 2em;
-      font-weight: 400;
-      padding: 20px; }
-      @media all and (max-width: 480px) {
-        section.invite .box h3.event-name {
-          font-size: 1.3em;
-          padding: 15px 10px; } }
-    section.invite .box .date {
-      font-size: 1.2em;
-      font-weight: 100;
-      margin-bottom: 30px;
-      margin-top: 15px; }
-    section.invite .box .invite-msg {
-      font-size: 1.5em;
-      line-height: 1.5em;
-      font-weight: 400;
-      margin-bottom: 15px; }
-    section.invite .box .contact-us {
-      color: #fff;
-      text-decoration: underline; }
-    section.invite .box .btn {
-      text-align: center;
-      color: #FFF;
-      font-size: 2em;
-      background: #19AB58;
-      padding: 13px 35px;
-      display: inline-block;
-      font-weight: 100; }
-      section.invite .box .btn.participate {
-        margin-top: 1rem; }
-        section.invite .box .btn.participate sub {
-          font-size: 15px;
-          vertical-align: middle; }
-      section.invite .box .btn.submit-talk, section.invite .box .btn.participate {
-        background: #427b5b;
-        margin-bottom: .5rem;
-        display: block; }
-      @media all and (max-width: 480px) {
-        section.invite .box .btn {
-          font-size: 1.3em;
-          padding: 10px 45px; } }
-  section.invite .agenda p {
-    font-style: italic; }
-    section.invite .agenda p a {
-      color: #fff;
-      text-decoration: underline; }
+      section.invite .box h3.event-name {
+        font-size: 1.3em;
+        padding: 15px 10px; } }
+  section.invite .box .date {
+    font-size: 1.2em;
+    font-weight: 100;
+    margin-bottom: 30px;
+    margin-top: 15px; }
+  section.invite .box .invite-msg {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight: 400;
+    margin-bottom: 15px; }
+  section.invite .box .contact-us {
+    color: #fff;
+    text-decoration: underline; }
+  section.invite .box .btn {
+    text-align: center;
+    color: #FFF;
+    font-size: 2em;
+    background: #19AB58;
+    padding: 13px 35px;
+    display: inline-block;
+    font-weight: 100; }
+    section.invite .box .btn.participate {
+      margin-top: 1rem; }
+      section.invite .box .btn.participate sub {
+        font-size: 15px;
+        vertical-align: middle; }
+    section.invite .box .btn.submit-talk, section.invite .box .btn.participate {
+      background: #427b5b;
+      margin-bottom: .5rem;
+      display: block; }
+    @media all and (max-width: 480px) {
+      section.invite .box .btn {
+        font-size: 1.3em;
+        padding: 10px 45px; } }
 
+section.invite .agenda p {
+  font-style: italic; }
+  section.invite .agenda p a {
+    color: #fff;
+    text-decoration: underline; }
 
+section.about {
+  background-color: #F6F6F6; }
 
-section.about{
-  background-color: #F6F6F6;
-}
 section.about .content,
 section.theme .content {
   line-height: 1.9em;
@@ -364,9 +366,11 @@ section.theme .content {
     font-weight: 100; }
 
 section.agenda {
-  background: rgba(17, 121, 170, 0.95); }
+  background: #427b5b; }
+  section.agenda p {
+    color: white; }
   section.agenda h2 {
-    color: #ddd; }
+    color: white; }
   section.agenda .track .topic {
     font-size: 1.5em;
     font-weight: 200; }
@@ -403,7 +407,7 @@ section.agenda .track .session .time {
   text-align: right;
   width: 200px;
   margin-right: 20px;
-  color: rgba(17, 121, 170, 0.95); }
+  color: #427b5b; }
   @media all and (max-width: 768px) {
     section.agenda .track .session .time {
       float: none;
@@ -602,12 +606,14 @@ section.contact {
           width: 100%;
           margin-top: 20px; } }
 
-.faqs ol {
-  margin-left: 1rem;
-  margin-bottom: 1.3rem; }
-
-.faqs h1 {
-  margin: 1rem 0 .2rem; }
+.faqs {
+  background: #427b5b;
+  color: white; }
+  .faqs ol {
+    margin-left: 1rem;
+    margin-bottom: 1.3rem; }
+  .faqs h1 {
+    margin: 1rem 0 .2rem; }
 
 section.register {
   background: #fff;
@@ -657,7 +663,7 @@ section.register .mktoForm {
       border: 1px solid rgba(0, 0, 0, 0.2);
       background: #fff; }
       section.register .mktoForm .mktoFormRow input[type="text"]:focus, section.register .mktoForm .mktoFormRow input[type="email"]:focus, section.register .mktoForm .mktoFormRow input[type="tel"]:focus, section.register .mktoForm .mktoFormRow textarea:focus, section.register .mktoForm .mktoFormRow select:focus {
-        outline-color: rgba(17, 121, 170, 0.95);
+        outline-color: #427b5b;
         outline-offset: -2;
         outline-width: 2px; }
       @media all and (max-width: 480px) {
@@ -689,7 +695,7 @@ section.register .mktoForm {
           section.register .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple.actions {
             margin-left: 16em; } }
       section.register .mktoForm .mktoButtonRow .mktoButtonWrap.mktoSimple .mktoButton {
-        background: rgba(17, 121, 170, 0.95);
+        background: #427b5b;
         box-shadow: 0 2px 2px 0 #265e7f;
         font-weight: 100;
         border-radius: 2px;
@@ -752,7 +758,7 @@ section.register .mktoForm {
     background-color: #b3b3b3;
     border-radius: .5em; }
     #editions .editions a:hover, #editions .editions a.active {
-      background-color: rgba(17, 121, 170, 0.95); }
+      background-color: #427b5b; }
     #editions .editions a .month {
       color: #FFF;
       line-height: 1.5em;
@@ -779,6 +785,127 @@ section.register .mktoForm {
       line-height: 2em;
       border-radius: 0 0 .25em .25em; }
 
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 100001;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s; }
+
+.overlay-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10%; }
+  .overlay-content h2 {
+    background: #666;
+    color: white;
+    height: 47px;
+    position: relative;
+    left: 25%;
+    width: 50%;
+    margin-bottom: 0; }
+  .overlay-content .talk, .overlay-content .break {
+    background: white;
+    margin-top: 1%;
+    position: relative;
+    left: 25%;
+    width: 50%; }
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s; }
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1; }
+
+.overlay .closebtn {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  font-size: 60px; }
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px; }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px; } }
+
 section.footer p {
   text-align: right; }
 
+section.event-card {
+  background: #e6bf0e;
+  color: white;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  padding: 0; }
+  section.event-card .content {
+    padding: 0;
+    margin-bottom: 2em; }
+    section.event-card .content #event-title {
+      margin: 0.5em 0 0;
+      color: #353535; }
+    section.event-card .content #event-date {
+      color: #353535; }
+  section.event-card .event-topic {
+    font-size: 1.4em;
+    color: #353535; }
+  section.event-card .content .btn-section {
+    margin-top: 4%;
+    padding-left: 1em; }
+    section.event-card .content .btn-section .btn {
+      text-align: center;
+      color: #FFF;
+      font-size: 2em;
+      padding: 13px 35px;
+      font-weight: 100;
+      width: 14%;
+      display: none;
+      margin-top: 1rem;
+      background: #604020;
+      margin-bottom: .5rem;
+      display: none;
+      margin-right: 1em;
+      border-radius: 5px; }
+      @media all and (max-width: 480px) {
+        section.event-card .content .btn-section .btn {
+          font-size: 1.3em;
+          padding: 10px 45px; } }
+  section.event-card .content #clockdiv {
+    font-family: sans-serif;
+    color: #fff;
+    display: none;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 1%; }
+  section.event-card .content #clockdiv > div {
+    padding: 10px;
+    border-radius: 3px;
+    background: white;
+    display: inline-block; }
+  section.event-card .content #clockdiv div > span {
+    padding: 15px;
+    border-radius: 3px;
+    background: #dddddd;
+    display: inline-block;
+    color: #353535; }
+  section.event-card .content .smalltext {
+    padding-top: 5px;
+    font-size: 16px;
+    color: #353535; }

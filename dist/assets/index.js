@@ -5,7 +5,7 @@ $(document).ready(function($) {
   $('.content.para').each(function() {
     return paraPositions.push($(this).offset().top);
   });
-  $('a').click(function() {
+  $('.navigator a').click(function() {
     window.scrolling = true;
     $('html, body').animate({
       scrollTop: $($.attr(this, 'href')).offset().top - headerHeight + 20
@@ -14,8 +14,8 @@ $(document).ready(function($) {
     });
     return false;
   });
-  $('ul li a').click(function() {
-    $('ul li a').removeClass('current');
+  $('.navigator ul li a').click(function() {
+    $('.navigator ul li a').removeClass('current');
     return $(this).addClass('current');
   });
   $(document).on('scroll', function() {
@@ -27,8 +27,8 @@ $(document).ready(function($) {
     currentParaIndex = Math.max(0, paraPositions.filter(function(p) {
       return p < currentScrollTop + headerHeight;
     }).length - 1);
-    $('ul li a').removeClass('current');
-    return $('ul li a:eq(' + currentParaIndex + ')').addClass('current');
+    $('.navigator ul li a').removeClass('current');
+    return $('.navigator ul li a:eq(' + currentParaIndex + ')').addClass('current');
   });
   return $('.navigation-toggle').click(function() {
     return $('.navigation').slideToggle();
