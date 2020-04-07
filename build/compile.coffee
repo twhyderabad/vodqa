@@ -34,4 +34,4 @@ gulp.task "watch", ->
     gulp.watch "src/assets/styles/**/*.sass", ["compile:css"]
     gulp.watch "src/assets/scripts/*.coffee", ["compile:js", "copy"]
 
-gulp.task "compile", ["compile:html", "compile:css", "compile:js"]
+gulp.task "compile", gulp.series ["compile:html", "compile:css", "compile:js"]
