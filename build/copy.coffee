@@ -13,4 +13,4 @@ gulp.task "copy:js", ->
   .pipe gulp.dest "./dist/assets/js/"
 
 
-gulp.task "copy", ["copy:images", "copy:lib", "copy:js"]
+gulp.task "copy", gulp.series ["copy:images", "copy:lib", "copy:js"]

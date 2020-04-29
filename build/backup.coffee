@@ -13,4 +13,4 @@ gulp.task "backup:index.html", ->
   .pipe gulp.dest "./july2016/"
 
 
-gulp.task "backup", ["backup:dist", "backup:src","backup:index.html"]
+gulp.task "backup", gulp.series ["backup:dist", "backup:src","backup:index.html"]
