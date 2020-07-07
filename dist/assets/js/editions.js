@@ -1,5 +1,5 @@
 function openNav(editionURL) {
-    const accessControl = "Access-Control-Allow-Origin";
+    //const accessControl = "Access-Control-Allow-Origin";
     // $.ajax({
     //     url: editionURL,
     //     headers : {accessControl: "*"}       

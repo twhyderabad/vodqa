@@ -22,7 +22,7 @@ $( document ).ready(function() {
         btnTalk.style.display = "inline";   
         timerBox.style.display = "inline-block";
 
-        var deadline = new Date(eventDate);
+        var deadline = new Date(eventDateNew);
         initializeClock('clockdiv', deadline);
     }
 });
