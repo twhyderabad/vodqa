@@ -421,6 +421,11 @@ section.agenda .track .session .time {
 @media all and (min-width: 768px) {
   section.agenda .track .session .details {
     float: left; } }
+@media all and (max-width: 768px) {
+    section.agenda .track .session .details {
+      float: none;
+      text-align: left;
+      font-size: .8em; } }
 
 section.agenda .track .session .details.details-half {
   margin-bottom: 10px; }
