@@ -444,9 +444,12 @@ section.agenda .track .session:after {
 section.agenda .track .session {
   margin: 0.5em 0 0;
   padding: 0.5em;
+  text-align: left;
   box-sizing: border-box; }
   section.agenda .track .session.talk {
-    background: #F6F6F6; }
+    background: #F6F6F6;
+    text-align: left;
+ }
   section.agenda .track .session.break {
     background: url("images/bg.png") #fff; }
     section.agenda .track .session.break .border {
