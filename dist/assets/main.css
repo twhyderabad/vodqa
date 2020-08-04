@@ -371,9 +371,10 @@ section.agenda {
   background: rgba(17, 121, 170, 0.95);
   color: #FFF; }
   section.agenda h2 {
-    color: #ddd; }
+    color: #ccc; }
   section.agenda .track .topic {
     font-size: 1.5em;
+    text-align: left; 
     font-weight: 200; }
   section.agenda .track .speaker {
     font-size: 1em;
@@ -405,7 +406,7 @@ section.agenda .track .session .track-title {
 
 section.agenda .track .session .time {
   float: left;
-  text-align: right;
+  text-align: left;
   width: 200px;
   margin-right: 20px;
   color: rgba(17, 121, 170, 0.95); }
