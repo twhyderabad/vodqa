@@ -1,0 +1,29 @@
+section.header
+  text-align: left
+  color: $grey2
+  padding: .5em
+  @media all and ("max-width: 1024px")
+    padding: 1em 2em 0
+  .logo
+    float: left
+    margin: 0.5 0
+    @media all and (max-width: 768px)
+      float: none
+      margin: 0.5 auto
+      display: block
+      text-align: center
+    img
+      max-width: 10em
+  .caption
+    float: right
+    color: $grey0
+    font-weight: 100
+    text-transform: uppercase
+    font-size: 1.5em
+    line-height: 3em
+    @media all and (max-width: 768px)
+      clear: both
+      float: none
+      text-align: center
+      display: block
+      line-height: 1.25em
