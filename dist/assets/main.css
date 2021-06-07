@@ -216,8 +216,23 @@ section.header {
         display: block;
         line-height: 1.25em; } }
 
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  background: white;
+  width: 100%;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+td, th {
+  text-align: left;
+  padding: 10px;
+
+}
 section.invite {
-  background: url("images/vodQA_Banner.png") no-repeat center 50px;
+  background: url("images/vodQA_Banner_1.png") no-repeat center 50px;
   background-size: 100%;
   margin-top: 90px; }
   @media all and (min-width: 1200px) {
