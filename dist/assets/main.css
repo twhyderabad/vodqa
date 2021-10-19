@@ -64,7 +64,7 @@ input, select {
   vertical-align: middle; }
 
 body {
-  color: #666;
+  color: #634f7d;
   margin: 0;
   padding: 0;
   font-family: "Open Sans", Arial, sans-serif;
@@ -94,7 +94,7 @@ sup {
 h2 {
   font-size: 2em;
   margin: 1em 0 .5em;
-  font-weight: 100;
+  font-weight: 500;
   line-height: 1.25em; }
 
 a {
@@ -172,7 +172,7 @@ a {
       padding: 0.3em; }
       .navigator ul li a {
         text-decoration: none;
-        color: rgba(17, 121, 170, 0.95);
+        color: rgba(0, 61, 79, 0.95);
         padding: .15em .5em; }
       .navigator ul li a.current {
         border-bottom: 2px #CCC solid; }
@@ -221,7 +221,7 @@ section.header {
         line-height: 1.25em; } }
 
 section.invite {
-  background: url("images/vodQA_Banner.png") no-repeat right;
+  background: url("images/vodQA_Banner1.jpg") no-repeat right;
   background-size: contain;
   margin-top: 100px; }
   @media all and (min-width: 1200px) {
@@ -239,7 +239,7 @@ section.invite {
     text-align: center;
     padding: 0; }
   section.invite .box {
-    background: rgba(34, 34, 34, 0.75);
+    background: rgba(0, 61, 79, 0.75);
     text-align: center;
     float: right;
     margin: 3em 2em;
@@ -296,7 +296,7 @@ section.invite {
           font-size: 15px;
           vertical-align: middle; }
       section.invite .box .btn.submit-talk, section.invite .box .btn.participate {
-        background: #427b5b;
+        background: #634F7D;
         margin-bottom: .5rem;
         display: block;
         /* text-decoration: line-through; */
@@ -622,7 +622,7 @@ section.contact {
     width: 100%;
 }
 .faqs {
-  background: #F6F6F6; }
+  background: #EDF1F3; }
   .faqs ol {
     margin-left: 1rem;
     margin-bottom: 1.3rem; }
@@ -777,7 +777,7 @@ section.register .mktoForm {
     background-color: #b3b3b3;
     border-radius: .5em; }
     #editions .editions a:hover, #editions .editions a.active {
-      background-color: rgba(17, 121, 170, 0.95); }
+      background-color: rgba(99, 79, 125, 0.95); }
     #editions .editions a .month {
       color: #FFF;
       line-height: 1.5em;
