@@ -1,0 +1,77 @@
+.navigator
+  box-sizing: border-box
+  width: 100%
+  position: fixed
+  top: 0
+  background: white
+  z-index: 10000
+  .register
+    background-color: #11AA58;
+    padding: 10px;
+    color: #fff;
+  .navigation-toggle
+    display: none
+    position: absolute
+    top: 0
+    left: 0
+    padding: .5em
+    margin: 9px 1em
+    border-radius: 4px
+    background: transparent
+    border: $primary solid 2px
+    hr
+      height: 2px
+      margin: 3px 0
+      width: 15px
+      background: $primary
+      border: 0
+    @media all and (max-width: 768px)
+      display: inline-block
+
+  @media all and (max-width: 768px)
+    padding: 0
+    .content
+      margin: 0
+      padding: 0
+  .logo
+    float: left
+    width: 30%
+    line-height: 0
+    @media all and (max-width: 768px)
+      float: none
+      margin: 0 auto
+      text-align: center
+    img
+      max-width: 10em
+      @media all and (max-width: 768px)
+        height: 50px
+
+  ul
+    float: right;
+    text-align: right
+    list-style: none
+    margin-top: 1.5em
+    @media all and (max-width: 768px)
+      display: none
+      margin-top: 0
+      float: none
+    li
+      display: inline-block
+      font-size: 1.2em
+      font-weight: 300
+      padding: 0.3em
+      a
+        text-decoration: none
+        color: $primary
+        padding: .15em .5em
+      a.current
+        border-bottom: 2px $grey-1 solid
+        @media all and (max-width: 768px)
+          border-bottom: 0
+
+      @media all and (max-width: 768px)
+        display: block;
+        text-align: center;
+        width: 100%;
+        background-color: #eee;
+        border-bottom: #ccc solid 1px;

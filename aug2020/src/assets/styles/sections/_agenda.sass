@@ -1,0 +1,102 @@
+section.agenda
+  background: $primary
+  h2
+    color: #ddd
+  .track
+    .topic
+      font-size: 1.5em
+      font-weight: 200
+    .speaker
+      font-size: 1em
+      font-style: italic
+      line-height: 2.5em
+
+
+// # of tracks
+
+.tracks
+  overflow: hidden
+  width: 100%
+  .track
+    float: left
+  &.tracks-1
+    .track
+      width: 100%
+  &.tracks-2
+    .track
+      width: 46%
+      margin-right: 2%
+
+
+section.agenda
+  a.link
+    display: inline-block
+    margin-left: 20px
+    img
+      width: 1em
+      margin-right: .3em
+
+  .track
+    .session
+      .track-title
+        font-style: italic
+        font-weight: bold
+        margin-bottom: 10px
+      .time
+        float: left
+        text-align: right
+        width: 200px
+        margin-right: 20px
+        color: $primary
+        @media all and (max-width: 768px)
+          float: none
+          text-align: left
+          font-size: .8em
+        @media all and (min-width: 768px)
+          &.time-track
+            margin-top: 2em
+      .details
+        @media all and (min-width: 768px)
+          float: left
+        &.details-half
+          margin-bottom: 10px
+          @media all and (min-width: 768px)
+            &:last-child
+              padding-left: 20px
+              /*border-left: dotted 2px #B5B933*/
+              margin-left: 201px
+      &:after
+        clear: both
+        display: table
+        content: ""
+// track types
+
+section.agenda
+  .track
+    .session
+      margin: 0.5em 0 0
+      padding: 0.5em
+      box-sizing: border-box
+      &.talk
+        background: $grey-3
+      &.break
+        background: url('images/bg.png') #fff
+        .border
+          background: #fff
+          padding: .5em
+          &:after
+            clear: both
+            display: table
+            content: ""
+
+
+
+// Dynamic height based on duration
+
+section.agenda
+  $d: $agenda-base-duration
+  @while $d < $agenda-max-duration
+    .duration-#{$d}m
+      height: $agenda-base-height * $d/$agenda-base-duration
+      max-height: $agenda-max-height
+    $d: $d + $agenda-step

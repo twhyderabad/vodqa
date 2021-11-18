@@ -1,0 +1,96 @@
+section.invite
+  background: url("images/vodqa-2017.jpg") no-repeat fixed center 50px
+  background-size: cover
+  margin-top: 100px
+  @media all and (min-width: 1200px)
+    background-position-y: 40px
+    margin-top: 115px
+  @media all and (max-width: 768px)
+    margin-top: 40px
+  @media all and (max-width: 480px)
+    background-position-y: 0
+    margin-top: 50px
+  .content
+    text-align: center
+    padding: 0
+  .box
+    background: rgba($grey3, 0.75)
+    text-align: center
+    float: right
+    margin: 3em 2em
+    padding: 4em
+    color: $secondary
+    @media all and (max-width: 768px)
+      margin: 3em 1em
+      width: 20em
+    @media all and (max-width: 480px)
+      margin: 3em 0
+      width: auto
+      padding: 1em
+      float: none
+      display: inline-block
+
+    h4
+      &.tw-name, &.event-theme
+      font-weight: 100
+
+    h3.event-name
+        font-size: 2em
+        font-weight: 400
+        padding: 20px
+        @media all and (max-width: 480px)
+          font-size: 1.3em
+          padding: 15px 10px
+
+    .date
+      font-size: 1.2em
+      font-weight: 100
+      margin-bottom: 30px
+      margin-top: 15px
+
+    .invite-msg
+      font-size: 1.5em
+      line-height: 1.5em
+      font-weight: 400
+      margin-bottom: 15px
+      //@media all and (max-width: 480px)
+      //  font-size: 1.5em
+
+    .contact-us
+      color: #fff
+      text-decoration: underline
+
+    .btn
+      text-align: center
+      color: $secondary
+      font-size: 2em
+      background: $btn-primary-background
+      padding: 13px 35px
+      display: inline-block
+      font-weight: 100
+
+      &.participate
+        margin-top: 1rem
+
+        sub
+          font-size: 15px
+          vertical-align: middle
+
+      &.submit-talk      
+
+      &.submit-talk,
+      &.participate
+        background: #427b5b
+        margin-bottom: .5rem
+        display: block
+        text-decoration: line-through
+
+
+      @media all and (max-width: 480px)
+        font-size: 1.3em
+        padding: 10px 45px
+  .agenda p
+    font-style: italic
+    a
+      color: #fff
+      text-decoration: underline
