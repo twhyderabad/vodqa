@@ -232,8 +232,8 @@ td, th {
 
 }
 section.invite {
-  background: url("images/vodQA_Banner_1.png") no-repeat center 50px;
-  background-size: 100%;
+  background: url("images/img.png") no-repeat center 50px;
+  background-size: 60%;
   margin-top: 90px; }
   @media all and (min-width: 1200px) {
     section.invite {
