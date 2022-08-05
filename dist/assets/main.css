@@ -64,7 +64,7 @@ input, select {
   vertical-align: middle; }
 
 body {
-  color: #634f7d;
+  color: #00000;
   margin: 0;
   padding: 0;
   font-family: "Open Sans", Arial, sans-serif;
@@ -221,7 +221,7 @@ section.header {
         line-height: 1.25em; } }
 
 section.invite {
-  background: url("images/VodQABanner-Aug25.jpeg") no-repeat right;
+  background: url("images/vodQA_Banner1.jpg") no-repeat right;
   background-size: contain;
   margin-top: 100px; }
   @media all and (min-width: 1200px) {
@@ -296,7 +296,7 @@ section.invite {
           font-size: 15px;
           vertical-align: middle; }
       section.invite .box .btn.submit-talk, section.invite .box .btn.participate {
-        background: #f2627a;
+        background: #634F7D;
         margin-bottom: .5rem;
         display: block;
         /* text-decoration: line-through; */
