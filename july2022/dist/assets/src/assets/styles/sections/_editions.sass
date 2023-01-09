@@ -1,0 +1,233 @@
+#editions
+  $main-fg: $primary
+  $main-bg: $secondary
+  $alt-fg: $primary
+
+  padding-bottom: 3em
+
+  .editions
+    list-style-type: none
+    margin: 0
+    padding: 0
+    text-align: center
+
+    li
+      display: inline-block
+      width: 7.8em
+
+  .editions a
+    display: block
+    overflow: hidden
+    padding: .25em
+    background-color: darken($main-bg, 30%)
+    border-radius: .5em
+
+    &:hover, &.active
+      background-color: $alt-fg
+
+    .month
+      color: $main-bg
+      line-height: 1.5em
+      margin: 0
+      font-size: 2em
+      font-weight: 400
+
+      &:before,
+      &:after
+        content: '\2022'
+        display: inline-block
+      &:before
+        float: left
+      &:after
+        float: right
+
+    .day
+      background-color: $main-bg
+      margin: 0
+      line-height: 1.25em
+      color: black
+      font-size: 2.5em
+      padding: 5px 0px
+
+    .year
+      background-color: $main-bg
+      border-top: 1px dashed darken($main-bg, 30%)
+      line-height: 2em
+      border-radius: 0 0 .25em .25em
+
+
+//Overlay css start
+.overlay 
+  height: 100%
+  width: 100%
+  display: none
+  position: fixed
+  z-index: 100001
+  top: 0
+  left: 0
+  background-color: rgb(0,0,0)
+  background-color: rgba(0,0,0, 0.9)
+  overflow-x: hidden
+  transition: 0.5s
+
+.overlay-content 
+  position: relative
+  top: 10%
+  width: 100%
+  text-align: center
+  padding-bottom: 10%
+  //margin-top: 30px
+  h2 
+    background: #666
+    color: white
+    height: 47px
+    position: relative
+    left: 25%
+    width: 50%
+    margin-bottom: 0
+  .talk, .break
+    background: white
+    margin-top: 1%
+    position: relative
+    left: 25%
+    width: 50%
+    
+.overlay a 
+  padding: 8px
+  text-decoration: none
+  font-size: 36px
+  color: #818181
+  display: block
+  transition: 0.3s
+
+
+.overlay a:hover, .overlay a:focus 
+  color: #f1f1f1
+
+
+.overlay .closebtn 
+  position: absolute
+  top: 3%
+  right: 3%
+  font-size: 60px
+
+
+@media screen and (max-height: 450px) 
+  .overlay a 
+    font-size: 20px
+  .overlay .closebtn 
+    font-size: 40px
+    top: 15px
+    right: 35px
+  
+//Overlay css end
+
+  
+
+// .overlay .overlay-content 
+//   section.agenda
+//   //background: $primary
+//   p
+//     color: white
+//   h2
+//     color: white
+//   .track
+//     .topic
+//       font-size: 1.5em
+//       font-weight: 200
+//     .speaker
+//       font-size: 1em
+//       font-style: italic
+//       line-height: 2.5em
+
+
+//   // # of tracks
+
+//   .tracks
+//     overflow: hidden
+//     width: 100%
+//     .track
+//       float: left
+//     &.tracks-1
+//       .track
+//         width: 100%
+//     &.tracks-2
+//       .track
+//         width: 46%
+//         margin-right: 2%
+
+
+//   section.agenda
+//     .content .shotsDate .tracks .track .talk
+//       margin-top: 2%
+
+//     a.link
+//       display: inline-block
+//       margin-left: 20px
+//       img
+//         width: 1em
+//         margin-right: .3em
+
+//     .track
+//       .session
+//         .track-title
+//           font-style: italic
+//           font-weight: bold
+//           margin-bottom: 10px
+//         .time
+//           float: left
+//           text-align: right
+//           width: 200px
+//           margin-right: 20px
+//           color: $primary
+//           @media all and (max-width: 768px)
+//             float: none
+//             text-align: left
+//             font-size: .8em
+//           @media all and (min-width: 768px)
+//             &.time-track
+//               margin-top: 2em
+//         .details
+//           @media all and (min-width: 768px)
+//             float: left
+//           &.details-half
+//             margin-bottom: 10px
+//             @media all and (min-width: 768px)
+//               &:last-child
+//                 padding-left: 20px
+//                 /*border-left: dotted 2px #B5B933*/
+//                 margin-left: 201px
+//         &:after
+//           clear: both
+//           display: table
+//           content: ""
+//   // track types
+
+//   section.agenda
+//     .track
+//       .session
+//         margin: 0.5em 0 0
+//         padding: 0.5em
+//         box-sizing: border-box
+//         &.talk
+//           background: $grey-3
+//         &.break
+//           background: url('images/bg.png') #fff
+//           .border
+//             background: #fff
+//             padding: .5em
+//             &:after
+//               clear: both
+//               display: table
+//               content: ""
+
+
+//   // Dynamic height based on duration
+
+//   section.agenda
+//     $d: $agenda-base-duration
+//     @while $d < $agenda-max-duration
+//       .duration-#{$d}m
+//         height: $agenda-base-height * $d/$agenda-base-duration
+//         max-height: $agenda-max-height
+//       $d: $d + $agenda-step
